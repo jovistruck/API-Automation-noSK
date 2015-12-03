@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="base sanity)" tests="9" skipped="0" failures="0" errors="0" timestamp="2015-12-01T14:03:06" hostname="jov-HP-Z220-CMT-Workstation" time="0.928">
+  <properties/>
+  <testcase name="Given I target the PO environment(Scenario: Add one address " classname="base sanity)" time="0.0"/>
+  <testcase name="When I create an interaction reference(Scenario: Add one address " classname="base sanity)" time="0.0"/>
+  <testcase name="And I add an address with name &quot;my purpose&quot; with purposes &quot;DELIVERY,BILLING,INSTALLATION&quot;(Scenario: Add one address " classname="base sanity)" time="0.0"/>
+  <testcase name="Then the response status is 201(Scenario: Add one address " classname="base sanity)" time="0.0"/>
+  <testcase name="And these json path values are not null(Scenario: Add one address " classname="base sanity)" time="0.0"/>
+  <testcase name="And the interaction reference is returned(Scenario: Add one address " classname="base sanity)" time="0.0"/>
+  <testcase name="And the response body matches the template &quot;add-address-all-purposes&quot;(Scenario: Add one address " classname="base sanity)" time="0.0"/>
+  <testcase name="And the single address references match &quot;delivery,billing,installation&quot;(Scenario: Add one address " classname="base sanity)" time="0.0"/>
+  <testcase name="And these json path values are equal to(Scenario: Add one address " classname="base sanity)" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

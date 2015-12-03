@@ -1,0 +1,2559 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Scenario: Aggregated multiple product total</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Scenario: Aggregated multiple product total</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Scenario: Aggregated multiple product total</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.312s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">And the response status is 200</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Given I target the BO environment</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Then the total subscription charges are computed correctly</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When I view bill details for a bill of the type &quot;tv talk and broadband charges&quot;</td>
+<td>0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">classMethod</td>
+<td>0.312s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>not a valid json
+{
+    &quot;PATH&quot;: &quot;/bin:/usr/bin&quot;,
+    &quot;VCAP_APP_HOST&quot;: &quot;0.0.0.0&quot;,
+    &quot;ces-catalogue&quot;: {
+        &quot;cache&quot;: {
+            &quot;TTL&quot;: &quot;60 minutes&quot;
+        },
+        &quot;circuit-breaker&quot;: {
+            &quot;maxFailures&quot;: 5,
+            &quot;resetTimeout&quot;: &quot;1 minute&quot;,
+            &quot;callTimeout&quot;: &quot;10 seconds&quot;
+        },
+        &quot;get-product-catalogue&quot;: &quot;/cbs-catalogue-evaluation-service/v1/catalogues/NOW_TV&quot;
+    },
+    &quot;CORS_HOSTNAMES&quot;: &quot;10\\.65\\.140\\..*,web\\.static\\.nowtv\\.com,localhost\\.nowtv\\.com&quot;,
+    &quot;line&quot;: {
+        &quot;separator&quot;: &quot;\n&quot;
+    },
+    &quot;JAVA_OPTS&quot;: &quot;-javaagent:lib/aspectjweaver-1.8.7.jar&quot;,
+    &quot;PAV_AES_SECRET&quot;: &quot;secret1234567890&quot;,
+    &quot;XFILESEARCHPATH&quot;: &quot;/usr/dt/app-defaults/%L/Dt&quot;,
+    &quot;development-e2e-d02&quot;: {
+        &quot;cbs-interaction&quot;: {
+            &quot;credentials&quot;: {
+                &quot;password&quot;: &quot;*****&quot;,
+                &quot;url&quot;: &quot;https://lwssisd02.gss.bskyb.com&quot;,
+                &quot;username&quot;: &quot;demo&quot;
+            }
+        }
+    },
+    &quot;LANG&quot;: &quot;en_US.UTF-8&quot;,
+    &quot;development-e2e-d01&quot;: {
+        &quot;ces-catalogue&quot;: {
+            &quot;credentials&quot;: {
+                &quot;password&quot;: &quot;*****&quot;,
+                &quot;url&quot;: &quot;http://udcsg14a:16580&quot;,
+                &quot;username&quot;: &quot;demo&quot;
+            }
+        },
+        &quot;lws-address&quot;: {
+            &quot;credentials&quot;: {
+                &quot;password&quot;: &quot;*****&quot;,
+                &quot;url&quot;: &quot;http://ud001481&quot;,
+                &quot;username&quot;: &quot;demo&quot;
+            }
+        },
+        &quot;cbs-interaction&quot;: {
+            &quot;credentials&quot;: {
+                &quot;password&quot;: &quot;*****&quot;,
+                &quot;url&quot;: &quot;http://udcsg13b:18280&quot;,
+                &quot;username&quot;: &quot;demo&quot;
+            }
+        }
+    },
+    &quot;sun&quot;: {
+        &quot;jnu&quot;: {
+            &quot;encoding&quot;: &quot;UTF-8&quot;
+        },
+        &quot;java&quot;: {
+            &quot;command&quot;: &quot;com.nowtv.pav.po.Application&quot;,
+            &quot;launcher&quot;: &quot;SUN_STANDARD&quot;
+        },
+        &quot;os&quot;: {
+            &quot;patch&quot;: {
+                &quot;level&quot;: &quot;unknown&quot;
+            }
+        },
+        &quot;management&quot;: {
+            &quot;compiler&quot;: &quot;HotSpot 64-Bit Tiered Compilers&quot;
+        },
+        &quot;io&quot;: {
+            &quot;unicode&quot;: {
+                &quot;encoding&quot;: &quot;UnicodeLittle&quot;
+            }
+        },
+        &quot;cpu&quot;: {
+            &quot;isalist&quot;: &quot;&quot;,
+            &quot;endian&quot;: &quot;little&quot;
+        },
+        &quot;arch&quot;: {
+            &quot;data&quot;: {
+                &quot;model&quot;: &quot;64&quot;
+            }
+        },
+        &quot;boot&quot;: {
+            &quot;library&quot;: {
+                &quot;path&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre/lib/amd64&quot;
+            },
+            &quot;class&quot;: {
+                &quot;path&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre/lib/resources.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/rt.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/sunrsasign.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/jsse.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/jce.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/charsets.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/jfr.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/classes&quot;
+            }
+        }
+    },
+    &quot;path&quot;: {
+        &quot;separator&quot;: &quot;:&quot;
+    },
+    &quot;DATABASE_URL&quot;: &quot;&quot;,
+    &quot;file&quot;: {
+        &quot;encoding&quot;: {
+            &quot;pkg&quot;: &quot;sun.io&quot;
+        },
+        &quot;separator&quot;: &quot;/&quot;
+    },
+    &quot;java&quot;: {
+        &quot;ext&quot;: {
+            &quot;dirs&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre/lib/ext:/usr/java/packages/lib/ext&quot;
+        },
+        &quot;library&quot;: {
+            &quot;path&quot;: &quot;/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib&quot;
+        },
+        &quot;io&quot;: {
+            &quot;tmpdir&quot;: &quot;/home/vcap/tmp&quot;
+        },
+        &quot;vendor&quot;: {
+            &quot;url&quot;: {
+                &quot;bug&quot;: &quot;http://bugreport.sun.com/bugreport/&quot;
+            }
+        },
+        &quot;vm&quot;: {
+            &quot;vendor&quot;: &quot;Oracle Corporation&quot;,
+            &quot;name&quot;: &quot;OpenJDK 64-Bit Server VM&quot;,
+            &quot;specification&quot;: {
+                &quot;vendor&quot;: &quot;Oracle Corporation&quot;,
+                &quot;name&quot;: &quot;Java Virtual Machine Specification&quot;,
+                &quot;version&quot;: &quot;1.8&quot;
+            },
+            &quot;version&quot;: &quot;25.66-b27&quot;,
+            &quot;info&quot;: &quot;mixed mode&quot;
+        },
+        &quot;runtime&quot;: {
+            &quot;name&quot;: &quot;OpenJDK Runtime Environment&quot;,
+            &quot;version&quot;: &quot;1.8.0_60--vagrant_2015_09_08_07_28-b27&quot;
+        },
+        &quot;specification&quot;: {
+            &quot;vendor&quot;: &quot;Oracle Corporation&quot;,
+            &quot;name&quot;: &quot;Java Platform API Specification&quot;,
+            &quot;version&quot;: &quot;1.8&quot;
+        },
+        &quot;class&quot;: {
+            &quot;path&quot;: &quot;/home/vcap/app/.:/home/vcap/app/lib/HdrHistogram-2.1.7.jar:/home/vcap/app/lib/akka-actor_2.11-2.4.0.jar:/home/vcap/app/lib/akka-slf4j_2.11-2.3.14.jar:/home/vcap/app/lib/aspectjweaver-1.8.7.jar:/home/vcap/app/lib/bcprov-jdk15on-1.50.jar:/home/vcap/app/lib/casbah-commons_2.11-2.7.1.jar:/home/vcap/app/lib/casbah-core_2.11-2.7.1.jar:/home/vcap/app/lib/casbah-query_2.11-2.7.1.jar:/home/vcap/app/lib/circuit-breaker-0.0.3.jar:/home/vcap/app/lib/commons-codec-1.6.jar:/home/vcap/app/lib/commons-io-2.4.jar:/home/vcap/app/lib/commons-lang-2.6.jar:/home/vcap/app/lib/commons-lang3-3.3.1.jar:/home/vcap/app/lib/commons-logging-1.1.3.jar:/home/vcap/app/lib/concurrentlinkedhashmap-lru-1.4.jar:/home/vcap/app/lib/config-1.3.0.jar:/home/vcap/app/lib/config-commons-0.1.2.jar:/home/vcap/app/lib/gomac-1.4.jar:/home/vcap/app/lib/guava-18.0.jar:/home/vcap/app/lib/httpclient-4.3.5.jar:/home/vcap/app/lib/httpcore-4.3.2.jar:/home/vcap/app/lib/jackson-annotations-2.5.4.jar:/home/vcap/app/lib/jackson-core-2.5.4.jar:/home/vcap/app/lib/jackson-core-asl-1.9.9.jar:/home/vcap/app/lib/jackson-databind-2.5.4.jar:/home/vcap/app/lib/jackson-datatype-jdk8-2.5.4.jar:/home/vcap/app/lib/jackson-datatype-jsr310-2.5.4.jar:/home/vcap/app/lib/jackson-mapper-asl-1.9.9.jar:/home/vcap/app/lib/javassist-3.19.0-GA.jar:/home/vcap/app/lib/javax.ws.rs-api-2.0.jar:/home/vcap/app/lib/joda-convert-1.7.jar:/home/vcap/app/lib/joda-time-2.7.jar:/home/vcap/app/lib/json-lenses_2.11-0.6.0.jar:/home/vcap/app/lib/json-path-0.8.1.jar:/home/vcap/app/lib/json-smart-1.1.1.jar:/home/vcap/app/lib/json4s-ast_2.11-3.3.0.jar:/home/vcap/app/lib/json4s-core_2.11-3.3.0.jar:/home/vcap/app/lib/json4s-native_2.11-3.3.0.jar:/home/vcap/app/lib/json4s-scalap_2.11-3.3.0.jar:/home/vcap/app/lib/jsr305-3.0.0.jar:/home/vcap/app/lib/kamon-akka_2.11-0.5.2.jar:/home/vcap/app/lib/kamon-core_2.11-0.5.2.jar:/home/vcap/app/lib/kamon-newrelic_2.11-0.5.2.jar:/home/vcap/app/lib/kamon-scala_2.11-0.5.2.jar:/home/vcap/app/lib/kamon-spray_2.11-0.5.2.jar:/home/vcap/app/lib/kamon-statsd_2.11-0.5.2.jar:/home/vcap/app/lib/kamon-system-metrics_2.11-0.5.2.jar:/home/vcap/app/lib/logback-classic-1.1.3.jar:/home/vcap/app/lib/logback-core-1.1.3.jar:/home/vcap/app/lib/macros_2.11-1.0.5.jar:/home/vcap/app/lib/metrics-core-3.0.2.jar:/home/vcap/app/lib/mimepull-1.9.5.jar:/home/vcap/app/lib/mongo-java-driver-2.12.1.jar:/home/vcap/app/lib/newrelic-api-3.11.0.jar:/home/vcap/app/lib/nscala-time_2.11-1.0.0.jar:/home/vcap/app/lib/paranamer-2.8.jar:/home/vcap/app/lib/parboiled-core-1.1.7.jar:/home/vcap/app/lib/parboiled-scala_2.11-1.1.7.jar:/home/vcap/app/lib/play-datacommons_2.11-2.4.1.jar:/home/vcap/app/lib/play-functional_2.11-2.4.1.jar:/home/vcap/app/lib/play-iteratees_2.11-2.4.1.jar:/home/vcap/app/lib/play-json_2.11-2.4.1.jar:/home/vcap/app/lib/protobuf-java-2.6.1.jar:/home/vcap/app/lib/rest-commons-0.1.39.jar:/home/vcap/app/lib/runtime_2.11-1.0.5.jar:/home/vcap/app/lib/salat-core_2.11-1.9.9.jar:/home/vcap/app/lib/salat-util_2.11-1.9.9.jar:/home/vcap/app/lib/scala-compiler-2.11.2.jar:/home/vcap/app/lib/scala-library-2.11.7.jar:/home/vcap/app/lib/scala-parser-combinators_2.11-1.0.2.jar:/home/vcap/app/lib/scala-reflect-2.11.6.jar:/home/vcap/app/lib/scala-stm_2.11-0.7.jar:/home/vcap/app/lib/scala-xml_2.11-1.0.5.jar:/home/vcap/app/lib/scalap-2.11.2.jar:/home/vcap/app/lib/shapeless_2.11-2.1.0.jar:/home/vcap/app/lib/sigar-loader-1.6.5-rev002.jar:/home/vcap/app/lib/sky-request-filter-3.0.jar:/home/vcap/app/lib/slf4j-api-1.7.7.jar:/home/vcap/app/lib/spray-caching-1.3.1.jar:/home/vcap/app/lib/spray-can_2.11-1.3.3.jar:/home/vcap/app/lib/spray-client_2.11-1.3.2.jar:/home/vcap/app/lib/spray-http_2.11-1.3.3.jar:/home/vcap/app/lib/spray-httpx_2.11-1.3.3.jar:/home/vcap/app/lib/spray-io_2.11-1.3.3.jar:/home/vcap/app/lib/spray-json_2.11-1.3.1.jar:/home/vcap/app/lib/spray-routing-shapeless2_2.11-1.3.3.jar:/home/vcap/app/lib/spray-routing_2.11-1.3.2.jar:/home/vcap/app/lib/spray-util-1.3.1.jar:/home/vcap/app/lib/spray-util_2.11-1.3.3.jar:/home/vcap/app/lib/umv-client-3.0.4.jar:/home/vcap/app/lib/umv-utils-1.23.jar:lib/aspectjweaver-1.8.7.jar&quot;,
+            &quot;version&quot;: &quot;52.0&quot;
+        },
+        &quot;version&quot;: &quot;1.8.0_60-&quot;,
+        &quot;endorsed&quot;: {
+            &quot;dirs&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre/lib/endorsed&quot;
+        },
+        &quot;awt&quot;: {
+            &quot;graphicsenv&quot;: &quot;sun.awt.X11GraphicsEnvironment&quot;,
+            &quot;printerjob&quot;: &quot;sun.print.PSPrinterJob&quot;
+        },
+        &quot;home&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre&quot;
+    },
+    &quot;PWD&quot;: &quot;/home/vcap/app&quot;,
+    &quot;VCAP_APPLICATION&quot;: &quot;{\&quot;limits\&quot;:{\&quot;mem\&quot;:1024,\&quot;disk\&quot;:1024,\&quot;fds\&quot;:16384},\&quot;application_version\&quot;:\&quot;6304ffc4-76b2-4af2-8923-656b2ffdd89a\&quot;,\&quot;application_name\&quot;:\&quot;product-orchestration-blue\&quot;,\&quot;application_uris\&quot;:[\&quot;development-po-blue.cf.dev-paas.bskyb.com\&quot;],\&quot;version\&quot;:\&quot;6304ffc4-76b2-4af2-8923-656b2ffdd89a\&quot;,\&quot;name\&quot;:\&quot;product-orchestration-blue\&quot;,\&quot;space_name\&quot;:\&quot;development\&quot;,\&quot;space_id\&quot;:\&quot;48dae084-1be2-4cbd-add7-a3ecb2037e10\&quot;,\&quot;uris\&quot;:[\&quot;development-po-blue.cf.dev-paas.bskyb.com\&quot;],\&quot;users\&quot;:null,\&quot;application_id\&quot;:\&quot;f187fccf-1ff4-41de-8315-98498d54f4bb\&quot;,\&quot;instance_id\&quot;:\&quot;5ccf6e53091c4ae7a0fafc12640a9e86\&quot;,\&quot;instance_index\&quot;:0,\&quot;host\&quot;:\&quot;0.0.0.0\&quot;,\&quot;port\&quot;:62271,\&quot;started_at\&quot;:\&quot;2015-12-02 09:29:11 +0000\&quot;,\&quot;started_at_timestamp\&quot;:1449048551,\&quot;start\&quot;:\&quot;2015-12-02 09:29:11 +0000\&quot;,\&quot;state_timestamp\&quot;:1449048551}&quot;,
+    &quot;_&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre/bin/java&quot;,
+    &quot;info&quot;: {
+        &quot;build&quot;: {
+            &quot;name&quot;: &quot;product-orchestration&quot;,
+            &quot;version&quot;: &quot;0.1.0-SNAPSHOT&quot;
+        }
+    },
+    &quot;umv&quot;: {
+        &quot;credentials&quot;: {
+            &quot;clientName&quot;: &quot;demoapp&quot;,
+            &quot;secret&quot;: &quot;supersecret2&quot;,
+            &quot;url&quot;: &quot;https://umv-service_ueuw1_api_bskyb_com&quot;
+        },
+        &quot;syslog_drain_url&quot;: &quot;&quot;,
+        &quot;name&quot;: &quot;umv&quot;,
+        &quot;label&quot;: &quot;user-provided&quot;,
+        &quot;tags&quot;: [
+            
+        ]
+    },
+    &quot;development&quot;: {
+        &quot;ces-catalogue&quot;: {
+            &quot;credentials&quot;: {
+                &quot;password&quot;: &quot;*****&quot;,
+                &quot;url&quot;: &quot;https://localhost:8483&quot;,
+                &quot;username&quot;: &quot;karel&quot;
+            }
+        },
+        &quot;lws-address&quot;: {
+            &quot;credentials&quot;: {
+                &quot;password&quot;: &quot;*****&quot;,
+                &quot;url&quot;: &quot;https://localhost:8481&quot;,
+                &quot;username&quot;: &quot;karel&quot;
+            }
+        },
+        &quot;cbs-interaction&quot;: {
+            &quot;credentials&quot;: {
+                &quot;password&quot;: &quot;*****&quot;,
+                &quot;url&quot;: &quot;https://localhost:8482&quot;,
+                &quot;username&quot;: &quot;karel&quot;
+            }
+        },
+        &quot;umv&quot;: {
+            &quot;credentials&quot;: {
+                &quot;clientName&quot;: &quot;nowtv&quot;,
+                &quot;secret&quot;: &quot;supersecret2&quot;,
+                &quot;url&quot;: &quot;http://localhost:8084/umv&quot;
+            }
+        }
+    },
+    &quot;PORT&quot;: &quot;62271&quot;,
+    &quot;os&quot;: {
+        &quot;name&quot;: &quot;Linux&quot;,
+        &quot;arch&quot;: &quot;amd64&quot;,
+        &quot;version&quot;: &quot;3.13.0-32-generic&quot;
+    },
+    &quot;spray&quot;: {
+        &quot;can&quot;: {
+            &quot;server&quot;: {
+                &quot;server-header&quot;: &quot;spray-can/1.3.1&quot;,
+                &quot;parsing-error-abort-timeout&quot;: &quot;2s&quot;,
+                &quot;chunkless-streaming&quot;: &quot;off&quot;,
+                &quot;parsing&quot;: {
+                    &quot;max-chunk-ext-length&quot;: 256,
+                    &quot;max-content-length&quot;: &quot;8m&quot;,
+                    &quot;incoming-auto-chunking-threshold-size&quot;: &quot;infinite&quot;,
+                    &quot;max-uri-length&quot;: &quot;2k&quot;,
+                    &quot;uri-parsing-mode&quot;: &quot;strict&quot;,
+                    &quot;max-response-reason-length&quot;: 64,
+                    &quot;max-header-value-length&quot;: &quot;8k&quot;,
+                    &quot;max-chunk-size&quot;: &quot;1m&quot;,
+                    &quot;max-header-name-length&quot;: 64,
+                    &quot;ssl-session-info-header&quot;: &quot;off&quot;,
+                    &quot;max-header-count&quot;: 64,
+                    &quot;illegal-header-warnings&quot;: &quot;on&quot;,
+                    &quot;header-cache&quot;: {
+                        &quot;If-None-Match&quot;: 0,
+                        &quot;If-Range&quot;: 0,
+                        &quot;default&quot;: 12,
+                        &quot;If-Match&quot;: 0,
+                        &quot;User-Agent&quot;: 32,
+                        &quot;If-Modified-Since&quot;: 0,
+                        &quot;Date&quot;: 0,
+                        &quot;Content-MD5&quot;: 0,
+                        &quot;If-Unmodified-Since&quot;: 0
+                    }
+                },
+                &quot;bind-timeout&quot;: &quot;3s&quot;,
+                &quot;max-encryption-chunk-size&quot;: &quot;1m&quot;,
+                &quot;ssl-tracing&quot;: &quot;off&quot;,
+                &quot;verbose-error-logging&quot;: &quot;off&quot;,
+                &quot;request-timeout&quot;: &quot;20 s&quot;,
+                &quot;registration-timeout&quot;: &quot;5s&quot;,
+                &quot;request-chunk-aggregation-limit&quot;: &quot;1m&quot;,
+                &quot;verbose-error-messages&quot;: &quot;off&quot;,
+                &quot;idle-timeout&quot;: &quot;60 s&quot;,
+                &quot;automatic-back-pressure-handling&quot;: &quot;on&quot;,
+                &quot;ssl-encryption&quot;: &quot;off&quot;,
+                &quot;raw-request-uri-header&quot;: &quot;off&quot;,
+                &quot;unbind-timeout&quot;: &quot;1s&quot;,
+                &quot;response-header-size-hint&quot;: 512,
+                &quot;stats-support&quot;: &quot;on&quot;,
+                &quot;transparent-head-requests&quot;: &quot;on&quot;,
+                &quot;timeout-timeout&quot;: &quot;2 s&quot;,
+                &quot;default-host-header&quot;: &quot;&quot;,
+                &quot;pipelining-limit&quot;: 1,
+                &quot;remote-address-header&quot;: &quot;off&quot;,
+                &quot;back-pressure&quot;: {
+                    &quot;reading-low-watermark&quot;: &quot;infinite&quot;,
+                    &quot;noack-rate&quot;: 10
+                },
+                &quot;reaping-cycle&quot;: &quot;250 ms&quot;,
+                &quot;chunkhandler-registration-timeout&quot;: &quot;500 ms&quot;,
+                &quot;timeout-handler&quot;: &quot;&quot;
+            },
+            &quot;host-connector&quot;: {
+                &quot;max-redirects&quot;: 0,
+                &quot;client&quot;: {
+                    &quot;proxy&quot;: {
+                        &quot;http&quot;: &quot;default&quot;,
+                        &quot;https&quot;: &quot;default&quot;
+                    },
+                    &quot;response-chunk-aggregation-limit&quot;: &quot;1m&quot;,
+                    &quot;request-header-size-hint&quot;: 512,
+                    &quot;connecting-timeout&quot;: &quot;10s&quot;,
+                    &quot;user-agent-header&quot;: &quot;spray-can/1.3.1&quot;,
+                    &quot;request-timeout&quot;: &quot;20 s&quot;,
+                    &quot;chunkless-streaming&quot;: &quot;off&quot;,
+                    &quot;idle-timeout&quot;: &quot;60 s&quot;,
+                    &quot;reaping-cycle&quot;: &quot;250 ms&quot;,
+                    &quot;parsing&quot;: {
+                        &quot;max-chunk-ext-length&quot;: 256,
+                        &quot;max-content-length&quot;: &quot;8m&quot;,
+                        &quot;incoming-auto-chunking-threshold-size&quot;: &quot;infinite&quot;,
+                        &quot;max-uri-length&quot;: &quot;2k&quot;,
+                        &quot;uri-parsing-mode&quot;: &quot;strict&quot;,
+                        &quot;max-response-reason-length&quot;: 64,
+                        &quot;max-header-value-length&quot;: &quot;8k&quot;,
+                        &quot;max-chunk-size&quot;: &quot;1m&quot;,
+                        &quot;max-header-name-length&quot;: 64,
+                        &quot;ssl-session-info-header&quot;: &quot;off&quot;,
+                        &quot;max-header-count&quot;: 64,
+                        &quot;illegal-header-warnings&quot;: &quot;on&quot;,
+                        &quot;header-cache&quot;: {
+                            &quot;If-None-Match&quot;: 0,
+                            &quot;If-Range&quot;: 0,
+                            &quot;default&quot;: 12,
+                            &quot;If-Match&quot;: 0,
+                            &quot;User-Agent&quot;: 32,
+                            &quot;If-Modified-Since&quot;: 0,
+                            &quot;Date&quot;: 0,
+                            &quot;Content-MD5&quot;: 0,
+                            &quot;If-Unmodified-Since&quot;: 0
+                        }
+                    },
+                    &quot;max-encryption-chunk-size&quot;: &quot;1m&quot;,
+                    &quot;ssl-tracing&quot;: &quot;off&quot;
+                },
+                &quot;max-retries&quot;: 5,
+                &quot;idle-timeout&quot;: &quot;30 s&quot;,
+                &quot;max-connections&quot;: 4,
+                &quot;pipelining&quot;: &quot;off&quot;
+            },
+            &quot;listener-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+            &quot;manager-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+            &quot;client&quot;: {
+                &quot;proxy&quot;: {
+                    &quot;http&quot;: &quot;default&quot;,
+                    &quot;https&quot;: &quot;default&quot;
+                },
+                &quot;response-chunk-aggregation-limit&quot;: &quot;1m&quot;,
+                &quot;request-header-size-hint&quot;: 512,
+                &quot;connecting-timeout&quot;: &quot;10s&quot;,
+                &quot;user-agent-header&quot;: &quot;spray-can/1.3.1&quot;,
+                &quot;request-timeout&quot;: &quot;20 s&quot;,
+                &quot;chunkless-streaming&quot;: &quot;off&quot;,
+                &quot;idle-timeout&quot;: &quot;60 s&quot;,
+                &quot;reaping-cycle&quot;: &quot;250 ms&quot;,
+                &quot;parsing&quot;: {
+                    &quot;max-chunk-ext-length&quot;: 256,
+                    &quot;max-content-length&quot;: &quot;8m&quot;,
+                    &quot;incoming-auto-chunking-threshold-size&quot;: &quot;infinite&quot;,
+                    &quot;max-uri-length&quot;: &quot;2k&quot;,
+                    &quot;uri-parsing-mode&quot;: &quot;strict&quot;,
+                    &quot;max-response-reason-length&quot;: 64,
+                    &quot;max-header-value-length&quot;: &quot;8k&quot;,
+                    &quot;max-chunk-size&quot;: &quot;1m&quot;,
+                    &quot;max-header-name-length&quot;: 64,
+                    &quot;ssl-session-info-header&quot;: &quot;off&quot;,
+                    &quot;max-header-count&quot;: 64,
+                    &quot;illegal-header-warnings&quot;: &quot;on&quot;,
+                    &quot;header-cache&quot;: {
+                        &quot;If-None-Match&quot;: 0,
+                        &quot;If-Range&quot;: 0,
+                        &quot;default&quot;: 12,
+                        &quot;If-Match&quot;: 0,
+                        &quot;User-Agent&quot;: 32,
+                        &quot;If-Modified-Since&quot;: 0,
+                        &quot;Date&quot;: 0,
+                        &quot;Content-MD5&quot;: 0,
+                        &quot;If-Unmodified-Since&quot;: 0
+                    }
+                },
+                &quot;max-encryption-chunk-size&quot;: &quot;1m&quot;,
+                &quot;ssl-tracing&quot;: &quot;off&quot;
+            },
+            &quot;parsing&quot;: {
+                &quot;max-chunk-ext-length&quot;: 256,
+                &quot;max-content-length&quot;: &quot;8m&quot;,
+                &quot;incoming-auto-chunking-threshold-size&quot;: &quot;infinite&quot;,
+                &quot;max-uri-length&quot;: &quot;2k&quot;,
+                &quot;uri-parsing-mode&quot;: &quot;strict&quot;,
+                &quot;max-response-reason-length&quot;: 64,
+                &quot;max-header-value-length&quot;: &quot;8k&quot;,
+                &quot;max-chunk-size&quot;: &quot;1m&quot;,
+                &quot;max-header-name-length&quot;: 64,
+                &quot;ssl-session-info-header&quot;: &quot;off&quot;,
+                &quot;max-header-count&quot;: 64,
+                &quot;illegal-header-warnings&quot;: &quot;on&quot;,
+                &quot;header-cache&quot;: {
+                    &quot;If-None-Match&quot;: 0,
+                    &quot;If-Range&quot;: 0,
+                    &quot;default&quot;: 12,
+                    &quot;If-Match&quot;: 0,
+                    &quot;User-Agent&quot;: 32,
+                    &quot;If-Modified-Since&quot;: 0,
+                    &quot;Date&quot;: 0,
+                    &quot;Content-MD5&quot;: 0,
+                    &quot;If-Unmodified-Since&quot;: 0
+                }
+            },
+            &quot;connection-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+            &quot;host-connector-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+            &quot;settings-group-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;
+        },
+        &quot;routing&quot;: {
+            &quot;file-chunking-chunk-size&quot;: &quot;128k&quot;,
+            &quot;render-vanity-footer&quot;: &quot;yes&quot;,
+            &quot;file-chunking-threshold-size&quot;: &quot;128k&quot;,
+            &quot;range-coalescing-threshold&quot;: 80,
+            &quot;range-count-limit&quot;: 16,
+            &quot;verbose-error-messages&quot;: &quot;off&quot;,
+            &quot;file-get-conditional&quot;: &quot;on&quot;,
+            &quot;users&quot;: {
+                &quot;admin&quot;: &quot;p4v4dm1n&quot;
+            }
+        },
+        &quot;version&quot;: &quot;1.3.1&quot;
+    },
+    &quot;VCAP_SERVICES&quot;: &quot;{\&quot;user-provided\&quot;:[{\&quot;name\&quot;:\&quot;cbs-interaction-development-cloud\&quot;,\&quot;label\&quot;:\&quot;user-provided\&quot;,\&quot;tags\&quot;:[],\&quot;credentials\&quot;:{\&quot;password\&quot;:\&quot;9hhsvLocVpO8aQP5\&quot;,\&quot;url\&quot;:\&quot;https://lwssise02.gss.bskyb.com\&quot;,\&quot;username\&quot;:\&quot;nowtv-platform\&quot;},\&quot;syslog_drain_url\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;ces-catalogue-development-cloud\&quot;,\&quot;label\&quot;:\&quot;user-provided\&quot;,\&quot;tags\&quot;:[],\&quot;credentials\&quot;:{\&quot;password\&quot;:\&quot;9hhsvLocVpO8aQP5\&quot;,\&quot;url\&quot;:\&quot;https://lwscese02.gss.bskyb.com\&quot;,\&quot;username\&quot;:\&quot;nowtv-platform\&quot;},\&quot;syslog_drain_url\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;lws-address-development-cloud\&quot;,\&quot;label\&quot;:\&quot;user-provided\&quot;,\&quot;tags\&quot;:[],\&quot;credentials\&quot;:{\&quot;password\&quot;:\&quot;password\&quot;,\&quot;url\&quot;:\&quot;http://ud001481.bskyb.com\&quot;,\&quot;username\&quot;:\&quot;demo\&quot;},\&quot;syslog_drain_url\&quot;:\&quot;\&quot;},{\&quot;name\&quot;:\&quot;umv\&quot;,\&quot;label\&quot;:\&quot;user-provided\&quot;,\&quot;tags\&quot;:[],\&quot;credentials\&quot;:{\&quot;clientName\&quot;:\&quot;demoapp\&quot;,\&quot;secret\&quot;:\&quot;supersecret2\&quot;,\&quot;url\&quot;:\&quot;https://umv-service.ueuw1.api.bskyb.com\&quot;},\&quot;syslog_drain_url\&quot;:\&quot;\&quot;}]}&quot;,
+    &quot;VCAP_ZONE&quot;: &quot;slough&quot;,
+    &quot;lws-address&quot;: {
+        &quot;find&quot;: &quot;/cbs-address-service/v1/addresses?%s&amp;addFields=addressFields&quot;,
+        &quot;circuit-breaker&quot;: {
+            &quot;maxFailures&quot;: 5,
+            &quot;resetTimeout&quot;: &quot;1 minute&quot;,
+            &quot;callTimeout&quot;: &quot;10 seconds&quot;
+        }
+    },
+    &quot;kamon&quot;: {
+        &quot;trace&quot;: {
+            &quot;threshold-sampler&quot;: {
+                &quot;minimum-elapsed-time&quot;: &quot;1 second&quot;
+            },
+            &quot;incubator&quot;: {
+                &quot;max-incubation-time&quot;: &quot;20 seconds&quot;,
+                &quot;min-incubation-time&quot;: &quot;5 seconds&quot;,
+                &quot;check-interval&quot;: &quot;1 second&quot;
+            },
+            &quot;random-sampler&quot;: {
+                &quot;chance&quot;: 10
+            },
+            &quot;sampling&quot;: &quot;random&quot;,
+            &quot;token-generator&quot;: &quot;kamon.trace.DefaultTokenGenerator&quot;,
+            &quot;level-of-detail&quot;: &quot;metrics-only&quot;,
+            &quot;ordered-sampler&quot;: {
+                &quot;sample-interval&quot;: 8
+            },
+            &quot;clock-sampler&quot;: {
+                &quot;pause&quot;: &quot;1 second&quot;
+            }
+        },
+        &quot;spray&quot;: {
+            &quot;name-generator&quot;: &quot;kamon.spray.DefaultNameGenerator&quot;,
+            &quot;client&quot;: {
+                &quot;instrumentation-level&quot;: &quot;request-level&quot;
+            },
+            &quot;trace-token-header-name&quot;: &quot;X-Trace-Token&quot;,
+            &quot;automatic-trace-token-propagation&quot;: true
+        },
+        &quot;metric&quot;: {
+            &quot;default-collection-context-buffer-size&quot;: 33792,
+            &quot;tick-interval&quot;: &quot;10 seconds&quot;,
+            &quot;disable-aspectj-weaver-missing-error&quot;: false,
+            &quot;instrument-settings&quot;: {
+                
+            },
+            &quot;default-instrument-settings&quot;: {
+                &quot;gauge&quot;: {
+                    &quot;highest-trackable-value&quot;: 3600000000000,
+                    &quot;precision&quot;: &quot;normal&quot;,
+                    &quot;refresh-interval&quot;: &quot;100 milliseconds&quot;,
+                    &quot;lowest-discernible-value&quot;: 1
+                },
+                &quot;histogram&quot;: {
+                    &quot;highest-trackable-value&quot;: 3600000000000,
+                    &quot;precision&quot;: &quot;normal&quot;,
+                    &quot;lowest-discernible-value&quot;: 1
+                },
+                &quot;min-max-counter&quot;: {
+                    &quot;highest-trackable-value&quot;: 999999999,
+                    &quot;precision&quot;: &quot;normal&quot;,
+                    &quot;refresh-interval&quot;: &quot;100 milliseconds&quot;,
+                    &quot;lowest-discernible-value&quot;: 1
+                }
+            },
+            &quot;filters&quot;: {
+                &quot;akka-actor&quot;: {
+                    &quot;excludes&quot;: [
+                        
+                    ],
+                    &quot;includes&quot;: [
+                        &quot;**&quot;
+                    ]
+                },
+                &quot;trace&quot;: {
+                    &quot;excludes&quot;: [
+                        
+                    ],
+                    &quot;includes&quot;: [
+                        &quot;**&quot;
+                    ]
+                },
+                &quot;akka-dispatcher&quot;: {
+                    &quot;excludes&quot;: [
+                        
+                    ],
+                    &quot;includes&quot;: [
+                        &quot;**&quot;
+                    ]
+                },
+                &quot;akka-router&quot;: {
+                    &quot;excludes&quot;: [
+                        
+                    ],
+                    &quot;includes&quot;: [
+                        &quot;**&quot;
+                    ]
+                }
+            },
+            &quot;track-unmatched-entities&quot;: &quot;yes&quot;
+        },
+        &quot;statsd&quot;: {
+            &quot;flush-interval&quot;: &quot;10 seconds&quot;,
+            &quot;hostname&quot;: &quot;localhost&quot;,
+            &quot;subscriptions&quot;: {
+                &quot;akka-actor&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;gauge&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;histogram&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;trace&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;akka-dispatcher&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;min-max-counter&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;http-server&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;trace-segment&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;system-metric&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;counter&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;akka-router&quot;: [
+                    &quot;**&quot;
+                ]
+            },
+            &quot;max-packet-size&quot;: &quot;1024 bytes&quot;,
+            &quot;port&quot;: 8125,
+            &quot;metric-key-generator&quot;: &quot;kamon.statsd.SimpleMetricKeyGenerator&quot;,
+            &quot;simple-metric-key-generator&quot;: {
+                &quot;hostname-override&quot;: &quot;none&quot;,
+                &quot;application&quot;: &quot;kamon&quot;,
+                &quot;include-hostname&quot;: true,
+                &quot;metric-name-normalization-strategy&quot;: &quot;normalize&quot;
+            }
+        },
+        &quot;internal-config&quot;: {
+            &quot;spray&quot;: {
+                
+            },
+            &quot;akka&quot;: {
+                &quot;actor&quot;: {
+                    &quot;default-dispatcher&quot;: {
+                        &quot;fork-join-executor&quot;: {
+                            &quot;parallelism-min&quot;: 2,
+                            &quot;parallelism-factor&quot;: 2,
+                            &quot;parallelism-max&quot;: 10
+                        }
+                    }
+                }
+            }
+        },
+        &quot;metrics&quot;: {
+            &quot;instrument-settings&quot;: {
+                &quot;system-metric&quot;: {
+                    &quot;swap-used&quot;: {
+                        &quot;highest-trackable-value&quot;: 5368709120
+                    },
+                    &quot;thread-count&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000,
+                        &quot;refresh-interval&quot;: &quot;1 second&quot;
+                    },
+                    &quot;process-user-cpu&quot;: {
+                        &quot;highest-trackable-value&quot;: 100
+                    },
+                    &quot;process-system-cpu&quot;: {
+                        &quot;highest-trackable-value&quot;: 100
+                    },
+                    &quot;classes-loaded&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000000,
+                        &quot;refresh-interval&quot;: &quot;1 second&quot;
+                    },
+                    &quot;context-switches-process-voluntary&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000000
+                    },
+                    &quot;rx-errors&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000000
+                    },
+                    &quot;swap-free&quot;: {
+                        &quot;highest-trackable-value&quot;: 5368709120
+                    },
+                    &quot;tx-errors&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000000
+                    },
+                    &quot;process-cpu&quot;: {
+                        &quot;highest-trackable-value&quot;: 100
+                    },
+                    &quot;daemon-thread-count&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000,
+                        &quot;refresh-interval&quot;: &quot;1 second&quot;
+                    },
+                    &quot;heap-used&quot;: {
+                        &quot;highest-trackable-value&quot;: 5368709120,
+                        &quot;refresh-interval&quot;: &quot;1 second&quot;
+                    },
+                    &quot;non-heap-used&quot;: {
+                        &quot;highest-trackable-value&quot;: 5368709120,
+                        &quot;refresh-interval&quot;: &quot;1 second&quot;
+                    },
+                    &quot;tx-dropped&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000000
+                    },
+                    &quot;one-minute&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000
+                    },
+                    &quot;context-switches-process-non-voluntary&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000000
+                    },
+                    &quot;garbage-collection-time&quot;: {
+                        &quot;highest-trackable-value&quot;: 3600000,
+                        &quot;refresh-interval&quot;: &quot;1 second&quot;
+                    },
+                    &quot;heap-max&quot;: {
+                        &quot;highest-trackable-value&quot;: 5368709120,
+                        &quot;refresh-interval&quot;: &quot;1 second&quot;
+                    },
+                    &quot;memory-used&quot;: {
+                        &quot;highest-trackable-value&quot;: 5368709120
+                    },
+                    &quot;file-system-writes&quot;: {
+                        &quot;highest-trackable-value&quot;: 107374182400
+                    },
+                    &quot;cpu-wait&quot;: {
+                        &quot;highest-trackable-value&quot;: 100
+                    },
+                    &quot;rx-dropped&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000000
+                    },
+                    &quot;non-heap-committed&quot;: {
+                        &quot;highest-trackable-value&quot;: 5368709120,
+                        &quot;refresh-interval&quot;: &quot;1 second&quot;
+                    },
+                    &quot;cpu-stolen&quot;: {
+                        &quot;highest-trackable-value&quot;: 100
+                    },
+                    &quot;cpu-system&quot;: {
+                        &quot;highest-trackable-value&quot;: 100
+                    },
+                    &quot;non-heap-max&quot;: {
+                        &quot;highest-trackable-value&quot;: 5368709120,
+                        &quot;refresh-interval&quot;: &quot;1 second&quot;
+                    },
+                    &quot;heap-committed&quot;: {
+                        &quot;highest-trackable-value&quot;: 5368709120,
+                        &quot;refresh-interval&quot;: &quot;1 second&quot;
+                    },
+                    &quot;garbage-collection-count&quot;: {
+                        &quot;highest-trackable-value&quot;: 1000000,
+                        &quot;refresh-interval&quot;: &quot;1 second&quot;
+                    },
+                    &quot;fifteen-minutes&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000
+                    },
+                    &quot;file-system-reads&quot;: {
+                        &quot;highest-trackable-value&quot;: 107374182400
+                    },
+                    &quot;classes-currently-loaded&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000000,
+                        &quot;refresh-interval&quot;: &quot;1 second&quot;
+                    },
+                    &quot;peak-thread-count&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000,
+                        &quot;refresh-interval&quot;: &quot;1 second&quot;
+                    },
+                    &quot;memory-free&quot;: {
+                        &quot;highest-trackable-value&quot;: 5368709120
+                    },
+                    &quot;context-switches-global&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000000
+                    },
+                    &quot;cpu-user&quot;: {
+                        &quot;highest-trackable-value&quot;: 100
+                    },
+                    &quot;cpu-idle&quot;: {
+                        &quot;highest-trackable-value&quot;: 100
+                    },
+                    &quot;five-minutes&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000
+                    },
+                    &quot;tx-bytes&quot;: {
+                        &quot;highest-trackable-value&quot;: 107374182400
+                    },
+                    &quot;classes-unloaded&quot;: {
+                        &quot;highest-trackable-value&quot;: 10000000,
+                        &quot;refresh-interval&quot;: &quot;1 second&quot;
+                    },
+                    &quot;rx-bytes&quot;: {
+                        &quot;highest-trackable-value&quot;: 107374182400
+                    }
+                }
+            }
+        },
+        &quot;show-aspectj-missing-warning&quot;: &quot;yes&quot;,
+        &quot;akka&quot;: {
+            &quot;ask-pattern-timeout-warning&quot;: &quot;heavyweight&quot;
+        },
+        &quot;system-metrics&quot;: {
+            &quot;sigar-dispatcher&quot;: {
+                &quot;executor&quot;: &quot;thread-pool-executor&quot;,
+                &quot;type&quot;: &quot;PinnedDispatcher&quot;
+            },
+            &quot;jmx-enabled&quot;: true,
+            &quot;context-switches-dispatcher&quot;: {
+                &quot;executor&quot;: &quot;thread-pool-executor&quot;,
+                &quot;type&quot;: &quot;PinnedDispatcher&quot;
+            },
+            &quot;sigar-enabled&quot;: true,
+            &quot;sigar-native-folder&quot;: &quot;/home/vcap/app/native&quot;,
+            &quot;context-switches-refresh-interval&quot;: &quot;1 second&quot;,
+            &quot;sigar-metrics-refresh-interval&quot;: &quot;1 second&quot;
+        },
+        &quot;modules&quot;: {
+            &quot;kamon-newrelic&quot;: {
+                &quot;requires-aspectj&quot;: &quot;no&quot;,
+                &quot;extension-id&quot;: &quot;kamon.newrelic.NewRelic&quot;,
+                &quot;auto-start&quot;: &quot;yes&quot;
+            },
+            &quot;kamon-system-metrics&quot;: {
+                &quot;requires-aspectj&quot;: &quot;no&quot;,
+                &quot;extension-id&quot;: &quot;kamon.system.SystemMetrics&quot;,
+                &quot;auto-start&quot;: &quot;yes&quot;
+            },
+            &quot;kamon-scala&quot;: {
+                &quot;requires-aspectj&quot;: &quot;yes&quot;,
+                &quot;extension-id&quot;: &quot;none&quot;,
+                &quot;auto-start&quot;: &quot;no&quot;
+            },
+            &quot;kamon-akka&quot;: {
+                &quot;requires-aspectj&quot;: &quot;yes&quot;,
+                &quot;extension-id&quot;: &quot;kamon.akka.Akka&quot;,
+                &quot;auto-start&quot;: &quot;yes&quot;
+            },
+            &quot;kamon-spray&quot;: {
+                &quot;requires-aspectj&quot;: &quot;yes&quot;,
+                &quot;extension-id&quot;: &quot;kamon.spray.Spray&quot;,
+                &quot;auto-start&quot;: &quot;yes&quot;
+            },
+            &quot;kamon-statsd&quot;: {
+                &quot;requires-aspectj&quot;: &quot;no&quot;,
+                &quot;extension-id&quot;: &quot;kamon.statsd.StatsD&quot;,
+                &quot;auto-start&quot;: &quot;yes&quot;
+            }
+        },
+        &quot;newrelic&quot;: {
+            &quot;apdexT&quot;: &quot;1 second&quot;,
+            &quot;max-connect-retries&quot;: 3,
+            &quot;operation-timeout&quot;: &quot;30 seconds&quot;,
+            &quot;license-key&quot;: &quot;1c789681e41b5207d47f7f65fc0593890556271c&quot;,
+            &quot;custom-metric-subscriptions&quot;: {
+                &quot;akka-actor&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;gauge&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;histogram&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;akka-dispatcher&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;min-max-counter&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;counter&quot;: [
+                    &quot;**&quot;
+                ],
+                &quot;akka-router&quot;: [
+                    &quot;**&quot;
+                ]
+            },
+            &quot;app-name&quot;: &quot;po-development-cloud&quot;,
+            &quot;connect-retry-delay&quot;: &quot;30 seconds&quot;
+        }
+    },
+    &quot;ces-catalogue-development-cloud&quot;: {
+        &quot;credentials&quot;: {
+            &quot;password&quot;: &quot;*****&quot;,
+            &quot;url&quot;: &quot;https://lwscese02_gss_bskyb_com&quot;,
+            &quot;username&quot;: &quot;nowtv-platform&quot;
+        },
+        &quot;syslog_drain_url&quot;: &quot;&quot;,
+        &quot;name&quot;: &quot;ces-catalogue-development-cloud&quot;,
+        &quot;label&quot;: &quot;user-provided&quot;,
+        &quot;tags&quot;: [
+            
+        ]
+    },
+    &quot;OLDPWD&quot;: &quot;/home/vcap&quot;,
+    &quot;USER&quot;: &quot;vcap&quot;,
+    &quot;VCAP_APP_PORT&quot;: &quot;62271&quot;,
+    &quot;akka&quot;: {
+        &quot;daemonic&quot;: &quot;off&quot;,
+        &quot;logger-startup-timeout&quot;: &quot;5s&quot;,
+        &quot;loggers&quot;: [
+            &quot;akka.event.slf4j.Slf4jLogger&quot;,
+            &quot;kamon.newrelic.NewRelicErrorLogger&quot;
+        ],
+        &quot;io&quot;: {
+            &quot;tcp&quot;: {
+                &quot;windows-connection-abort-workaround-enabled&quot;: &quot;off&quot;,
+                &quot;max-received-message-size&quot;: &quot;unlimited&quot;,
+                &quot;file-io-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+                &quot;management-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+                &quot;worker-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+                &quot;direct-buffer-pool-limit&quot;: 1000,
+                &quot;register-timeout&quot;: &quot;5s&quot;,
+                &quot;trace-logging&quot;: &quot;off&quot;,
+                &quot;selector-dispatcher&quot;: &quot;akka.io.pinned-dispatcher&quot;,
+                &quot;selector-association-retries&quot;: 10,
+                &quot;direct-buffer-size&quot;: &quot;128 KiB&quot;,
+                &quot;file-io-transferTo-limit&quot;: &quot;512 KiB&quot;,
+                &quot;max-channels&quot;: 256000,
+                &quot;batch-accept-limit&quot;: 10,
+                &quot;nr-of-selectors&quot;: 1,
+                &quot;finish-connect-retries&quot;: 5
+            },
+            &quot;udp&quot;: {
+                &quot;direct-buffer-pool-limit&quot;: 1000,
+                &quot;trace-logging&quot;: &quot;off&quot;,
+                &quot;selector-dispatcher&quot;: &quot;akka.io.pinned-dispatcher&quot;,
+                &quot;received-message-size-limit&quot;: &quot;unlimited&quot;,
+                &quot;receive-throughput&quot;: 3,
+                &quot;selector-association-retries&quot;: 10,
+                &quot;direct-buffer-size&quot;: &quot;128 KiB&quot;,
+                &quot;max-channels&quot;: 4096,
+                &quot;management-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+                &quot;select-timeout&quot;: &quot;infinite&quot;,
+                &quot;nr-of-selectors&quot;: 1,
+                &quot;worker-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;
+            },
+            &quot;pinned-dispatcher&quot;: {
+                &quot;executor&quot;: &quot;thread-pool-executor&quot;,
+                &quot;thread-pool-executor&quot;: {
+                    &quot;allow-core-timeout&quot;: &quot;off&quot;,
+                    &quot;allow-core-pool-timeout&quot;: &quot;off&quot;
+                },
+                &quot;type&quot;: &quot;PinnedDispatcher&quot;
+            },
+            &quot;dns&quot;: {
+                &quot;inet-address&quot;: {
+                    &quot;positive-ttl&quot;: &quot;30s&quot;,
+                    &quot;negative-ttl&quot;: &quot;10s&quot;,
+                    &quot;provider-object&quot;: &quot;akka.io.InetAddressDnsProvider&quot;,
+                    &quot;cache-cleanup-interval&quot;: &quot;120s&quot;
+                },
+                &quot;resolver&quot;: &quot;inet-address&quot;,
+                &quot;dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;
+            },
+            &quot;udp-connected&quot;: {
+                &quot;direct-buffer-pool-limit&quot;: 1000,
+                &quot;trace-logging&quot;: &quot;off&quot;,
+                &quot;selector-dispatcher&quot;: &quot;akka.io.pinned-dispatcher&quot;,
+                &quot;received-message-size-limit&quot;: &quot;unlimited&quot;,
+                &quot;receive-throughput&quot;: 3,
+                &quot;selector-association-retries&quot;: 10,
+                &quot;direct-buffer-size&quot;: &quot;128 KiB&quot;,
+                &quot;max-channels&quot;: 4096,
+                &quot;management-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+                &quot;select-timeout&quot;: &quot;infinite&quot;,
+                &quot;nr-of-selectors&quot;: 1,
+                &quot;worker-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;
+            }
+        },
+        &quot;log-dead-letters&quot;: 10,
+        &quot;log-config-on-start&quot;: &quot;off&quot;,
+        &quot;version&quot;: &quot;2.4.0&quot;,
+        &quot;jvm-exit-on-fatal-error&quot;: &quot;on&quot;,
+        &quot;log-dead-letters-during-shutdown&quot;: &quot;on&quot;,
+        &quot;home&quot;: &quot;&quot;,
+        &quot;actor&quot;: {
+            &quot;default-dispatcher&quot;: {
+                &quot;attempt-teamwork&quot;: &quot;on&quot;,
+                &quot;fork-join-executor&quot;: {
+                    &quot;parallelism-min&quot;: 8,
+                    &quot;parallelism-factor&quot;: 3,
+                    &quot;parallelism-max&quot;: 64,
+                    &quot;task-peeking-mode&quot;: &quot;FIFO&quot;
+                },
+                &quot;mailbox-requirement&quot;: &quot;&quot;,
+                &quot;executor&quot;: &quot;default-executor&quot;,
+                &quot;shutdown-timeout&quot;: &quot;1s&quot;,
+                &quot;thread-pool-executor&quot;: {
+                    &quot;max-pool-size-min&quot;: 8,
+                    &quot;max-pool-size-factor&quot;: 3,
+                    &quot;allow-core-timeout&quot;: &quot;on&quot;,
+                    &quot;task-queue-size&quot;: -1,
+                    &quot;core-pool-size-min&quot;: 8,
+                    &quot;task-queue-type&quot;: &quot;linked&quot;,
+                    &quot;core-pool-size-factor&quot;: 3,
+                    &quot;core-pool-size-max&quot;: 64,
+                    &quot;keep-alive-time&quot;: &quot;60s&quot;,
+                    &quot;max-pool-size-max&quot;: 64
+                },
+                &quot;throughput-deadline-time&quot;: &quot;0ms&quot;,
+                &quot;throughput&quot;: 5,
+                &quot;type&quot;: &quot;Dispatcher&quot;,
+                &quot;default-executor&quot;: {
+                    &quot;fallback&quot;: &quot;fork-join-executor&quot;
+                }
+            },
+            &quot;debug&quot;: {
+                &quot;lifecycle&quot;: &quot;on&quot;,
+                &quot;unhandled&quot;: &quot;on&quot;,
+                &quot;fsm&quot;: &quot;off&quot;,
+                &quot;receive&quot;: &quot;on&quot;,
+                &quot;router-misconfiguration&quot;: &quot;off&quot;,
+                &quot;autoreceive&quot;: &quot;on&quot;,
+                &quot;event-stream&quot;: &quot;off&quot;
+            },
+            &quot;creation-timeout&quot;: &quot;20s&quot;,
+            &quot;serialization-bindings&quot;: {
+                &quot;[B&quot;: &quot;bytes&quot;,
+                &quot;java.io.Serializable&quot;: &quot;java&quot;
+            },
+            &quot;reaper-interval&quot;: &quot;5s&quot;,
+            &quot;guardian-supervisor-strategy&quot;: &quot;akka.actor.DefaultSupervisorStrategy&quot;,
+            &quot;typed&quot;: {
+                &quot;timeout&quot;: &quot;5s&quot;
+            },
+            &quot;default-mailbox&quot;: {
+                &quot;mailbox-capacity&quot;: 1000,
+                &quot;mailbox-type&quot;: &quot;akka.dispatch.UnboundedMailbox&quot;,
+                &quot;mailbox-push-timeout-time&quot;: &quot;10s&quot;,
+                &quot;stash-capacity&quot;: -1
+            },
+            &quot;router&quot;: {
+                &quot;type-mapping&quot;: {
+                    &quot;round-robin-pool&quot;: &quot;akka.routing.RoundRobinPool&quot;,
+                    &quot;broadcast-group&quot;: &quot;akka.routing.BroadcastGroup&quot;,
+                    &quot;smallest-mailbox-pool&quot;: &quot;akka.routing.SmallestMailboxPool&quot;,
+                    &quot;round-robin-group&quot;: &quot;akka.routing.RoundRobinGroup&quot;,
+                    &quot;random-pool&quot;: &quot;akka.routing.RandomPool&quot;,
+                    &quot;consistent-hashing-group&quot;: &quot;akka.routing.ConsistentHashingGroup&quot;,
+                    &quot;tail-chopping-pool&quot;: &quot;akka.routing.TailChoppingPool&quot;,
+                    &quot;scatter-gather-group&quot;: &quot;akka.routing.ScatterGatherFirstCompletedGroup&quot;,
+                    &quot;scatter-gather-pool&quot;: &quot;akka.routing.ScatterGatherFirstCompletedPool&quot;,
+                    &quot;balancing-pool&quot;: &quot;akka.routing.BalancingPool&quot;,
+                    &quot;from-code&quot;: &quot;akka.routing.NoRouter&quot;,
+                    &quot;random-group&quot;: &quot;akka.routing.RandomGroup&quot;,
+                    &quot;broadcast-pool&quot;: &quot;akka.routing.BroadcastPool&quot;,
+                    &quot;consistent-hashing-pool&quot;: &quot;akka.routing.ConsistentHashingPool&quot;,
+                    &quot;tail-chopping-group&quot;: &quot;akka.routing.TailChoppingGroup&quot;
+                }
+            },
+            &quot;serializers&quot;: {
+                &quot;java&quot;: &quot;akka.serialization.JavaSerializer&quot;,
+                &quot;bytes&quot;: &quot;akka.serialization.ByteArraySerializer&quot;
+            },
+            &quot;mailbox&quot;: {
+                &quot;logger-queue&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.event.LoggerMailboxType&quot;
+                },
+                &quot;requirements&quot;: {
+                    &quot;akka.dispatch.MultipleConsumerSemantics&quot;: &quot;akka.actor.mailbox.unbounded-queue-based&quot;,
+                    &quot;akka.dispatch.BoundedMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.bounded-queue-based&quot;,
+                    &quot;akka.dispatch.UnboundedControlAwareMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.unbounded-control-aware-queue-based&quot;,
+                    &quot;akka.dispatch.BoundedControlAwareMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.bounded-control-aware-queue-based&quot;,
+                    &quot;akka.dispatch.ControlAwareMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.unbounded-control-aware-queue-based&quot;,
+                    &quot;akka.dispatch.UnboundedDequeBasedMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.unbounded-deque-based&quot;,
+                    &quot;akka.dispatch.BoundedDequeBasedMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.bounded-deque-based&quot;,
+                    &quot;akka.dispatch.UnboundedMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.unbounded-queue-based&quot;,
+                    &quot;akka.dispatch.DequeBasedMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.unbounded-deque-based&quot;,
+                    &quot;akka.event.LoggerMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.logger-queue&quot;
+                },
+                &quot;unbounded-queue-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.UnboundedMailbox&quot;
+                },
+                &quot;unbounded-deque-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.UnboundedDequeBasedMailbox&quot;
+                },
+                &quot;unbounded-control-aware-queue-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.UnboundedControlAwareMailbox&quot;
+                },
+                &quot;bounded-control-aware-queue-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.BoundedControlAwareMailbox&quot;
+                },
+                &quot;bounded-deque-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.BoundedDequeBasedMailbox&quot;
+                },
+                &quot;bounded-queue-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.BoundedMailbox&quot;
+                }
+            },
+            &quot;provider&quot;: &quot;akka.actor.LocalActorRefProvider&quot;,
+            &quot;serialization-identifiers&quot;: {
+                &quot;akka.serialization.ByteArraySerializer&quot;: 4,
+                &quot;akka.serialization.JavaSerializer&quot;: 1
+            },
+            &quot;serialize-creators&quot;: &quot;off&quot;,
+            &quot;serialize-messages&quot;: &quot;off&quot;,
+            &quot;dsl&quot;: {
+                &quot;default-timeout&quot;: &quot;5s&quot;,
+                &quot;inbox-size&quot;: 1000
+            },
+            &quot;deployment&quot;: {
+                &quot;default&quot;: {
+                    &quot;routees&quot;: {
+                        &quot;paths&quot;: [
+                            
+                        ]
+                    },
+                    &quot;router&quot;: &quot;from-code&quot;,
+                    &quot;mailbox&quot;: &quot;&quot;,
+                    &quot;within&quot;: &quot;5 seconds&quot;,
+                    &quot;tail-chopping-router&quot;: {
+                        &quot;interval&quot;: &quot;10 milliseconds&quot;
+                    },
+                    &quot;resizer&quot;: {
+                        &quot;backoff-rate&quot;: 0.1,
+                        &quot;lower-bound&quot;: 1,
+                        &quot;rampup-rate&quot;: 0.2,
+                        &quot;pressure-threshold&quot;: 1,
+                        &quot;messages-per-resize&quot;: 10,
+                        &quot;upper-bound&quot;: 10,
+                        &quot;backoff-threshold&quot;: 0.3,
+                        &quot;enabled&quot;: &quot;off&quot;
+                    },
+                    &quot;dispatcher&quot;: &quot;&quot;,
+                    &quot;virtual-nodes-factor&quot;: 10,
+                    &quot;nr-of-instances&quot;: 1
+                },
+                &quot;/IO-DNS/inet-address&quot;: {
+                    &quot;router&quot;: &quot;consistent-hashing-pool&quot;,
+                    &quot;mailbox&quot;: &quot;unbounded&quot;,
+                    &quot;nr-of-instances&quot;: 4
+                }
+            },
+            &quot;unstarted-push-timeout&quot;: &quot;10s&quot;
+        },
+        &quot;scheduler&quot;: {
+            &quot;implementation&quot;: &quot;akka.actor.LightArrayRevolverScheduler&quot;,
+            &quot;shutdown-timeout&quot;: &quot;5s&quot;,
+            &quot;tick-duration&quot;: &quot;10ms&quot;,
+            &quot;ticks-per-wheel&quot;: 512
+        },
+        &quot;extensions&quot;: [
+            
+        ],
+        &quot;stdout-loglevel&quot;: &quot;DEBUG&quot;,
+        &quot;loglevel&quot;: &quot;DEBUG&quot;,
+        &quot;logging-filter&quot;: &quot;akka.event.DefaultLoggingFilter&quot;
+    },
+    &quot;TMPDIR&quot;: &quot;/home/vcap/tmp&quot;,
+    &quot;PROFILES_ACTIVE&quot;: &quot;development-cloud&quot;,
+    &quot;development-e2e-d03&quot;: {
+        &quot;ces-catalogue&quot;: {
+            &quot;credentials&quot;: {
+                &quot;password&quot;: &quot;*****&quot;,
+                &quot;url&quot;: &quot;https://cesd03.lwsdat.glb.bskyb.com&quot;,
+                &quot;username&quot;: &quot;nowtv-platform&quot;
+            }
+        },
+        &quot;lws-address&quot;: {
+            &quot;credentials&quot;: {
+                &quot;password&quot;: &quot;*****&quot;,
+                &quot;url&quot;: &quot;http://ud001481&quot;,
+                &quot;username&quot;: &quot;demo&quot;
+            }
+        },
+        &quot;cbs-interaction&quot;: {
+            &quot;credentials&quot;: {
+                &quot;password&quot;: &quot;*****&quot;,
+                &quot;url&quot;: &quot;https://sisd03.lwsdat.glb.bskyb.com&quot;,
+                &quot;username&quot;: &quot;nowtv-platform&quot;
+            }
+        }
+    },
+    &quot;CF_STACK&quot;: &quot;lucid64&quot;,
+    &quot;NLSPATH&quot;: &quot;/usr/dt/lib/nls/msg/%L/%N.cat&quot;,
+    &quot;lws-address-development-cloud&quot;: {
+        &quot;credentials&quot;: {
+            &quot;password&quot;: &quot;*****&quot;,
+            &quot;url&quot;: &quot;http://ud001481_bskyb_com&quot;,
+            &quot;username&quot;: &quot;demo&quot;
+        },
+        &quot;syslog_drain_url&quot;: &quot;&quot;,
+        &quot;name&quot;: &quot;lws-address-development-cloud&quot;,
+        &quot;label&quot;: &quot;user-provided&quot;,
+        &quot;tags&quot;: [
+            
+        ]
+    },
+    &quot;cbs-interaction&quot;: {
+        &quot;modify-basket&quot;: &quot;/cbs-sales-interaction-service/v1/interactions/%s/basket/&quot;,
+        &quot;update-customer&quot;: &quot;/cbs-sales-interaction-service/v1/interactions/%s/customer/&quot;,
+        &quot;payment-method&quot;: &quot;/cbs-sales-interaction-service/v1/interactions/%s/payment-methods/all/&quot;,
+        &quot;create-order&quot;: &quot;/cbs-sales-interaction-service/v1/interactions/%s/order&quot;,
+        &quot;add-address&quot;: &quot;/cbs-sales-interaction-service/v1/interactions/%s/addresses&quot;,
+        &quot;get-interaction&quot;: &quot;/cbs-sales-interaction-service/v1/interactions/%s&quot;,
+        &quot;catalogue-products&quot;: &quot;/cbs-sales-interaction-service/v1/interactions/%s/catalogue/products&quot;,
+        &quot;lead-time&quot;: &quot;/cbs-sales-interaction-service/v1/interactions/%s/profiles/voice-and-data/dates/&quot;,
+        &quot;start-path&quot;: &quot;/cbs-sales-interaction-service/v1/interactions/prospect/&quot;,
+        &quot;circuit-breaker&quot;: {
+            &quot;maxFailures&quot;: 5,
+            &quot;resetTimeout&quot;: &quot;1 minute&quot;,
+            &quot;callTimeout&quot;: &quot;10 seconds&quot;
+        },
+        &quot;voice-and-data&quot;: &quot;/cbs-sales-interaction-service/v1/interactions/%s/profiles/voice-and-data/target/&quot;
+    },
+    &quot;cbs-interaction-development-cloud&quot;: {
+        &quot;credentials&quot;: {
+            &quot;password&quot;: &quot;*****&quot;,
+            &quot;url&quot;: &quot;https://lwssise02_gss_bskyb_com&quot;,
+            &quot;username&quot;: &quot;nowtv-platform&quot;
+        },
+        &quot;syslog_drain_url&quot;: &quot;&quot;,
+        &quot;name&quot;: &quot;cbs-interaction-development-cloud&quot;,
+        &quot;label&quot;: &quot;user-provided&quot;,
+        &quot;tags&quot;: [
+            
+        ]
+    },
+    &quot;MEMORY_LIMIT&quot;: &quot;1024m&quot;,
+    &quot;user&quot;: {
+        &quot;country&quot;: &quot;US&quot;,
+        &quot;timezone&quot;: &quot;Etc/UTC&quot;,
+        &quot;name&quot;: &quot;vcap&quot;,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;dir&quot;: &quot;/home/vcap/app&quot;,
+        &quot;home&quot;: &quot;/home/vcap&quot;
+    },
+    &quot;HOME&quot;: &quot;/home/vcap/app&quot;,
+    &quot;SHLVL&quot;: &quot;1&quot;,
+    &quot;awt&quot;: {
+        &quot;toolkit&quot;: &quot;sun.awt.X11.XToolkit&quot;
+    }
+}
+{&quot;user-provided&quot;:[{&quot;name&quot;:&quot;cbs-interaction-development-cloud&quot;,&quot;label&quot;:&quot;user-provided&quot;,&quot;tags&quot;:[],&quot;credentials&quot;:{&quot;password&quot;:&quot;9hhsvLocVpO8aQP5&quot;,&quot;url&quot;:&quot;https://lwssise02.gss.bskyb.com&quot;,&quot;username&quot;:&quot;nowtv-platform&quot;},&quot;syslog_drain_url&quot;:&quot;&quot;},{&quot;name&quot;:&quot;ces-catalogue-development-cloud&quot;,&quot;label&quot;:&quot;user-provided&quot;,&quot;tags&quot;:[],&quot;credentials&quot;:{&quot;password&quot;:&quot;9hhsvLocVpO8aQP5&quot;,&quot;url&quot;:&quot;https://lwscese02.gss.bskyb.com&quot;,&quot;username&quot;:&quot;nowtv-platform&quot;},&quot;syslog_drain_url&quot;:&quot;&quot;},{&quot;name&quot;:&quot;lws-address-development-cloud&quot;,&quot;label&quot;:&quot;user-provided&quot;,&quot;tags&quot;:[],&quot;credentials&quot;:{&quot;password&quot;:&quot;password&quot;,&quot;url&quot;:&quot;http://ud001481.bskyb.com&quot;,&quot;username&quot;:&quot;demo&quot;},&quot;syslog_drain_url&quot;:&quot;&quot;},{&quot;name&quot;:&quot;umv&quot;,&quot;label&quot;:&quot;user-provided&quot;,&quot;tags&quot;:[],&quot;credentials&quot;:{&quot;clientName&quot;:&quot;demoapp&quot;,&quot;secret&quot;:&quot;supersecret2&quot;,&quot;url&quot;:&quot;https://umv-service.ueuw1.api.bskyb.com&quot;},&quot;syslog_drain_url&quot;:&quot;&quot;}]}
+not a valid json
+{
+    &quot;PATH&quot;: &quot;/bin:/usr/bin&quot;,
+    &quot;VCAP_APP_HOST&quot;: &quot;0.0.0.0&quot;,
+    &quot;CORS_HOSTNAMES&quot;: &quot;null&quot;,
+    &quot;line&quot;: {
+        &quot;separator&quot;: &quot;\n&quot;
+    },
+    &quot;JAVA_OPTS&quot;: &quot;-javaagent:lib/aspectjweaver-1.5.4.jar&quot;,
+    &quot;XFILESEARCHPATH&quot;: &quot;/usr/dt/app-defaults/%L/Dt&quot;,
+    &quot;LANG&quot;: &quot;en_US.UTF-8&quot;,
+    &quot;sun&quot;: {
+        &quot;jnu&quot;: {
+            &quot;encoding&quot;: &quot;UTF-8&quot;
+        },
+        &quot;java&quot;: {
+            &quot;command&quot;: &quot;com.nowtv.pav.bo.Application&quot;,
+            &quot;launcher&quot;: &quot;SUN_STANDARD&quot;
+        },
+        &quot;os&quot;: {
+            &quot;patch&quot;: {
+                &quot;level&quot;: &quot;unknown&quot;
+            }
+        },
+        &quot;management&quot;: {
+            &quot;compiler&quot;: &quot;HotSpot 64-Bit Tiered Compilers&quot;
+        },
+        &quot;io&quot;: {
+            &quot;unicode&quot;: {
+                &quot;encoding&quot;: &quot;UnicodeLittle&quot;
+            }
+        },
+        &quot;cpu&quot;: {
+            &quot;isalist&quot;: &quot;&quot;,
+            &quot;endian&quot;: &quot;little&quot;
+        },
+        &quot;arch&quot;: {
+            &quot;data&quot;: {
+                &quot;model&quot;: &quot;64&quot;
+            }
+        },
+        &quot;boot&quot;: {
+            &quot;library&quot;: {
+                &quot;path&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre/lib/amd64&quot;
+            },
+            &quot;class&quot;: {
+                &quot;path&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre/lib/resources.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/rt.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/sunrsasign.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/jsse.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/jce.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/charsets.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/jfr.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/classes&quot;
+            }
+        }
+    },
+    &quot;cbs-billing-development-cloud&quot;: {
+        &quot;credentials&quot;: {
+            &quot;url&quot;: &quot;https://udwas0g0_bskyb_com:20845&quot;
+        },
+        &quot;syslog_drain_url&quot;: &quot;&quot;,
+        &quot;name&quot;: &quot;cbs-billing-development-cloud&quot;,
+        &quot;label&quot;: &quot;user-provided&quot;,
+        &quot;tags&quot;: [
+            
+        ]
+    },
+    &quot;path&quot;: {
+        &quot;separator&quot;: &quot;:&quot;
+    },
+    &quot;DATABASE_URL&quot;: &quot;&quot;,
+    &quot;file&quot;: {
+        &quot;encoding&quot;: {
+            &quot;pkg&quot;: &quot;sun.io&quot;
+        },
+        &quot;separator&quot;: &quot;/&quot;
+    },
+    &quot;java&quot;: {
+        &quot;ext&quot;: {
+            &quot;dirs&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre/lib/ext:/usr/java/packages/lib/ext&quot;
+        },
+        &quot;library&quot;: {
+            &quot;path&quot;: &quot;/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib&quot;
+        },
+        &quot;io&quot;: {
+            &quot;tmpdir&quot;: &quot;/home/vcap/tmp&quot;
+        },
+        &quot;vendor&quot;: {
+            &quot;url&quot;: {
+                &quot;bug&quot;: &quot;http://bugreport.sun.com/bugreport/&quot;
+            }
+        },
+        &quot;vm&quot;: {
+            &quot;vendor&quot;: &quot;Oracle Corporation&quot;,
+            &quot;name&quot;: &quot;OpenJDK 64-Bit Server VM&quot;,
+            &quot;specification&quot;: {
+                &quot;vendor&quot;: &quot;Oracle Corporation&quot;,
+                &quot;name&quot;: &quot;Java Virtual Machine Specification&quot;,
+                &quot;version&quot;: &quot;1.8&quot;
+            },
+            &quot;version&quot;: &quot;25.66-b27&quot;,
+            &quot;info&quot;: &quot;mixed mode&quot;
+        },
+        &quot;runtime&quot;: {
+            &quot;name&quot;: &quot;OpenJDK Runtime Environment&quot;,
+            &quot;version&quot;: &quot;1.8.0_60--vagrant_2015_09_08_07_28-b27&quot;
+        },
+        &quot;specification&quot;: {
+            &quot;vendor&quot;: &quot;Oracle Corporation&quot;,
+            &quot;name&quot;: &quot;Java Platform API Specification&quot;,
+            &quot;version&quot;: &quot;1.8&quot;
+        },
+        &quot;class&quot;: {
+            &quot;path&quot;: &quot;/home/vcap/app/.:/home/vcap/app/lib/akka-actor_2.11-2.4.0.jar:/home/vcap/app/lib/aspectjweaver-1.5.4.jar:/home/vcap/app/lib/circuit-breaker-0.0.3.jar:/home/vcap/app/lib/commons-lang-2.6.jar:/home/vcap/app/lib/concurrentlinkedhashmap-lru-1.4.jar:/home/vcap/app/lib/config-1.3.0.jar:/home/vcap/app/lib/config-commons-0.1.2.jar:/home/vcap/app/lib/guava-18.0.jar:/home/vcap/app/lib/jackson-annotations-2.5.4.jar:/home/vcap/app/lib/jackson-core-2.5.4.jar:/home/vcap/app/lib/jackson-databind-2.5.4.jar:/home/vcap/app/lib/jackson-datatype-jdk8-2.5.4.jar:/home/vcap/app/lib/jackson-datatype-jsr310-2.5.4.jar:/home/vcap/app/lib/javassist-3.19.0-GA.jar:/home/vcap/app/lib/joda-convert-1.7.jar:/home/vcap/app/lib/joda-time-2.7.jar:/home/vcap/app/lib/json-path-0.8.1.jar:/home/vcap/app/lib/json-smart-1.1.1.jar:/home/vcap/app/lib/logback-classic-1.1.3.jar:/home/vcap/app/lib/logback-core-1.1.3.jar:/home/vcap/app/lib/macros_2.11-1.0.5.jar:/home/vcap/app/lib/mimepull-1.9.5.jar:/home/vcap/app/lib/parboiled-core-1.1.7.jar:/home/vcap/app/lib/parboiled-scala_2.11-1.1.7.jar:/home/vcap/app/lib/play-datacommons_2.11-2.4.1.jar:/home/vcap/app/lib/play-functional_2.11-2.4.1.jar:/home/vcap/app/lib/play-iteratees_2.11-2.4.1.jar:/home/vcap/app/lib/play-json_2.11-2.4.1.jar:/home/vcap/app/lib/rest-commons-0.1.33.jar:/home/vcap/app/lib/runtime_2.11-1.0.5.jar:/home/vcap/app/lib/scala-library-2.11.7.jar:/home/vcap/app/lib/scala-reflect-2.11.6.jar:/home/vcap/app/lib/scala-stm_2.11-0.7.jar:/home/vcap/app/lib/scala-xml_2.11-1.0.3.jar:/home/vcap/app/lib/shapeless_2.11-2.1.0.jar:/home/vcap/app/lib/slf4j-api-1.7.7.jar:/home/vcap/app/lib/spray-caching-1.3.1.jar:/home/vcap/app/lib/spray-can_2.11-1.3.3.jar:/home/vcap/app/lib/spray-client_2.11-1.3.1.jar:/home/vcap/app/lib/spray-http_2.11-1.3.3.jar:/home/vcap/app/lib/spray-httpx_2.11-1.3.3.jar:/home/vcap/app/lib/spray-io_2.11-1.3.3.jar:/home/vcap/app/lib/spray-json_2.11-1.3.1.jar:/home/vcap/app/lib/spray-routing-shapeless2_2.11-1.3.3.jar:/home/vcap/app/lib/spray-util-1.3.1.jar:/home/vcap/app/lib/spray-util_2.11-1.3.3.jar:lib/aspectjweaver-1.5.4.jar&quot;,
+            &quot;version&quot;: &quot;52.0&quot;
+        },
+        &quot;version&quot;: &quot;1.8.0_60-&quot;,
+        &quot;endorsed&quot;: {
+            &quot;dirs&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre/lib/endorsed&quot;
+        },
+        &quot;awt&quot;: {
+            &quot;graphicsenv&quot;: &quot;sun.awt.X11GraphicsEnvironment&quot;,
+            &quot;printerjob&quot;: &quot;sun.print.PSPrinterJob&quot;
+        },
+        &quot;home&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre&quot;
+    },
+    &quot;PWD&quot;: &quot;/home/vcap/app&quot;,
+    &quot;VCAP_APPLICATION&quot;: &quot;{\&quot;limits\&quot;:{\&quot;mem\&quot;:1024,\&quot;disk\&quot;:1024,\&quot;fds\&quot;:16384},\&quot;application_version\&quot;:\&quot;424273bd-3995-4508-b777-4c31257172bb\&quot;,\&quot;application_name\&quot;:\&quot;billing-orchestration-green\&quot;,\&quot;application_uris\&quot;:[\&quot;development-bo-green.cf.dev-paas.bskyb.com\&quot;],\&quot;version\&quot;:\&quot;424273bd-3995-4508-b777-4c31257172bb\&quot;,\&quot;name\&quot;:\&quot;billing-orchestration-green\&quot;,\&quot;space_name\&quot;:\&quot;development\&quot;,\&quot;space_id\&quot;:\&quot;48dae084-1be2-4cbd-add7-a3ecb2037e10\&quot;,\&quot;uris\&quot;:[\&quot;development-bo-green.cf.dev-paas.bskyb.com\&quot;],\&quot;users\&quot;:null,\&quot;application_id\&quot;:\&quot;85a6d274-35cf-4c30-a647-6732df3f8b55\&quot;,\&quot;instance_id\&quot;:\&quot;3cc5d69a5542437a9d952a820cef3c42\&quot;,\&quot;instance_index\&quot;:0,\&quot;host\&quot;:\&quot;0.0.0.0\&quot;,\&quot;port\&quot;:61255,\&quot;started_at\&quot;:\&quot;2015-12-03 11:47:17 +0000\&quot;,\&quot;started_at_timestamp\&quot;:1449143237,\&quot;start\&quot;:\&quot;2015-12-03 11:47:17 +0000\&quot;,\&quot;state_timestamp\&quot;:1449143237}&quot;,
+    &quot;development-e2e&quot;: {
+        &quot;cbs-billing-web-services&quot;: {
+            &quot;credentials&quot;: {
+                &quot;url&quot;: &quot;https://udwas060.bskyb.com:20845&quot;
+            }
+        },
+        &quot;cbs-billing&quot;: {
+            &quot;credentials&quot;: {
+                &quot;url&quot;: &quot;https://udwas060.bskyb.com:20845&quot;
+            }
+        }
+    },
+    &quot;_&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre/bin/java&quot;,
+    &quot;info&quot;: {
+        &quot;build&quot;: {
+            &quot;name&quot;: &quot;billing-orchestration&quot;,
+            &quot;version&quot;: &quot;0.1.0-SNAPSHOT&quot;
+        }
+    },
+    &quot;cbs-billing-web-services&quot;: {
+        &quot;future&quot;: {
+            &quot;bills&quot;: {
+                &quot;path&quot;: &quot;/dthbillingservices/v1/account/%s/futurecharges?futurePeriods=1&quot;
+            }
+        },
+        &quot;circuit-breaker&quot;: {
+            &quot;maxFailures&quot;: 5,
+            &quot;resetTimeout&quot;: &quot;1 minute&quot;,
+            &quot;callTimeout&quot;: &quot;10 seconds&quot;
+        }
+    },
+    &quot;development&quot;: {
+        &quot;cbs-billing-web-services&quot;: {
+            &quot;credentials&quot;: {
+                &quot;url&quot;: &quot;http://localhost:8082&quot;
+            }
+        },
+        &quot;cbs-billing&quot;: {
+            &quot;credentials&quot;: {
+                &quot;url&quot;: &quot;http://localhost:8082&quot;
+            }
+        }
+    },
+    &quot;PORT&quot;: &quot;61255&quot;,
+    &quot;os&quot;: {
+        &quot;name&quot;: &quot;Linux&quot;,
+        &quot;arch&quot;: &quot;amd64&quot;,
+        &quot;version&quot;: &quot;3.13.0-32-generic&quot;
+    },
+    &quot;spray&quot;: {
+        &quot;can&quot;: {
+            &quot;server&quot;: {
+                &quot;server-header&quot;: &quot;spray-can/1.3.1&quot;,
+                &quot;parsing-error-abort-timeout&quot;: &quot;2s&quot;,
+                &quot;chunkless-streaming&quot;: &quot;off&quot;,
+                &quot;parsing&quot;: {
+                    &quot;max-chunk-ext-length&quot;: 256,
+                    &quot;max-content-length&quot;: &quot;8m&quot;,
+                    &quot;incoming-auto-chunking-threshold-size&quot;: &quot;infinite&quot;,
+                    &quot;max-uri-length&quot;: &quot;2k&quot;,
+                    &quot;uri-parsing-mode&quot;: &quot;strict&quot;,
+                    &quot;max-response-reason-length&quot;: 64,
+                    &quot;max-header-value-length&quot;: &quot;8k&quot;,
+                    &quot;max-chunk-size&quot;: &quot;1m&quot;,
+                    &quot;max-header-name-length&quot;: 64,
+                    &quot;ssl-session-info-header&quot;: &quot;off&quot;,
+                    &quot;max-header-count&quot;: 64,
+                    &quot;illegal-header-warnings&quot;: &quot;on&quot;,
+                    &quot;header-cache&quot;: {
+                        &quot;If-None-Match&quot;: 0,
+                        &quot;If-Range&quot;: 0,
+                        &quot;default&quot;: 12,
+                        &quot;If-Match&quot;: 0,
+                        &quot;User-Agent&quot;: 32,
+                        &quot;If-Modified-Since&quot;: 0,
+                        &quot;Date&quot;: 0,
+                        &quot;Content-MD5&quot;: 0,
+                        &quot;If-Unmodified-Since&quot;: 0
+                    }
+                },
+                &quot;bind-timeout&quot;: &quot;3s&quot;,
+                &quot;max-encryption-chunk-size&quot;: &quot;1m&quot;,
+                &quot;ssl-tracing&quot;: &quot;off&quot;,
+                &quot;verbose-error-logging&quot;: &quot;off&quot;,
+                &quot;request-timeout&quot;: &quot;20 s&quot;,
+                &quot;registration-timeout&quot;: &quot;5s&quot;,
+                &quot;request-chunk-aggregation-limit&quot;: &quot;1m&quot;,
+                &quot;verbose-error-messages&quot;: &quot;off&quot;,
+                &quot;idle-timeout&quot;: &quot;60 s&quot;,
+                &quot;automatic-back-pressure-handling&quot;: &quot;on&quot;,
+                &quot;ssl-encryption&quot;: &quot;off&quot;,
+                &quot;raw-request-uri-header&quot;: &quot;off&quot;,
+                &quot;unbind-timeout&quot;: &quot;1s&quot;,
+                &quot;response-header-size-hint&quot;: 512,
+                &quot;stats-support&quot;: &quot;on&quot;,
+                &quot;transparent-head-requests&quot;: &quot;on&quot;,
+                &quot;timeout-timeout&quot;: &quot;2 s&quot;,
+                &quot;default-host-header&quot;: &quot;&quot;,
+                &quot;pipelining-limit&quot;: 1,
+                &quot;remote-address-header&quot;: &quot;off&quot;,
+                &quot;back-pressure&quot;: {
+                    &quot;reading-low-watermark&quot;: &quot;infinite&quot;,
+                    &quot;noack-rate&quot;: 10
+                },
+                &quot;reaping-cycle&quot;: &quot;250 ms&quot;,
+                &quot;chunkhandler-registration-timeout&quot;: &quot;500 ms&quot;,
+                &quot;timeout-handler&quot;: &quot;&quot;
+            },
+            &quot;host-connector&quot;: {
+                &quot;max-redirects&quot;: 0,
+                &quot;client&quot;: {
+                    &quot;proxy&quot;: {
+                        &quot;http&quot;: &quot;default&quot;,
+                        &quot;https&quot;: &quot;default&quot;
+                    },
+                    &quot;response-chunk-aggregation-limit&quot;: &quot;1m&quot;,
+                    &quot;request-header-size-hint&quot;: 512,
+                    &quot;connecting-timeout&quot;: &quot;10s&quot;,
+                    &quot;user-agent-header&quot;: &quot;spray-can/1.3.1&quot;,
+                    &quot;request-timeout&quot;: &quot;20 s&quot;,
+                    &quot;chunkless-streaming&quot;: &quot;off&quot;,
+                    &quot;idle-timeout&quot;: &quot;60 s&quot;,
+                    &quot;reaping-cycle&quot;: &quot;250 ms&quot;,
+                    &quot;parsing&quot;: {
+                        &quot;max-chunk-ext-length&quot;: 256,
+                        &quot;max-content-length&quot;: &quot;8m&quot;,
+                        &quot;incoming-auto-chunking-threshold-size&quot;: &quot;infinite&quot;,
+                        &quot;max-uri-length&quot;: &quot;2k&quot;,
+                        &quot;uri-parsing-mode&quot;: &quot;strict&quot;,
+                        &quot;max-response-reason-length&quot;: 64,
+                        &quot;max-header-value-length&quot;: &quot;8k&quot;,
+                        &quot;max-chunk-size&quot;: &quot;1m&quot;,
+                        &quot;max-header-name-length&quot;: 64,
+                        &quot;ssl-session-info-header&quot;: &quot;off&quot;,
+                        &quot;max-header-count&quot;: 64,
+                        &quot;illegal-header-warnings&quot;: &quot;on&quot;,
+                        &quot;header-cache&quot;: {
+                            &quot;If-None-Match&quot;: 0,
+                            &quot;If-Range&quot;: 0,
+                            &quot;default&quot;: 12,
+                            &quot;If-Match&quot;: 0,
+                            &quot;User-Agent&quot;: 32,
+                            &quot;If-Modified-Since&quot;: 0,
+                            &quot;Date&quot;: 0,
+                            &quot;Content-MD5&quot;: 0,
+                            &quot;If-Unmodified-Since&quot;: 0
+                        }
+                    },
+                    &quot;max-encryption-chunk-size&quot;: &quot;1m&quot;,
+                    &quot;ssl-tracing&quot;: &quot;off&quot;
+                },
+                &quot;max-retries&quot;: 5,
+                &quot;idle-timeout&quot;: &quot;30 s&quot;,
+                &quot;max-connections&quot;: 4,
+                &quot;pipelining&quot;: &quot;off&quot;
+            },
+            &quot;listener-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+            &quot;manager-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+            &quot;client&quot;: {
+                &quot;proxy&quot;: {
+                    &quot;http&quot;: &quot;default&quot;,
+                    &quot;https&quot;: &quot;default&quot;
+                },
+                &quot;response-chunk-aggregation-limit&quot;: &quot;1m&quot;,
+                &quot;request-header-size-hint&quot;: 512,
+                &quot;connecting-timeout&quot;: &quot;10s&quot;,
+                &quot;user-agent-header&quot;: &quot;spray-can/1.3.1&quot;,
+                &quot;request-timeout&quot;: &quot;20 s&quot;,
+                &quot;chunkless-streaming&quot;: &quot;off&quot;,
+                &quot;idle-timeout&quot;: &quot;60 s&quot;,
+                &quot;reaping-cycle&quot;: &quot;250 ms&quot;,
+                &quot;parsing&quot;: {
+                    &quot;max-chunk-ext-length&quot;: 256,
+                    &quot;max-content-length&quot;: &quot;8m&quot;,
+                    &quot;incoming-auto-chunking-threshold-size&quot;: &quot;infinite&quot;,
+                    &quot;max-uri-length&quot;: &quot;2k&quot;,
+                    &quot;uri-parsing-mode&quot;: &quot;strict&quot;,
+                    &quot;max-response-reason-length&quot;: 64,
+                    &quot;max-header-value-length&quot;: &quot;8k&quot;,
+                    &quot;max-chunk-size&quot;: &quot;1m&quot;,
+                    &quot;max-header-name-length&quot;: 64,
+                    &quot;ssl-session-info-header&quot;: &quot;off&quot;,
+                    &quot;max-header-count&quot;: 64,
+                    &quot;illegal-header-warnings&quot;: &quot;on&quot;,
+                    &quot;header-cache&quot;: {
+                        &quot;If-None-Match&quot;: 0,
+                        &quot;If-Range&quot;: 0,
+                        &quot;default&quot;: 12,
+                        &quot;If-Match&quot;: 0,
+                        &quot;User-Agent&quot;: 32,
+                        &quot;If-Modified-Since&quot;: 0,
+                        &quot;Date&quot;: 0,
+                        &quot;Content-MD5&quot;: 0,
+                        &quot;If-Unmodified-Since&quot;: 0
+                    }
+                },
+                &quot;max-encryption-chunk-size&quot;: &quot;1m&quot;,
+                &quot;ssl-tracing&quot;: &quot;off&quot;
+            },
+            &quot;parsing&quot;: {
+                &quot;max-chunk-ext-length&quot;: 256,
+                &quot;max-content-length&quot;: &quot;8m&quot;,
+                &quot;incoming-auto-chunking-threshold-size&quot;: &quot;infinite&quot;,
+                &quot;max-uri-length&quot;: &quot;2k&quot;,
+                &quot;uri-parsing-mode&quot;: &quot;strict&quot;,
+                &quot;max-response-reason-length&quot;: 64,
+                &quot;max-header-value-length&quot;: &quot;8k&quot;,
+                &quot;max-chunk-size&quot;: &quot;1m&quot;,
+                &quot;max-header-name-length&quot;: 64,
+                &quot;ssl-session-info-header&quot;: &quot;off&quot;,
+                &quot;max-header-count&quot;: 64,
+                &quot;illegal-header-warnings&quot;: &quot;on&quot;,
+                &quot;header-cache&quot;: {
+                    &quot;If-None-Match&quot;: 0,
+                    &quot;If-Range&quot;: 0,
+                    &quot;default&quot;: 12,
+                    &quot;If-Match&quot;: 0,
+                    &quot;User-Agent&quot;: 32,
+                    &quot;If-Modified-Since&quot;: 0,
+                    &quot;Date&quot;: 0,
+                    &quot;Content-MD5&quot;: 0,
+                    &quot;If-Unmodified-Since&quot;: 0
+                }
+            },
+            &quot;connection-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+            &quot;host-connector-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+            &quot;settings-group-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;
+        },
+        &quot;routing&quot;: {
+            &quot;file-chunking-chunk-size&quot;: &quot;128k&quot;,
+            &quot;render-vanity-footer&quot;: &quot;yes&quot;,
+            &quot;file-chunking-threshold-size&quot;: &quot;128k&quot;,
+            &quot;range-coalescing-threshold&quot;: 80,
+            &quot;range-count-limit&quot;: 16,
+            &quot;verbose-error-messages&quot;: &quot;off&quot;,
+            &quot;file-get-conditional&quot;: &quot;on&quot;,
+            &quot;users&quot;: {
+                &quot;admin&quot;: &quot;p4v4dm1n&quot;
+            }
+        },
+        &quot;version&quot;: &quot;1.3.1&quot;
+    },
+    &quot;VCAP_SERVICES&quot;: &quot;{\&quot;user-provided\&quot;:[{\&quot;name\&quot;:\&quot;cbs-billing-development-cloud\&quot;,\&quot;label\&quot;:\&quot;user-provided\&quot;,\&quot;tags\&quot;:[],\&quot;credentials\&quot;:{\&quot;url\&quot;:\&quot;https://udwas0g0.bskyb.com:20845\&quot;},\&quot;syslog_drain_url\&quot;:\&quot;\&quot;}]}&quot;,
+    &quot;VCAP_ZONE&quot;: &quot;hemel&quot;,
+    &quot;OLDPWD&quot;: &quot;/home/vcap&quot;,
+    &quot;USER&quot;: &quot;vcap&quot;,
+    &quot;VCAP_APP_PORT&quot;: &quot;61255&quot;,
+    &quot;akka&quot;: {
+        &quot;daemonic&quot;: &quot;off&quot;,
+        &quot;logger-startup-timeout&quot;: &quot;5s&quot;,
+        &quot;loggers&quot;: [
+            &quot;akka.event.Logging$DefaultLogger&quot;
+        ],
+        &quot;io&quot;: {
+            &quot;tcp&quot;: {
+                &quot;windows-connection-abort-workaround-enabled&quot;: &quot;off&quot;,
+                &quot;max-received-message-size&quot;: &quot;unlimited&quot;,
+                &quot;file-io-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+                &quot;management-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+                &quot;worker-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+                &quot;direct-buffer-pool-limit&quot;: 1000,
+                &quot;register-timeout&quot;: &quot;5s&quot;,
+                &quot;trace-logging&quot;: &quot;off&quot;,
+                &quot;selector-dispatcher&quot;: &quot;akka.io.pinned-dispatcher&quot;,
+                &quot;selector-association-retries&quot;: 10,
+                &quot;direct-buffer-size&quot;: &quot;128 KiB&quot;,
+                &quot;file-io-transferTo-limit&quot;: &quot;512 KiB&quot;,
+                &quot;max-channels&quot;: 256000,
+                &quot;batch-accept-limit&quot;: 10,
+                &quot;nr-of-selectors&quot;: 1,
+                &quot;finish-connect-retries&quot;: 5
+            },
+            &quot;udp&quot;: {
+                &quot;direct-buffer-pool-limit&quot;: 1000,
+                &quot;trace-logging&quot;: &quot;off&quot;,
+                &quot;selector-dispatcher&quot;: &quot;akka.io.pinned-dispatcher&quot;,
+                &quot;received-message-size-limit&quot;: &quot;unlimited&quot;,
+                &quot;receive-throughput&quot;: 3,
+                &quot;selector-association-retries&quot;: 10,
+                &quot;direct-buffer-size&quot;: &quot;128 KiB&quot;,
+                &quot;max-channels&quot;: 4096,
+                &quot;management-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+                &quot;select-timeout&quot;: &quot;infinite&quot;,
+                &quot;nr-of-selectors&quot;: 1,
+                &quot;worker-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;
+            },
+            &quot;pinned-dispatcher&quot;: {
+                &quot;executor&quot;: &quot;thread-pool-executor&quot;,
+                &quot;thread-pool-executor&quot;: {
+                    &quot;allow-core-timeout&quot;: &quot;off&quot;,
+                    &quot;allow-core-pool-timeout&quot;: &quot;off&quot;
+                },
+                &quot;type&quot;: &quot;PinnedDispatcher&quot;
+            },
+            &quot;dns&quot;: {
+                &quot;inet-address&quot;: {
+                    &quot;positive-ttl&quot;: &quot;30s&quot;,
+                    &quot;negative-ttl&quot;: &quot;10s&quot;,
+                    &quot;provider-object&quot;: &quot;akka.io.InetAddressDnsProvider&quot;,
+                    &quot;cache-cleanup-interval&quot;: &quot;120s&quot;
+                },
+                &quot;resolver&quot;: &quot;inet-address&quot;,
+                &quot;dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;
+            },
+            &quot;udp-connected&quot;: {
+                &quot;direct-buffer-pool-limit&quot;: 1000,
+                &quot;trace-logging&quot;: &quot;off&quot;,
+                &quot;selector-dispatcher&quot;: &quot;akka.io.pinned-dispatcher&quot;,
+                &quot;received-message-size-limit&quot;: &quot;unlimited&quot;,
+                &quot;receive-throughput&quot;: 3,
+                &quot;selector-association-retries&quot;: 10,
+                &quot;direct-buffer-size&quot;: &quot;128 KiB&quot;,
+                &quot;max-channels&quot;: 4096,
+                &quot;management-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+                &quot;select-timeout&quot;: &quot;infinite&quot;,
+                &quot;nr-of-selectors&quot;: 1,
+                &quot;worker-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;
+            }
+        },
+        &quot;log-dead-letters&quot;: 10,
+        &quot;log-config-on-start&quot;: &quot;off&quot;,
+        &quot;version&quot;: &quot;2.4.0&quot;,
+        &quot;jvm-exit-on-fatal-error&quot;: &quot;on&quot;,
+        &quot;log-dead-letters-during-shutdown&quot;: &quot;on&quot;,
+        &quot;home&quot;: &quot;&quot;,
+        &quot;actor&quot;: {
+            &quot;default-dispatcher&quot;: {
+                &quot;attempt-teamwork&quot;: &quot;on&quot;,
+                &quot;fork-join-executor&quot;: {
+                    &quot;parallelism-min&quot;: 8,
+                    &quot;parallelism-factor&quot;: 3,
+                    &quot;parallelism-max&quot;: 64,
+                    &quot;task-peeking-mode&quot;: &quot;FIFO&quot;
+                },
+                &quot;mailbox-requirement&quot;: &quot;&quot;,
+                &quot;executor&quot;: &quot;default-executor&quot;,
+                &quot;shutdown-timeout&quot;: &quot;1s&quot;,
+                &quot;thread-pool-executor&quot;: {
+                    &quot;max-pool-size-min&quot;: 8,
+                    &quot;max-pool-size-factor&quot;: 3,
+                    &quot;allow-core-timeout&quot;: &quot;on&quot;,
+                    &quot;task-queue-size&quot;: -1,
+                    &quot;core-pool-size-min&quot;: 8,
+                    &quot;task-queue-type&quot;: &quot;linked&quot;,
+                    &quot;core-pool-size-factor&quot;: 3,
+                    &quot;core-pool-size-max&quot;: 64,
+                    &quot;keep-alive-time&quot;: &quot;60s&quot;,
+                    &quot;max-pool-size-max&quot;: 64
+                },
+                &quot;throughput-deadline-time&quot;: &quot;0ms&quot;,
+                &quot;throughput&quot;: 5,
+                &quot;type&quot;: &quot;Dispatcher&quot;,
+                &quot;default-executor&quot;: {
+                    &quot;fallback&quot;: &quot;fork-join-executor&quot;
+                }
+            },
+            &quot;debug&quot;: {
+                &quot;lifecycle&quot;: &quot;off&quot;,
+                &quot;unhandled&quot;: &quot;off&quot;,
+                &quot;fsm&quot;: &quot;off&quot;,
+                &quot;receive&quot;: &quot;off&quot;,
+                &quot;router-misconfiguration&quot;: &quot;off&quot;,
+                &quot;autoreceive&quot;: &quot;off&quot;,
+                &quot;event-stream&quot;: &quot;off&quot;
+            },
+            &quot;creation-timeout&quot;: &quot;20s&quot;,
+            &quot;serialization-bindings&quot;: {
+                &quot;[B&quot;: &quot;bytes&quot;,
+                &quot;java.io.Serializable&quot;: &quot;java&quot;
+            },
+            &quot;reaper-interval&quot;: &quot;5s&quot;,
+            &quot;guardian-supervisor-strategy&quot;: &quot;akka.actor.DefaultSupervisorStrategy&quot;,
+            &quot;typed&quot;: {
+                &quot;timeout&quot;: &quot;5s&quot;
+            },
+            &quot;default-mailbox&quot;: {
+                &quot;mailbox-capacity&quot;: 1000,
+                &quot;mailbox-type&quot;: &quot;akka.dispatch.UnboundedMailbox&quot;,
+                &quot;mailbox-push-timeout-time&quot;: &quot;10s&quot;,
+                &quot;stash-capacity&quot;: -1
+            },
+            &quot;router&quot;: {
+                &quot;type-mapping&quot;: {
+                    &quot;round-robin-pool&quot;: &quot;akka.routing.RoundRobinPool&quot;,
+                    &quot;broadcast-group&quot;: &quot;akka.routing.BroadcastGroup&quot;,
+                    &quot;smallest-mailbox-pool&quot;: &quot;akka.routing.SmallestMailboxPool&quot;,
+                    &quot;round-robin-group&quot;: &quot;akka.routing.RoundRobinGroup&quot;,
+                    &quot;random-pool&quot;: &quot;akka.routing.RandomPool&quot;,
+                    &quot;consistent-hashing-group&quot;: &quot;akka.routing.ConsistentHashingGroup&quot;,
+                    &quot;tail-chopping-pool&quot;: &quot;akka.routing.TailChoppingPool&quot;,
+                    &quot;scatter-gather-group&quot;: &quot;akka.routing.ScatterGatherFirstCompletedGroup&quot;,
+                    &quot;scatter-gather-pool&quot;: &quot;akka.routing.ScatterGatherFirstCompletedPool&quot;,
+                    &quot;balancing-pool&quot;: &quot;akka.routing.BalancingPool&quot;,
+                    &quot;from-code&quot;: &quot;akka.routing.NoRouter&quot;,
+                    &quot;random-group&quot;: &quot;akka.routing.RandomGroup&quot;,
+                    &quot;broadcast-pool&quot;: &quot;akka.routing.BroadcastPool&quot;,
+                    &quot;consistent-hashing-pool&quot;: &quot;akka.routing.ConsistentHashingPool&quot;,
+                    &quot;tail-chopping-group&quot;: &quot;akka.routing.TailChoppingGroup&quot;
+                }
+            },
+            &quot;serializers&quot;: {
+                &quot;java&quot;: &quot;akka.serialization.JavaSerializer&quot;,
+                &quot;bytes&quot;: &quot;akka.serialization.ByteArraySerializer&quot;
+            },
+            &quot;mailbox&quot;: {
+                &quot;logger-queue&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.event.LoggerMailboxType&quot;
+                },
+                &quot;requirements&quot;: {
+                    &quot;akka.dispatch.MultipleConsumerSemantics&quot;: &quot;akka.actor.mailbox.unbounded-queue-based&quot;,
+                    &quot;akka.dispatch.BoundedMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.bounded-queue-based&quot;,
+                    &quot;akka.dispatch.UnboundedControlAwareMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.unbounded-control-aware-queue-based&quot;,
+                    &quot;akka.dispatch.BoundedControlAwareMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.bounded-control-aware-queue-based&quot;,
+                    &quot;akka.dispatch.ControlAwareMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.unbounded-control-aware-queue-based&quot;,
+                    &quot;akka.dispatch.UnboundedDequeBasedMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.unbounded-deque-based&quot;,
+                    &quot;akka.dispatch.BoundedDequeBasedMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.bounded-deque-based&quot;,
+                    &quot;akka.dispatch.UnboundedMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.unbounded-queue-based&quot;,
+                    &quot;akka.dispatch.DequeBasedMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.unbounded-deque-based&quot;,
+                    &quot;akka.event.LoggerMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.logger-queue&quot;
+                },
+                &quot;unbounded-queue-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.UnboundedMailbox&quot;
+                },
+                &quot;unbounded-deque-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.UnboundedDequeBasedMailbox&quot;
+                },
+                &quot;unbounded-control-aware-queue-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.UnboundedControlAwareMailbox&quot;
+                },
+                &quot;bounded-control-aware-queue-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.BoundedControlAwareMailbox&quot;
+                },
+                &quot;bounded-deque-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.BoundedDequeBasedMailbox&quot;
+                },
+                &quot;bounded-queue-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.BoundedMailbox&quot;
+                }
+            },
+            &quot;provider&quot;: &quot;akka.actor.LocalActorRefProvider&quot;,
+            &quot;serialization-identifiers&quot;: {
+                &quot;akka.serialization.ByteArraySerializer&quot;: 4,
+                &quot;akka.serialization.JavaSerializer&quot;: 1
+            },
+            &quot;serialize-creators&quot;: &quot;off&quot;,
+            &quot;serialize-messages&quot;: &quot;off&quot;,
+            &quot;dsl&quot;: {
+                &quot;default-timeout&quot;: &quot;5s&quot;,
+                &quot;inbox-size&quot;: 1000
+            },
+            &quot;deployment&quot;: {
+                &quot;default&quot;: {
+                    &quot;routees&quot;: {
+                        &quot;paths&quot;: [
+                            
+                        ]
+                    },
+                    &quot;router&quot;: &quot;from-code&quot;,
+                    &quot;mailbox&quot;: &quot;&quot;,
+                    &quot;within&quot;: &quot;5 seconds&quot;,
+                    &quot;tail-chopping-router&quot;: {
+                        &quot;interval&quot;: &quot;10 milliseconds&quot;
+                    },
+                    &quot;resizer&quot;: {
+                        &quot;backoff-rate&quot;: 0.1,
+                        &quot;lower-bound&quot;: 1,
+                        &quot;rampup-rate&quot;: 0.2,
+                        &quot;pressure-threshold&quot;: 1,
+                        &quot;messages-per-resize&quot;: 10,
+                        &quot;upper-bound&quot;: 10,
+                        &quot;backoff-threshold&quot;: 0.3,
+                        &quot;enabled&quot;: &quot;off&quot;
+                    },
+                    &quot;dispatcher&quot;: &quot;&quot;,
+                    &quot;virtual-nodes-factor&quot;: 10,
+                    &quot;nr-of-instances&quot;: 1
+                },
+                &quot;/IO-DNS/inet-address&quot;: {
+                    &quot;router&quot;: &quot;consistent-hashing-pool&quot;,
+                    &quot;mailbox&quot;: &quot;unbounded&quot;,
+                    &quot;nr-of-instances&quot;: 4
+                }
+            },
+            &quot;unstarted-push-timeout&quot;: &quot;10s&quot;
+        },
+        &quot;scheduler&quot;: {
+            &quot;implementation&quot;: &quot;akka.actor.LightArrayRevolverScheduler&quot;,
+            &quot;shutdown-timeout&quot;: &quot;5s&quot;,
+            &quot;tick-duration&quot;: &quot;10ms&quot;,
+            &quot;ticks-per-wheel&quot;: 512
+        },
+        &quot;extensions&quot;: [
+            
+        ],
+        &quot;stdout-loglevel&quot;: &quot;INFO&quot;,
+        &quot;loglevel&quot;: &quot;INFO&quot;,
+        &quot;logging-filter&quot;: &quot;akka.event.DefaultLoggingFilter&quot;
+    },
+    &quot;TMPDIR&quot;: &quot;/home/vcap/tmp&quot;,
+    &quot;PROFILES_ACTIVE&quot;: &quot;development-cloud&quot;,
+    &quot;CF_STACK&quot;: &quot;lucid64&quot;,
+    &quot;NLSPATH&quot;: &quot;/usr/dt/lib/nls/msg/%L/%N.cat&quot;,
+    &quot;cbs-billing&quot;: {
+        &quot;bill&quot;: {
+            &quot;details&quot;: {
+                &quot;path&quot;: &quot;/cbs-kenan-bis/v1/account/%s/bills/%s&quot;
+            }
+        },
+        &quot;bills&quot;: {
+            &quot;path&quot;: &quot;/cbs-kenan-bis/v1/account/%s/bills?n=%d&quot;
+        },
+        &quot;circuit-breaker&quot;: {
+            &quot;maxFailures&quot;: 5,
+            &quot;resetTimeout&quot;: &quot;1 minute&quot;,
+            &quot;callTimeout&quot;: &quot;10 seconds&quot;
+        }
+    },
+    &quot;MEMORY_LIMIT&quot;: &quot;1024m&quot;,
+    &quot;user&quot;: {
+        &quot;country&quot;: &quot;US&quot;,
+        &quot;timezone&quot;: &quot;&quot;,
+        &quot;name&quot;: &quot;vcap&quot;,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;dir&quot;: &quot;/home/vcap/app&quot;,
+        &quot;home&quot;: &quot;/home/vcap&quot;
+    },
+    &quot;HOME&quot;: &quot;/home/vcap/app&quot;,
+    &quot;SHLVL&quot;: &quot;1&quot;,
+    &quot;awt&quot;: {
+        &quot;toolkit&quot;: &quot;sun.awt.X11.XToolkit&quot;
+    }
+}
+not a valid json
+{
+    &quot;PATH&quot;: &quot;/bin:/usr/bin&quot;,
+    &quot;VCAP_APP_HOST&quot;: &quot;0.0.0.0&quot;,
+    &quot;CORS_HOSTNAMES&quot;: &quot;null&quot;,
+    &quot;line&quot;: {
+        &quot;separator&quot;: &quot;\n&quot;
+    },
+    &quot;JAVA_OPTS&quot;: &quot;-javaagent:lib/aspectjweaver-1.5.4.jar&quot;,
+    &quot;XFILESEARCHPATH&quot;: &quot;/usr/dt/app-defaults/%L/Dt&quot;,
+    &quot;LANG&quot;: &quot;en_US.UTF-8&quot;,
+    &quot;sun&quot;: {
+        &quot;jnu&quot;: {
+            &quot;encoding&quot;: &quot;UTF-8&quot;
+        },
+        &quot;java&quot;: {
+            &quot;command&quot;: &quot;com.nowtv.pav.so.Application&quot;,
+            &quot;launcher&quot;: &quot;SUN_STANDARD&quot;
+        },
+        &quot;os&quot;: {
+            &quot;patch&quot;: {
+                &quot;level&quot;: &quot;unknown&quot;
+            }
+        },
+        &quot;management&quot;: {
+            &quot;compiler&quot;: &quot;HotSpot 64-Bit Tiered Compilers&quot;
+        },
+        &quot;io&quot;: {
+            &quot;unicode&quot;: {
+                &quot;encoding&quot;: &quot;UnicodeLittle&quot;
+            }
+        },
+        &quot;cpu&quot;: {
+            &quot;isalist&quot;: &quot;&quot;,
+            &quot;endian&quot;: &quot;little&quot;
+        },
+        &quot;arch&quot;: {
+            &quot;data&quot;: {
+                &quot;model&quot;: &quot;64&quot;
+            }
+        },
+        &quot;boot&quot;: {
+            &quot;library&quot;: {
+                &quot;path&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre/lib/amd64&quot;
+            },
+            &quot;class&quot;: {
+                &quot;path&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre/lib/resources.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/rt.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/sunrsasign.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/jsse.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/jce.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/charsets.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/lib/jfr.jar:/home/vcap/app/.java-buildpack/open_jdk_jre/classes&quot;
+            }
+        }
+    },
+    &quot;path&quot;: {
+        &quot;separator&quot;: &quot;:&quot;
+    },
+    &quot;DATABASE_URL&quot;: &quot;&quot;,
+    &quot;file&quot;: {
+        &quot;encoding&quot;: {
+            &quot;pkg&quot;: &quot;sun.io&quot;
+        },
+        &quot;separator&quot;: &quot;/&quot;
+    },
+    &quot;java&quot;: {
+        &quot;ext&quot;: {
+            &quot;dirs&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre/lib/ext:/usr/java/packages/lib/ext&quot;
+        },
+        &quot;library&quot;: {
+            &quot;path&quot;: &quot;/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib&quot;
+        },
+        &quot;io&quot;: {
+            &quot;tmpdir&quot;: &quot;/home/vcap/tmp&quot;
+        },
+        &quot;vendor&quot;: {
+            &quot;url&quot;: {
+                &quot;bug&quot;: &quot;http://bugreport.sun.com/bugreport/&quot;
+            }
+        },
+        &quot;vm&quot;: {
+            &quot;vendor&quot;: &quot;Oracle Corporation&quot;,
+            &quot;name&quot;: &quot;OpenJDK 64-Bit Server VM&quot;,
+            &quot;specification&quot;: {
+                &quot;vendor&quot;: &quot;Oracle Corporation&quot;,
+                &quot;name&quot;: &quot;Java Virtual Machine Specification&quot;,
+                &quot;version&quot;: &quot;1.8&quot;
+            },
+            &quot;version&quot;: &quot;25.66-b27&quot;,
+            &quot;info&quot;: &quot;mixed mode&quot;
+        },
+        &quot;runtime&quot;: {
+            &quot;name&quot;: &quot;OpenJDK Runtime Environment&quot;,
+            &quot;version&quot;: &quot;1.8.0_60--vagrant_2015_09_08_07_28-b27&quot;
+        },
+        &quot;specification&quot;: {
+            &quot;vendor&quot;: &quot;Oracle Corporation&quot;,
+            &quot;name&quot;: &quot;Java Platform API Specification&quot;,
+            &quot;version&quot;: &quot;1.8&quot;
+        },
+        &quot;class&quot;: {
+            &quot;path&quot;: &quot;/home/vcap/app/.:/home/vcap/app/lib/akka-actor_2.11-2.4.0.jar:/home/vcap/app/lib/aspectjweaver-1.5.4.jar:/home/vcap/app/lib/commons-lang-2.6.jar:/home/vcap/app/lib/concurrentlinkedhashmap-lru-1.4.jar:/home/vcap/app/lib/config-1.3.0.jar:/home/vcap/app/lib/config-commons-0.1.2.jar:/home/vcap/app/lib/guava-18.0.jar:/home/vcap/app/lib/jackson-annotations-2.5.4.jar:/home/vcap/app/lib/jackson-core-2.5.4.jar:/home/vcap/app/lib/jackson-databind-2.5.4.jar:/home/vcap/app/lib/jackson-datatype-jdk8-2.5.4.jar:/home/vcap/app/lib/jackson-datatype-jsr310-2.5.4.jar:/home/vcap/app/lib/javassist-3.19.0-GA.jar:/home/vcap/app/lib/joda-convert-1.7.jar:/home/vcap/app/lib/joda-time-2.7.jar:/home/vcap/app/lib/json-path-0.8.1.jar:/home/vcap/app/lib/json-smart-1.1.1.jar:/home/vcap/app/lib/logback-classic-1.1.3.jar:/home/vcap/app/lib/logback-core-1.1.3.jar:/home/vcap/app/lib/macros_2.11-1.0.5.jar:/home/vcap/app/lib/mimepull-1.9.5.jar:/home/vcap/app/lib/parboiled-core-1.1.7.jar:/home/vcap/app/lib/parboiled-scala_2.11-1.1.7.jar:/home/vcap/app/lib/play-datacommons_2.11-2.4.1.jar:/home/vcap/app/lib/play-functional_2.11-2.4.1.jar:/home/vcap/app/lib/play-iteratees_2.11-2.4.1.jar:/home/vcap/app/lib/play-json_2.11-2.4.1.jar:/home/vcap/app/lib/rest-commons-0.1.30.jar:/home/vcap/app/lib/runtime_2.11-1.0.5.jar:/home/vcap/app/lib/scala-library-2.11.7.jar:/home/vcap/app/lib/scala-reflect-2.11.6.jar:/home/vcap/app/lib/scala-stm_2.11-0.7.jar:/home/vcap/app/lib/scala-xml_2.11-1.0.3.jar:/home/vcap/app/lib/shapeless_2.11-2.1.0.jar:/home/vcap/app/lib/slf4j-api-1.7.7.jar:/home/vcap/app/lib/spray-caching-1.3.1.jar:/home/vcap/app/lib/spray-can_2.11-1.3.3.jar:/home/vcap/app/lib/spray-client_2.11-1.3.1.jar:/home/vcap/app/lib/spray-http_2.11-1.3.3.jar:/home/vcap/app/lib/spray-httpx_2.11-1.3.3.jar:/home/vcap/app/lib/spray-io_2.11-1.3.3.jar:/home/vcap/app/lib/spray-json_2.11-1.3.1.jar:/home/vcap/app/lib/spray-routing-shapeless2_2.11-1.3.3.jar:/home/vcap/app/lib/spray-util-1.3.1.jar:/home/vcap/app/lib/spray-util_2.11-1.3.3.jar:lib/aspectjweaver-1.5.4.jar&quot;,
+            &quot;version&quot;: &quot;52.0&quot;
+        },
+        &quot;version&quot;: &quot;1.8.0_60-&quot;,
+        &quot;endorsed&quot;: {
+            &quot;dirs&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre/lib/endorsed&quot;
+        },
+        &quot;awt&quot;: {
+            &quot;graphicsenv&quot;: &quot;sun.awt.X11GraphicsEnvironment&quot;,
+            &quot;printerjob&quot;: &quot;sun.print.PSPrinterJob&quot;
+        },
+        &quot;home&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre&quot;
+    },
+    &quot;sal-order&quot;: {
+        &quot;credentials&quot;: {
+            &quot;password&quot;: &quot;*****&quot;,
+            &quot;username&quot;: &quot;lws-ors&quot;
+        },
+        &quot;findOrders&quot;: &quot;/cbs-order-management-service/service/v2/orders?partyId=%s&quot;
+    },
+    &quot;PWD&quot;: &quot;/home/vcap/app&quot;,
+    &quot;VCAP_APPLICATION&quot;: &quot;{\&quot;limits\&quot;:{\&quot;mem\&quot;:1024,\&quot;disk\&quot;:1024,\&quot;fds\&quot;:16384},\&quot;application_version\&quot;:\&quot;2e17eeb3-7d56-4287-a5c5-d1a023b9c157\&quot;,\&quot;application_name\&quot;:\&quot;service-orchestration-blue\&quot;,\&quot;application_uris\&quot;:[\&quot;development-so-blue.cf.dev-paas.bskyb.com\&quot;],\&quot;version\&quot;:\&quot;2e17eeb3-7d56-4287-a5c5-d1a023b9c157\&quot;,\&quot;name\&quot;:\&quot;service-orchestration-blue\&quot;,\&quot;space_name\&quot;:\&quot;development\&quot;,\&quot;space_id\&quot;:\&quot;48dae084-1be2-4cbd-add7-a3ecb2037e10\&quot;,\&quot;uris\&quot;:[\&quot;development-so-blue.cf.dev-paas.bskyb.com\&quot;],\&quot;users\&quot;:null,\&quot;application_id\&quot;:\&quot;fd5641f6-16f3-4f19-83ba-57df47535332\&quot;,\&quot;instance_id\&quot;:\&quot;c948dedc524d4fc2aba36c3241132124\&quot;,\&quot;instance_index\&quot;:0,\&quot;host\&quot;:\&quot;0.0.0.0\&quot;,\&quot;port\&quot;:62377,\&quot;started_at\&quot;:\&quot;2015-12-01 11:31:25 +0000\&quot;,\&quot;started_at_timestamp\&quot;:1448969485,\&quot;start\&quot;:\&quot;2015-12-01 11:31:25 +0000\&quot;,\&quot;state_timestamp\&quot;:1448969485}&quot;,
+    &quot;development-e2e&quot;: {
+        &quot;sal-order&quot;: {
+            &quot;credentials&quot;: {
+                &quot;url&quot;: &quot;https://lwsorsd01.gss.bskyb.com&quot;
+            }
+        }
+    },
+    &quot;_&quot;: &quot;/home/vcap/app/.java-buildpack/open_jdk_jre/bin/java&quot;,
+    &quot;info&quot;: {
+        &quot;build&quot;: {
+            &quot;name&quot;: &quot;service-orchestration&quot;,
+            &quot;version&quot;: &quot;0.1.0-SNAPSHOT&quot;
+        }
+    },
+    &quot;development&quot;: {
+        &quot;sal-order&quot;: {
+            &quot;credentials&quot;: {
+                &quot;url&quot;: &quot;https://localhost:8497&quot;
+            }
+        }
+    },
+    &quot;PORT&quot;: &quot;62377&quot;,
+    &quot;os&quot;: {
+        &quot;name&quot;: &quot;Linux&quot;,
+        &quot;arch&quot;: &quot;amd64&quot;,
+        &quot;version&quot;: &quot;3.13.0-32-generic&quot;
+    },
+    &quot;spray&quot;: {
+        &quot;can&quot;: {
+            &quot;server&quot;: {
+                &quot;server-header&quot;: &quot;spray-can/1.3.1&quot;,
+                &quot;parsing-error-abort-timeout&quot;: &quot;2s&quot;,
+                &quot;chunkless-streaming&quot;: &quot;off&quot;,
+                &quot;parsing&quot;: {
+                    &quot;max-chunk-ext-length&quot;: 256,
+                    &quot;max-content-length&quot;: &quot;8m&quot;,
+                    &quot;incoming-auto-chunking-threshold-size&quot;: &quot;infinite&quot;,
+                    &quot;max-uri-length&quot;: &quot;2k&quot;,
+                    &quot;uri-parsing-mode&quot;: &quot;strict&quot;,
+                    &quot;max-response-reason-length&quot;: 64,
+                    &quot;max-header-value-length&quot;: &quot;8k&quot;,
+                    &quot;max-chunk-size&quot;: &quot;1m&quot;,
+                    &quot;max-header-name-length&quot;: 64,
+                    &quot;ssl-session-info-header&quot;: &quot;off&quot;,
+                    &quot;max-header-count&quot;: 64,
+                    &quot;illegal-header-warnings&quot;: &quot;on&quot;,
+                    &quot;header-cache&quot;: {
+                        &quot;If-None-Match&quot;: 0,
+                        &quot;If-Range&quot;: 0,
+                        &quot;default&quot;: 12,
+                        &quot;If-Match&quot;: 0,
+                        &quot;User-Agent&quot;: 32,
+                        &quot;If-Modified-Since&quot;: 0,
+                        &quot;Date&quot;: 0,
+                        &quot;Content-MD5&quot;: 0,
+                        &quot;If-Unmodified-Since&quot;: 0
+                    }
+                },
+                &quot;bind-timeout&quot;: &quot;3s&quot;,
+                &quot;max-encryption-chunk-size&quot;: &quot;1m&quot;,
+                &quot;ssl-tracing&quot;: &quot;off&quot;,
+                &quot;verbose-error-logging&quot;: &quot;off&quot;,
+                &quot;request-timeout&quot;: &quot;20 s&quot;,
+                &quot;registration-timeout&quot;: &quot;5s&quot;,
+                &quot;request-chunk-aggregation-limit&quot;: &quot;1m&quot;,
+                &quot;verbose-error-messages&quot;: &quot;off&quot;,
+                &quot;idle-timeout&quot;: &quot;60 s&quot;,
+                &quot;automatic-back-pressure-handling&quot;: &quot;on&quot;,
+                &quot;ssl-encryption&quot;: &quot;off&quot;,
+                &quot;raw-request-uri-header&quot;: &quot;off&quot;,
+                &quot;unbind-timeout&quot;: &quot;1s&quot;,
+                &quot;response-header-size-hint&quot;: 512,
+                &quot;stats-support&quot;: &quot;on&quot;,
+                &quot;transparent-head-requests&quot;: &quot;on&quot;,
+                &quot;timeout-timeout&quot;: &quot;2 s&quot;,
+                &quot;default-host-header&quot;: &quot;&quot;,
+                &quot;pipelining-limit&quot;: 1,
+                &quot;remote-address-header&quot;: &quot;off&quot;,
+                &quot;back-pressure&quot;: {
+                    &quot;reading-low-watermark&quot;: &quot;infinite&quot;,
+                    &quot;noack-rate&quot;: 10
+                },
+                &quot;reaping-cycle&quot;: &quot;250 ms&quot;,
+                &quot;chunkhandler-registration-timeout&quot;: &quot;500 ms&quot;,
+                &quot;timeout-handler&quot;: &quot;&quot;
+            },
+            &quot;host-connector&quot;: {
+                &quot;max-redirects&quot;: 0,
+                &quot;client&quot;: {
+                    &quot;proxy&quot;: {
+                        &quot;http&quot;: &quot;default&quot;,
+                        &quot;https&quot;: &quot;default&quot;
+                    },
+                    &quot;response-chunk-aggregation-limit&quot;: &quot;1m&quot;,
+                    &quot;request-header-size-hint&quot;: 512,
+                    &quot;connecting-timeout&quot;: &quot;10s&quot;,
+                    &quot;user-agent-header&quot;: &quot;spray-can/1.3.1&quot;,
+                    &quot;request-timeout&quot;: &quot;20 s&quot;,
+                    &quot;chunkless-streaming&quot;: &quot;off&quot;,
+                    &quot;idle-timeout&quot;: &quot;60 s&quot;,
+                    &quot;reaping-cycle&quot;: &quot;250 ms&quot;,
+                    &quot;parsing&quot;: {
+                        &quot;max-chunk-ext-length&quot;: 256,
+                        &quot;max-content-length&quot;: &quot;8m&quot;,
+                        &quot;incoming-auto-chunking-threshold-size&quot;: &quot;infinite&quot;,
+                        &quot;max-uri-length&quot;: &quot;2k&quot;,
+                        &quot;uri-parsing-mode&quot;: &quot;strict&quot;,
+                        &quot;max-response-reason-length&quot;: 64,
+                        &quot;max-header-value-length&quot;: &quot;8k&quot;,
+                        &quot;max-chunk-size&quot;: &quot;1m&quot;,
+                        &quot;max-header-name-length&quot;: 64,
+                        &quot;ssl-session-info-header&quot;: &quot;off&quot;,
+                        &quot;max-header-count&quot;: 64,
+                        &quot;illegal-header-warnings&quot;: &quot;on&quot;,
+                        &quot;header-cache&quot;: {
+                            &quot;If-None-Match&quot;: 0,
+                            &quot;If-Range&quot;: 0,
+                            &quot;default&quot;: 12,
+                            &quot;If-Match&quot;: 0,
+                            &quot;User-Agent&quot;: 32,
+                            &quot;If-Modified-Since&quot;: 0,
+                            &quot;Date&quot;: 0,
+                            &quot;Content-MD5&quot;: 0,
+                            &quot;If-Unmodified-Since&quot;: 0
+                        }
+                    },
+                    &quot;max-encryption-chunk-size&quot;: &quot;1m&quot;,
+                    &quot;ssl-tracing&quot;: &quot;off&quot;
+                },
+                &quot;max-retries&quot;: 5,
+                &quot;idle-timeout&quot;: &quot;30 s&quot;,
+                &quot;max-connections&quot;: 4,
+                &quot;pipelining&quot;: &quot;off&quot;
+            },
+            &quot;listener-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+            &quot;manager-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+            &quot;client&quot;: {
+                &quot;proxy&quot;: {
+                    &quot;http&quot;: &quot;default&quot;,
+                    &quot;https&quot;: &quot;default&quot;
+                },
+                &quot;response-chunk-aggregation-limit&quot;: &quot;1m&quot;,
+                &quot;request-header-size-hint&quot;: 512,
+                &quot;connecting-timeout&quot;: &quot;10s&quot;,
+                &quot;user-agent-header&quot;: &quot;spray-can/1.3.1&quot;,
+                &quot;request-timeout&quot;: &quot;20 s&quot;,
+                &quot;chunkless-streaming&quot;: &quot;off&quot;,
+                &quot;idle-timeout&quot;: &quot;60 s&quot;,
+                &quot;reaping-cycle&quot;: &quot;250 ms&quot;,
+                &quot;parsing&quot;: {
+                    &quot;max-chunk-ext-length&quot;: 256,
+                    &quot;max-content-length&quot;: &quot;8m&quot;,
+                    &quot;incoming-auto-chunking-threshold-size&quot;: &quot;infinite&quot;,
+                    &quot;max-uri-length&quot;: &quot;2k&quot;,
+                    &quot;uri-parsing-mode&quot;: &quot;strict&quot;,
+                    &quot;max-response-reason-length&quot;: 64,
+                    &quot;max-header-value-length&quot;: &quot;8k&quot;,
+                    &quot;max-chunk-size&quot;: &quot;1m&quot;,
+                    &quot;max-header-name-length&quot;: 64,
+                    &quot;ssl-session-info-header&quot;: &quot;off&quot;,
+                    &quot;max-header-count&quot;: 64,
+                    &quot;illegal-header-warnings&quot;: &quot;on&quot;,
+                    &quot;header-cache&quot;: {
+                        &quot;If-None-Match&quot;: 0,
+                        &quot;If-Range&quot;: 0,
+                        &quot;default&quot;: 12,
+                        &quot;If-Match&quot;: 0,
+                        &quot;User-Agent&quot;: 32,
+                        &quot;If-Modified-Since&quot;: 0,
+                        &quot;Date&quot;: 0,
+                        &quot;Content-MD5&quot;: 0,
+                        &quot;If-Unmodified-Since&quot;: 0
+                    }
+                },
+                &quot;max-encryption-chunk-size&quot;: &quot;1m&quot;,
+                &quot;ssl-tracing&quot;: &quot;off&quot;
+            },
+            &quot;parsing&quot;: {
+                &quot;max-chunk-ext-length&quot;: 256,
+                &quot;max-content-length&quot;: &quot;8m&quot;,
+                &quot;incoming-auto-chunking-threshold-size&quot;: &quot;infinite&quot;,
+                &quot;max-uri-length&quot;: &quot;2k&quot;,
+                &quot;uri-parsing-mode&quot;: &quot;strict&quot;,
+                &quot;max-response-reason-length&quot;: 64,
+                &quot;max-header-value-length&quot;: &quot;8k&quot;,
+                &quot;max-chunk-size&quot;: &quot;1m&quot;,
+                &quot;max-header-name-length&quot;: 64,
+                &quot;ssl-session-info-header&quot;: &quot;off&quot;,
+                &quot;max-header-count&quot;: 64,
+                &quot;illegal-header-warnings&quot;: &quot;on&quot;,
+                &quot;header-cache&quot;: {
+                    &quot;If-None-Match&quot;: 0,
+                    &quot;If-Range&quot;: 0,
+                    &quot;default&quot;: 12,
+                    &quot;If-Match&quot;: 0,
+                    &quot;User-Agent&quot;: 32,
+                    &quot;If-Modified-Since&quot;: 0,
+                    &quot;Date&quot;: 0,
+                    &quot;Content-MD5&quot;: 0,
+                    &quot;If-Unmodified-Since&quot;: 0
+                }
+            },
+            &quot;connection-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+            &quot;host-connector-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+            &quot;settings-group-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;
+        },
+        &quot;routing&quot;: {
+            &quot;file-chunking-chunk-size&quot;: &quot;128k&quot;,
+            &quot;render-vanity-footer&quot;: &quot;yes&quot;,
+            &quot;file-chunking-threshold-size&quot;: &quot;128k&quot;,
+            &quot;range-coalescing-threshold&quot;: 80,
+            &quot;range-count-limit&quot;: 16,
+            &quot;verbose-error-messages&quot;: &quot;off&quot;,
+            &quot;file-get-conditional&quot;: &quot;on&quot;,
+            &quot;users&quot;: {
+                &quot;admin&quot;: &quot;p4v4dm1n&quot;
+            }
+        },
+        &quot;version&quot;: &quot;1.3.1&quot;
+    },
+    &quot;VCAP_SERVICES&quot;: &quot;{\&quot;user-provided\&quot;:[{\&quot;name\&quot;:\&quot;sal-order-development-cloud\&quot;,\&quot;label\&quot;:\&quot;user-provided\&quot;,\&quot;tags\&quot;:[],\&quot;credentials\&quot;:{\&quot;password\&quot;:\&quot;password\&quot;,\&quot;url\&quot;:\&quot;https://lwsorse02.gss.bskyb.com\&quot;,\&quot;username\&quot;:\&quot;lws-ors\&quot;},\&quot;syslog_drain_url\&quot;:\&quot;\&quot;}]}&quot;,
+    &quot;VCAP_ZONE&quot;: &quot;hemel&quot;,
+    &quot;OLDPWD&quot;: &quot;/home/vcap&quot;,
+    &quot;USER&quot;: &quot;vcap&quot;,
+    &quot;VCAP_APP_PORT&quot;: &quot;62377&quot;,
+    &quot;akka&quot;: {
+        &quot;daemonic&quot;: &quot;off&quot;,
+        &quot;logger-startup-timeout&quot;: &quot;5s&quot;,
+        &quot;loggers&quot;: [
+            &quot;akka.event.Logging$DefaultLogger&quot;
+        ],
+        &quot;io&quot;: {
+            &quot;tcp&quot;: {
+                &quot;windows-connection-abort-workaround-enabled&quot;: &quot;off&quot;,
+                &quot;max-received-message-size&quot;: &quot;unlimited&quot;,
+                &quot;file-io-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+                &quot;management-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+                &quot;worker-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+                &quot;direct-buffer-pool-limit&quot;: 1000,
+                &quot;register-timeout&quot;: &quot;5s&quot;,
+                &quot;trace-logging&quot;: &quot;off&quot;,
+                &quot;selector-dispatcher&quot;: &quot;akka.io.pinned-dispatcher&quot;,
+                &quot;selector-association-retries&quot;: 10,
+                &quot;direct-buffer-size&quot;: &quot;128 KiB&quot;,
+                &quot;file-io-transferTo-limit&quot;: &quot;512 KiB&quot;,
+                &quot;max-channels&quot;: 256000,
+                &quot;batch-accept-limit&quot;: 10,
+                &quot;nr-of-selectors&quot;: 1,
+                &quot;finish-connect-retries&quot;: 5
+            },
+            &quot;udp&quot;: {
+                &quot;direct-buffer-pool-limit&quot;: 1000,
+                &quot;trace-logging&quot;: &quot;off&quot;,
+                &quot;selector-dispatcher&quot;: &quot;akka.io.pinned-dispatcher&quot;,
+                &quot;received-message-size-limit&quot;: &quot;unlimited&quot;,
+                &quot;receive-throughput&quot;: 3,
+                &quot;selector-association-retries&quot;: 10,
+                &quot;direct-buffer-size&quot;: &quot;128 KiB&quot;,
+                &quot;max-channels&quot;: 4096,
+                &quot;management-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+                &quot;select-timeout&quot;: &quot;infinite&quot;,
+                &quot;nr-of-selectors&quot;: 1,
+                &quot;worker-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;
+            },
+            &quot;pinned-dispatcher&quot;: {
+                &quot;executor&quot;: &quot;thread-pool-executor&quot;,
+                &quot;thread-pool-executor&quot;: {
+                    &quot;allow-core-timeout&quot;: &quot;off&quot;,
+                    &quot;allow-core-pool-timeout&quot;: &quot;off&quot;
+                },
+                &quot;type&quot;: &quot;PinnedDispatcher&quot;
+            },
+            &quot;dns&quot;: {
+                &quot;inet-address&quot;: {
+                    &quot;positive-ttl&quot;: &quot;30s&quot;,
+                    &quot;negative-ttl&quot;: &quot;10s&quot;,
+                    &quot;provider-object&quot;: &quot;akka.io.InetAddressDnsProvider&quot;,
+                    &quot;cache-cleanup-interval&quot;: &quot;120s&quot;
+                },
+                &quot;resolver&quot;: &quot;inet-address&quot;,
+                &quot;dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;
+            },
+            &quot;udp-connected&quot;: {
+                &quot;direct-buffer-pool-limit&quot;: 1000,
+                &quot;trace-logging&quot;: &quot;off&quot;,
+                &quot;selector-dispatcher&quot;: &quot;akka.io.pinned-dispatcher&quot;,
+                &quot;received-message-size-limit&quot;: &quot;unlimited&quot;,
+                &quot;receive-throughput&quot;: 3,
+                &quot;selector-association-retries&quot;: 10,
+                &quot;direct-buffer-size&quot;: &quot;128 KiB&quot;,
+                &quot;max-channels&quot;: 4096,
+                &quot;management-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;,
+                &quot;select-timeout&quot;: &quot;infinite&quot;,
+                &quot;nr-of-selectors&quot;: 1,
+                &quot;worker-dispatcher&quot;: &quot;akka.actor.default-dispatcher&quot;
+            }
+        },
+        &quot;log-dead-letters&quot;: 10,
+        &quot;log-config-on-start&quot;: &quot;off&quot;,
+        &quot;version&quot;: &quot;2.4.0&quot;,
+        &quot;jvm-exit-on-fatal-error&quot;: &quot;on&quot;,
+        &quot;log-dead-letters-during-shutdown&quot;: &quot;on&quot;,
+        &quot;home&quot;: &quot;&quot;,
+        &quot;actor&quot;: {
+            &quot;default-dispatcher&quot;: {
+                &quot;attempt-teamwork&quot;: &quot;on&quot;,
+                &quot;fork-join-executor&quot;: {
+                    &quot;parallelism-min&quot;: 8,
+                    &quot;parallelism-factor&quot;: 3,
+                    &quot;parallelism-max&quot;: 64,
+                    &quot;task-peeking-mode&quot;: &quot;FIFO&quot;
+                },
+                &quot;mailbox-requirement&quot;: &quot;&quot;,
+                &quot;executor&quot;: &quot;default-executor&quot;,
+                &quot;shutdown-timeout&quot;: &quot;1s&quot;,
+                &quot;thread-pool-executor&quot;: {
+                    &quot;max-pool-size-min&quot;: 8,
+                    &quot;max-pool-size-factor&quot;: 3,
+                    &quot;allow-core-timeout&quot;: &quot;on&quot;,
+                    &quot;task-queue-size&quot;: -1,
+                    &quot;core-pool-size-min&quot;: 8,
+                    &quot;task-queue-type&quot;: &quot;linked&quot;,
+                    &quot;core-pool-size-factor&quot;: 3,
+                    &quot;core-pool-size-max&quot;: 64,
+                    &quot;keep-alive-time&quot;: &quot;60s&quot;,
+                    &quot;max-pool-size-max&quot;: 64
+                },
+                &quot;throughput-deadline-time&quot;: &quot;0ms&quot;,
+                &quot;throughput&quot;: 5,
+                &quot;type&quot;: &quot;Dispatcher&quot;,
+                &quot;default-executor&quot;: {
+                    &quot;fallback&quot;: &quot;fork-join-executor&quot;
+                }
+            },
+            &quot;debug&quot;: {
+                &quot;lifecycle&quot;: &quot;off&quot;,
+                &quot;unhandled&quot;: &quot;off&quot;,
+                &quot;fsm&quot;: &quot;off&quot;,
+                &quot;receive&quot;: &quot;off&quot;,
+                &quot;router-misconfiguration&quot;: &quot;off&quot;,
+                &quot;autoreceive&quot;: &quot;off&quot;,
+                &quot;event-stream&quot;: &quot;off&quot;
+            },
+            &quot;creation-timeout&quot;: &quot;20s&quot;,
+            &quot;serialization-bindings&quot;: {
+                &quot;[B&quot;: &quot;bytes&quot;,
+                &quot;java.io.Serializable&quot;: &quot;java&quot;
+            },
+            &quot;reaper-interval&quot;: &quot;5s&quot;,
+            &quot;guardian-supervisor-strategy&quot;: &quot;akka.actor.DefaultSupervisorStrategy&quot;,
+            &quot;typed&quot;: {
+                &quot;timeout&quot;: &quot;5s&quot;
+            },
+            &quot;default-mailbox&quot;: {
+                &quot;mailbox-capacity&quot;: 1000,
+                &quot;mailbox-type&quot;: &quot;akka.dispatch.UnboundedMailbox&quot;,
+                &quot;mailbox-push-timeout-time&quot;: &quot;10s&quot;,
+                &quot;stash-capacity&quot;: -1
+            },
+            &quot;router&quot;: {
+                &quot;type-mapping&quot;: {
+                    &quot;round-robin-pool&quot;: &quot;akka.routing.RoundRobinPool&quot;,
+                    &quot;broadcast-group&quot;: &quot;akka.routing.BroadcastGroup&quot;,
+                    &quot;smallest-mailbox-pool&quot;: &quot;akka.routing.SmallestMailboxPool&quot;,
+                    &quot;round-robin-group&quot;: &quot;akka.routing.RoundRobinGroup&quot;,
+                    &quot;random-pool&quot;: &quot;akka.routing.RandomPool&quot;,
+                    &quot;consistent-hashing-group&quot;: &quot;akka.routing.ConsistentHashingGroup&quot;,
+                    &quot;tail-chopping-pool&quot;: &quot;akka.routing.TailChoppingPool&quot;,
+                    &quot;scatter-gather-group&quot;: &quot;akka.routing.ScatterGatherFirstCompletedGroup&quot;,
+                    &quot;scatter-gather-pool&quot;: &quot;akka.routing.ScatterGatherFirstCompletedPool&quot;,
+                    &quot;balancing-pool&quot;: &quot;akka.routing.BalancingPool&quot;,
+                    &quot;from-code&quot;: &quot;akka.routing.NoRouter&quot;,
+                    &quot;random-group&quot;: &quot;akka.routing.RandomGroup&quot;,
+                    &quot;broadcast-pool&quot;: &quot;akka.routing.BroadcastPool&quot;,
+                    &quot;consistent-hashing-pool&quot;: &quot;akka.routing.ConsistentHashingPool&quot;,
+                    &quot;tail-chopping-group&quot;: &quot;akka.routing.TailChoppingGroup&quot;
+                }
+            },
+            &quot;serializers&quot;: {
+                &quot;java&quot;: &quot;akka.serialization.JavaSerializer&quot;,
+                &quot;bytes&quot;: &quot;akka.serialization.ByteArraySerializer&quot;
+            },
+            &quot;mailbox&quot;: {
+                &quot;logger-queue&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.event.LoggerMailboxType&quot;
+                },
+                &quot;requirements&quot;: {
+                    &quot;akka.dispatch.MultipleConsumerSemantics&quot;: &quot;akka.actor.mailbox.unbounded-queue-based&quot;,
+                    &quot;akka.dispatch.BoundedMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.bounded-queue-based&quot;,
+                    &quot;akka.dispatch.UnboundedControlAwareMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.unbounded-control-aware-queue-based&quot;,
+                    &quot;akka.dispatch.BoundedControlAwareMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.bounded-control-aware-queue-based&quot;,
+                    &quot;akka.dispatch.ControlAwareMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.unbounded-control-aware-queue-based&quot;,
+                    &quot;akka.dispatch.UnboundedDequeBasedMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.unbounded-deque-based&quot;,
+                    &quot;akka.dispatch.BoundedDequeBasedMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.bounded-deque-based&quot;,
+                    &quot;akka.dispatch.UnboundedMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.unbounded-queue-based&quot;,
+                    &quot;akka.dispatch.DequeBasedMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.unbounded-deque-based&quot;,
+                    &quot;akka.event.LoggerMessageQueueSemantics&quot;: &quot;akka.actor.mailbox.logger-queue&quot;
+                },
+                &quot;unbounded-queue-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.UnboundedMailbox&quot;
+                },
+                &quot;unbounded-deque-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.UnboundedDequeBasedMailbox&quot;
+                },
+                &quot;unbounded-control-aware-queue-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.UnboundedControlAwareMailbox&quot;
+                },
+                &quot;bounded-control-aware-queue-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.BoundedControlAwareMailbox&quot;
+                },
+                &quot;bounded-deque-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.BoundedDequeBasedMailbox&quot;
+                },
+                &quot;bounded-queue-based&quot;: {
+                    &quot;mailbox-type&quot;: &quot;akka.dispatch.BoundedMailbox&quot;
+                }
+            },
+            &quot;provider&quot;: &quot;akka.actor.LocalActorRefProvider&quot;,
+            &quot;serialization-identifiers&quot;: {
+                &quot;akka.serialization.ByteArraySerializer&quot;: 4,
+                &quot;akka.serialization.JavaSerializer&quot;: 1
+            },
+            &quot;serialize-creators&quot;: &quot;off&quot;,
+            &quot;serialize-messages&quot;: &quot;off&quot;,
+            &quot;dsl&quot;: {
+                &quot;default-timeout&quot;: &quot;5s&quot;,
+                &quot;inbox-size&quot;: 1000
+            },
+            &quot;deployment&quot;: {
+                &quot;default&quot;: {
+                    &quot;routees&quot;: {
+                        &quot;paths&quot;: [
+                            
+                        ]
+                    },
+                    &quot;router&quot;: &quot;from-code&quot;,
+                    &quot;mailbox&quot;: &quot;&quot;,
+                    &quot;within&quot;: &quot;5 seconds&quot;,
+                    &quot;tail-chopping-router&quot;: {
+                        &quot;interval&quot;: &quot;10 milliseconds&quot;
+                    },
+                    &quot;resizer&quot;: {
+                        &quot;backoff-rate&quot;: 0.1,
+                        &quot;lower-bound&quot;: 1,
+                        &quot;rampup-rate&quot;: 0.2,
+                        &quot;pressure-threshold&quot;: 1,
+                        &quot;messages-per-resize&quot;: 10,
+                        &quot;upper-bound&quot;: 10,
+                        &quot;backoff-threshold&quot;: 0.3,
+                        &quot;enabled&quot;: &quot;off&quot;
+                    },
+                    &quot;dispatcher&quot;: &quot;&quot;,
+                    &quot;virtual-nodes-factor&quot;: 10,
+                    &quot;nr-of-instances&quot;: 1
+                },
+                &quot;/IO-DNS/inet-address&quot;: {
+                    &quot;router&quot;: &quot;consistent-hashing-pool&quot;,
+                    &quot;mailbox&quot;: &quot;unbounded&quot;,
+                    &quot;nr-of-instances&quot;: 4
+                }
+            },
+            &quot;unstarted-push-timeout&quot;: &quot;10s&quot;
+        },
+        &quot;scheduler&quot;: {
+            &quot;implementation&quot;: &quot;akka.actor.LightArrayRevolverScheduler&quot;,
+            &quot;shutdown-timeout&quot;: &quot;5s&quot;,
+            &quot;tick-duration&quot;: &quot;10ms&quot;,
+            &quot;ticks-per-wheel&quot;: 512
+        },
+        &quot;extensions&quot;: [
+            
+        ],
+        &quot;stdout-loglevel&quot;: &quot;INFO&quot;,
+        &quot;loglevel&quot;: &quot;INFO&quot;,
+        &quot;logging-filter&quot;: &quot;akka.event.DefaultLoggingFilter&quot;
+    },
+    &quot;TMPDIR&quot;: &quot;/home/vcap/tmp&quot;,
+    &quot;sal-order-development-cloud&quot;: {
+        &quot;credentials&quot;: {
+            &quot;password&quot;: &quot;*****&quot;,
+            &quot;url&quot;: &quot;https://lwsorse02_gss_bskyb_com&quot;,
+            &quot;username&quot;: &quot;lws-ors&quot;
+        },
+        &quot;syslog_drain_url&quot;: &quot;&quot;,
+        &quot;name&quot;: &quot;sal-order-development-cloud&quot;,
+        &quot;label&quot;: &quot;user-provided&quot;,
+        &quot;tags&quot;: [
+            
+        ]
+    },
+    &quot;PROFILES_ACTIVE&quot;: &quot;development-cloud&quot;,
+    &quot;CF_STACK&quot;: &quot;lucid64&quot;,
+    &quot;NLSPATH&quot;: &quot;/usr/dt/lib/nls/msg/%L/%N.cat&quot;,
+    &quot;MEMORY_LIMIT&quot;: &quot;1024m&quot;,
+    &quot;user&quot;: {
+        &quot;country&quot;: &quot;US&quot;,
+        &quot;timezone&quot;: &quot;&quot;,
+        &quot;name&quot;: &quot;vcap&quot;,
+        &quot;language&quot;: &quot;en&quot;,
+        &quot;dir&quot;: &quot;/home/vcap/app&quot;,
+        &quot;home&quot;: &quot;/home/vcap&quot;
+    },
+    &quot;HOME&quot;: &quot;/home/vcap/app&quot;,
+    &quot;SHLVL&quot;: &quot;1&quot;,
+    &quot;awt&quot;: {
+        &quot;toolkit&quot;: &quot;sun.awt.X11.XToolkit&quot;
+    }
+}
+
+  Scenario: Per product itemized charge calculation                                 ?[90m# features/bo/BillDetails.feature:10?[0m
+    ?[32mGiven ?[0m?[32mI target the ?[0m?[32m?[1mBO?[0m?[32m environment?[0m                                               ?[90m# CommonStepDefs.I_target_the_environment(String)?[0m
+    ?[32mWhen ?[0m?[32mI view bill details for a bill of the type &quot;?[0m?[32m?[1mtv talk and broadband charges?[0m?[32m&quot;?[0m ?[90m# BillingStepDefs.I_view_bill_details_for_a_bill_of_the_type(String)?[0m
+    ?[32mAnd ?[0m?[32mthe response status is ?[0m?[32m?[1m200?[0m                                                  ?[90m# RestStepDefinitions.theResponseStatusIs(int)?[0m
+    ?[32mThen ?[0m?[32mthe bill total for the bundle is computed correctly?[0m                        ?[90m# BillingStepDefs.the_bill_total_for_bundle_is_computed_correctly()?[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.8</a> at 03-Dec-2015 16:42:28</p>
+</div>
+</div>
+</body>
+</html>

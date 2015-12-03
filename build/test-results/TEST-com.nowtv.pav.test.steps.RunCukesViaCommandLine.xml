@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.nowtv.pav.test.steps.RunCukesViaCommandLine" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="jov-HP-Z220-CMT-Workstation" time="0.0">
+  <properties/>
+  <system-out><![CDATA[@BOBillingBillDetails @BOBilling @BO @ALL
+Feature: BO Bill Details
+not a valid json
+{
+    "total": 99.99,
+    "triplePlay": true,
+    "_links": {
+        "self": {
+            "href": "http://development-bo.cf.dev-paas.bskyb.com/bills/722522002-1"
+        }
+    },
+    "subscriptionCharges": {
+        "total": 99.99,
+        "bundle": {
+            "charges": [
+                {
+                    "amount": 9.99,
+                    "description": "Now TV Movies"
+                },
+                {
+                    "amount": 40,
+                    "description": "Now TV Broadband Unlimited"
+                },
+                {
+                    "amount": 15,
+                    "description": "Now TV Talk Evenings and Weekends Extra"
+                },
+                {
+                    "amount": 35,
+                    "description": "Now TV Line Rental"
+                }
+            ],
+            "total": 99.99
+        }
+    },
+    "from": "2015-10-23",
+    "to": "2015-11-22"
+}
+not a valid json
+{
+    "total": -107.34,
+    "triplePlay": true,
+    "_links": {
+        "self": {
+            "href": "http://development-bo.cf.dev-paas.bskyb.com/bills/722563002-1"
+        }
+    },
+    "subscriptionCharges": {
+        "total": 98.98,
+        "bundle": {
+            "charges": [
+                {
+                    "amount": 6.99,
+                    "description": "Now TV Entertainment"
+                },
+                {
+                    "amount": 9.99,
+                    "description": "Now TV Movies"
+                },
+                {
+                    "amount": 40,
+                    "description": "Now TV Broadband Unlimited"
+                },
+                {
+                    "amount": 0,
+                    "description": "Now TV Pay as you Talk"
+                },
+                {
+                    "amount": 35,
+                    "description": "Now TV Line Rental"
+                },
+                {
+                    "amount": 7,
+                    "description": "Anonymous Caller Reject"
+                }
+            ],
+            "total": 98.98
+        }
+    },
+    "from": "2017-03-06",
+    "to": "2017-04-05"
+}
+not a valid json
+{
+    "total": -107.34,
+    "triplePlay": true,
+    "_links": {
+        "self": {
+            "href": "http://development-bo.cf.dev-paas.bskyb.com/bills/722563002-1"
+        }
+    },
+    "subscriptionCharges": {
+        "total": 98.98,
+        "bundle": {
+            "charges": [
+                {
+                    "amount": 6.99,
+                    "description": "Now TV Entertainment"
+                },
+                {
+                    "amount": 9.99,
+                    "description": "Now TV Movies"
+                },
+                {
+                    "amount": 40,
+                    "description": "Now TV Broadband Unlimited"
+                },
+                {
+                    "amount": 0,
+                    "description": "Now TV Pay as you Talk"
+                },
+                {
+                    "amount": 35,
+                    "description": "Now TV Line Rental"
+                },
+                {
+                    "amount": 7,
+                    "description": "Anonymous Caller Reject"
+                }
+            ],
+            "total": 98.98
+        }
+    },
+    "from": "2017-03-06",
+    "to": "2017-04-05"
+}
+not a valid json
+{
+    "total": 115.98,
+    "triplePlay": true,
+    "_links": {
+        "self": {
+            "href": "http://development-bo.cf.dev-paas.bskyb.com/bills/722573002-1"
+        }
+    },
+    "subscriptionCharges": {
+        "total": 106.99,
+        "bundle": {
+            "charges": [
+                {
+                    "amount": 6.99,
+                    "description": "Now TV Entertainment"
+                },
+                {
+                    "amount": 40,
+                    "description": "Now TV Broadband Unlimited"
+                },
+                {
+                    "amount": 25,
+                    "description": "Now TV Talk Anytime Extra"
+                },
+                {
+                    "amount": 35,
+                    "description": "Now TV Line Rental"
+                }
+            ],
+            "total": 106.99
+        }
+    },
+    "from": "2015-11-02",
+    "to": "2015-12-01",
+    "proratedCharges": {
+        "total": 8.99,
+        "periods": [
+            {
+                "total": 8.99,
+                "from": "2015-11-05",
+                "to": "2015-12-01",
+                "bundle": {
+                    "charges": [
+                        {
+                            "amount": 8.99,
+                            "description": "Now TV Movies"
+                        }
+                    ]
+                }
+            }
+        ],
+        "from": "2015-10-02"
+    }
+}
+
+  Scenario: Per product prorated charge calculation                   ?[90m# features/bo/BillDetails.feature:22?[0m
+    ?[32mGiven ?[0m?[32mI target the ?[0m?[32m?[1mBO?[0m?[32m environment?[0m                                 ?[90m# CommonStepDefs.I_target_the_environment(String)?[0m
+    ?[32mWhen ?[0m?[32mI view bill details for a bill of the type "?[0m?[32m?[1m1 prorated bill?[0m?[32m"?[0m ?[90m# BillingStepDefs.I_view_bill_details_for_a_bill_of_the_type(String)?[0m
+    ?[32mAnd ?[0m?[32mthe response status is ?[0m?[32m?[1m200?[0m                                    ?[90m# RestStepDefinitions.theResponseStatusIs(int)?[0m
+    ?[32mThen ?[0m?[32mthe bill total for prorated charges is computed correctly?[0m    ?[90m# BillingStepDefs.the_bill_total_for_prorated_charges_is_computed_correctly()?[0m
+
+4 Scenarios (?[32m4 passed?[0m)
+16 Steps (?[32m16 passed?[0m)
+0m2.724s
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "data": {
+      "id": "data",
+      "type": "array",
+      "items": {
+        "id": "0",
+        "type": "object",
+        "properties": {
+          "summary": {
+            "id": "summary",
+            "type": "string"
+          },
+          "addressFields": {
+            "id": "addressFields",
+            "type": "object",
+            "properties": {
+              "houseNumber": {
+                "id": "houseNumber",
+                "type": "string"
+              },
+              "subBuildingNumber": {
+                "id": "subBuildingNumber",
+                "type": "string"
+              },
+              "houseName": {
+                "id": "houseName",
+                "type": "string"
+              },
+              "street": {
+                "id": "street",
+                "type": "string"
+              },
+              "locality": {
+                "id": "locality",
+                "type": "string"
+              },
+              "town": {
+                "id": "town",
+                "type": "string"
+              },
+              "county": {
+                "id": "county",
+                "type": "string"
+              },
+              "dpSuffix": {
+                "id": "dpSuffix",
+                "type": "string"
+              },
+              "postcode": {
+                "id": "postcode",
+                "type": "string"
+              },
+              "countryCode": {
+                "id": "countryCode",
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "summary",
+          "addressFields"
+        ]
+      },
+      "additionalItems": false,
+      "required": [
+        "0"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "data"
+  ]
+}

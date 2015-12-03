@@ -1,0 +1,790 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 106056158,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PaymentStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 294580,
+              "status": "passed"
+            },
+            "match": {
+              "location": "VoiceAndDataStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 232499,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InteractionStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 226400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProductStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1131828482,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CBSGuardDogStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 474175,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BillingStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 64494847,
+              "status": "passed"
+            },
+            "match": {
+              "location": "VoucherManagerStepdefs.start(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 377443,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OrdersStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 321406,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AddressStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 284692,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 345799,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CustomerStepDefs.before(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "BO Bill Details (happy path)",
+        "description": "",
+        "id": "bo-bill-details;bo-bill-details-(happy-path)",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 68782842,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I target the BO environment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BO",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonStepDefs.I_target_the_environment(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "embeddings": [
+              {
+                "data": "PGRpdj48cHJlIHN0eWxlPSJtYXJnaW4tYm90dG9tOiAwOyI+PGI+cmVxdWVzdDo8L2I+PGJyPjxicj5odHRwOi8vZGV2ZWxvcG1lbnQtYm8uY2YuZGV2LXBhYXMuYnNreWIuY29tL2JpbGxzLzcyMjUyMjAwMi0xPGJyPjxicj5HRVQgfCB7WC1CaWxsaW5nLUFjY291bnQtTnVtYmVyPVs2MjExNzUzNzcwNDZdfTwvcHJlPjwvZGl2Pjxicj4\u003d",
+                "mime_type": "text/html"
+              },
+              {
+                "data": "PGRpdj48cHJlIHN0eWxlPSJtYXJnaW4tYm90dG9tOiAwOyI+PGI+cmVzcG9uc2U6PC9iPjxicj48YnI+MjAwIHwge1NlcnZlcj1bbmdpbnhdLCBEYXRlPVtUaHUsIDAzIERlYyAyMDE1IDE2OjQyOjI3IEdNVF0sIENvbnRlbnQtVHlwZT1bYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD1VVEYtOF0sIENvbnRlbnQtTGVuZ3RoPVs0NTldLCBDb25uZWN0aW9uPVtrZWVwLWFsaXZlXSwgS2VlcC1BbGl2ZT1bdGltZW91dD0xMF0sIEFjY2Vzcy1Db250cm9sLUFsbG93LUNyZWRlbnRpYWxzPVt0cnVlXSwgQWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2luPVtudWxsXSwgWC1DZi1SZXF1ZXN0aWQ9W2JjZTY3M2FiLTdkN2EtNDYzNy01NjdkLTllMjVhYjMyMjE5Yl19PGJyPjxicj57CiAgICAidG90YWwiOiA5OS45OSwKICAgICJ0cmlwbGVQbGF5IjogdHJ1ZSwKICAgICJfbGlua3MiOiB7CiAgICAgICAgInNlbGYiOiB7CiAgICAgICAgICAgICJocmVmIjogImh0dHA6Ly9kZXZlbG9wbWVudC1iby5jZi5kZXYtcGFhcy5ic2t5Yi5jb20vYmlsbHMvNzIyNTIyMDAyLTEiCiAgICAgICAgfQogICAgfSwKICAgICJzdWJzY3JpcHRpb25DaGFyZ2VzIjogewogICAgICAgICJ0b3RhbCI6IDk5Ljk5LAogICAgICAgICJidW5kbGUiOiB7CiAgICAgICAgICAgICJjaGFyZ2VzIjogWwogICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICJhbW91bnQiOiA5Ljk5LAogICAgICAgICAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJOb3cgVFYgTW92aWVzIgogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAiYW1vdW50IjogNDAsCiAgICAgICAgICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIk5vdyBUViBCcm9hZGJhbmQgVW5saW1pdGVkIgogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAiYW1vdW50IjogMTUsCiAgICAgICAgICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIk5vdyBUViBUYWxrIEV2ZW5pbmdzIGFuZCBXZWVrZW5kcyBFeHRyYSIKICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgImFtb3VudCI6IDM1LAogICAgICAgICAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJOb3cgVFYgTGluZSBSZW50YWwiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIF0sCiAgICAgICAgICAgICJ0b3RhbCI6IDk5Ljk5CiAgICAgICAgfQogICAgfSwKICAgICJmcm9tIjogIjIwMTUtMTAtMjMiLAogICAgInRvIjogIjIwMTUtMTEtMjIiCn08L3ByZT48L2Rpdj48YnI+",
+                "mime_type": "text/html"
+              }
+            ],
+            "result": {
+              "duration": 209459901,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I view bill details for a bill of the type \"Line-Movies-Broadband\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Line-Movies-Broadband",
+                  "offset": 44
+                }
+              ],
+              "location": "BillingStepDefs.I_view_bill_details_for_a_bill_of_the_type(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37456855,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the response status is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "RestStepDefinitions.theResponseStatusIs(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "embeddings": [
+              {
+                "data": "W3ssICAgIiRzY2hlbWEiOiAiaHR0cDovL2pzb24tc2NoZW1hLm9yZy9kcmFmdC0wNC9zY2hlbWEjIiwsICAgImlkIjogImh0dHA6Ly9wYXYubmV0IiwsICAgInR5cGUiOiAib2JqZWN0IiwsICAgInByb3BlcnRpZXMiOiB7LCAgICAgInRvdGFsIjogeywgICAgICAgImlkIjogImh0dHA6Ly9wYXYubmV0L3RvdGFsIiwsICAgICAgICJ0eXBlIjogIm51bWJlciIsICAgICB9LCwgICAgICJ0cmlwbGVQbGF5IjogeywgICAgICAgImlkIjogImh0dHA6Ly9wYXYubmV0L3RyaXBsZVBsYXkiLCwgICAgICAgInR5cGUiOiAiYm9vbGVhbiIsICAgICB9LCwgICAgICJfbGlua3MiOiB7LCAgICAgICAiaWQiOiAiaHR0cDovL3Bhdi5uZXQvX2xpbmtzIiwsICAgICAgICJ0eXBlIjogIm9iamVjdCIsLCAgICAgICAicHJvcGVydGllcyI6IHssICAgICAgICAgInNlbGYiOiB7LCAgICAgICAgICAgImlkIjogImh0dHA6Ly9wYXYubmV0L19saW5rcy9zZWxmIiwsICAgICAgICAgICAidHlwZSI6ICJvYmplY3QiLCwgICAgICAgICAgICJwcm9wZXJ0aWVzIjogeywgICAgICAgICAgICAgImhyZWYiOiB7LCAgICAgICAgICAgICAgICJpZCI6ICJodHRwOi8vcGF2Lm5ldC9fbGlua3Mvc2VsZi9ocmVmIiwsICAgICAgICAgICAgICAgInR5cGUiOiAic3RyaW5nIiwgICAgICAgICAgICAgfSwgICAgICAgICAgIH0sLCAgICAgICAgICAgImFkZGl0aW9uYWxQcm9wZXJ0aWVzIjogZmFsc2UsICAgICAgICAgfSwgICAgICAgfSwsICAgICAgICJhZGRpdGlvbmFsUHJvcGVydGllcyI6IGZhbHNlLCAgICAgfSwsICAgICAic3Vic2NyaXB0aW9uQ2hhcmdlcyI6IHssICAgICAgICJpZCI6ICJodHRwOi8vcGF2Lm5ldC9zdWJzY3JpcHRpb25DaGFyZ2VzIiwsICAgICAgICJ0eXBlIjogIm9iamVjdCIsLCAgICAgICAicHJvcGVydGllcyI6IHssICAgICAgICAgInRvdGFsIjogeywgICAgICAgICAgICJpZCI6ICJodHRwOi8vcGF2Lm5ldC9zdWJzY3JpcHRpb25DaGFyZ2VzL3RvdGFsIiwsICAgICAgICAgICAidHlwZSI6ICJudW1iZXIiLCAgICAgICAgIH0sLCAgICAgICAgICJidW5kbGUiOiB7LCAgICAgICAgICAgImlkIjogImh0dHA6Ly9wYXYubmV0L3N1YnNjcmlwdGlvbkNoYXJnZXMvYnVuZGxlIiwsICAgICAgICAgICAidHlwZSI6ICJvYmplY3QiLCwgICAgICAgICAgICJwcm9wZXJ0aWVzIjogeywgICAgICAgICAgICAgImNoYXJnZXMiOiB7LCAgICAgICAgICAgICAgICJpZCI6ICJodHRwOi8vcGF2Lm5ldC9zdWJzY3JpcHRpb25DaGFyZ2VzL2J1bmRsZS9jaGFyZ2VzIiwsICAgICAgICAgICAgICAgInR5cGUiOiAiYXJyYXkiLCwgICAgICAgICAgICAgICAiaXRlbXMiOiBbLCAgICAgICAgICAgICAgICAgeywgICAgICAgICAgICAgICAgICAgImlkIjogImh0dHA6Ly9wYXYubmV0L3N1YnNjcmlwdGlvbkNoYXJnZXMvYnVuZGxlL2NoYXJnZXMvMCIsLCAgICAgICAgICAgICAgICAgICAidHlwZSI6ICJvYmplY3QiLCwgICAgICAgICAgICAgICAgICAgInByb3BlcnRpZXMiOiB7LCAgICAgICAgICAgICAgICAgICAgICJhbW91bnQiOiB7LCAgICAgICAgICAgICAgICAgICAgICAgImlkIjogImh0dHA6Ly9wYXYubmV0L3N1YnNjcmlwdGlvbkNoYXJnZXMvYnVuZGxlL2NoYXJnZXMvMC9hbW91bnQiLCwgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIjogIm51bWJlciIsICAgICAgICAgICAgICAgICAgICAgfSwsICAgICAgICAgICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogeywgICAgICAgICAgICAgICAgICAgICAgICJpZCI6ICJodHRwOi8vcGF2Lm5ldC9zdWJzY3JpcHRpb25DaGFyZ2VzL2J1bmRsZS9jaGFyZ2VzLzAvZGVzY3JpcHRpb24iLCwgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIjogInN0cmluZyIsICAgICAgICAgICAgICAgICAgICAgfSwgICAgICAgICAgICAgICAgICAgfSwsICAgICAgICAgICAgICAgICAgICJhZGRpdGlvbmFsUHJvcGVydGllcyI6IGZhbHNlLCAgICAgICAgICAgICAgICAgfSwsICAgICAgICAgICAgICAgICB7LCAgICAgICAgICAgICAgICAgICAiaWQiOiAiaHR0cDovL3Bhdi5uZXQvc3Vic2NyaXB0aW9uQ2hhcmdlcy9idW5kbGUvY2hhcmdlcy8xIiwsICAgICAgICAgICAgICAgICAgICJ0eXBlIjogIm9iamVjdCIsLCAgICAgICAgICAgICAgICAgICAicHJvcGVydGllcyI6IHssICAgICAgICAgICAgICAgICAgICAgImFtb3VudCI6IHssICAgICAgICAgICAgICAgICAgICAgICAiaWQiOiAiaHR0cDovL3Bhdi5uZXQvc3Vic2NyaXB0aW9uQ2hhcmdlcy9idW5kbGUvY2hhcmdlcy8xL2Ftb3VudCIsLCAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiOiAiaW50ZWdlciIsICAgICAgICAgICAgICAgICAgICAgfSwsICAgICAgICAgICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogeywgICAgICAgICAgICAgICAgICAgICAgICJpZCI6ICJodHRwOi8vcGF2Lm5ldC9zdWJzY3JpcHRpb25DaGFyZ2VzL2J1bmRsZS9jaGFyZ2VzLzEvZGVzY3JpcHRpb24iLCwgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIjogInN0cmluZyIsICAgICAgICAgICAgICAgICAgICAgfSwgICAgICAgICAgICAgICAgICAgfSwsICAgICAgICAgICAgICAgICAgICJhZGRpdGlvbmFsUHJvcGVydGllcyI6IGZhbHNlLCAgICAgICAgICAgICAgICAgfSwsICAgICAgICAgICAgICAgICB7LCAgICAgICAgICAgICAgICAgICAiaWQiOiAiaHR0cDovL3Bhdi5uZXQvc3Vic2NyaXB0aW9uQ2hhcmdlcy9idW5kbGUvY2hhcmdlcy8yIiwsICAgICAgICAgICAgICAgICAgICJ0eXBlIjogIm9iamVjdCIsLCAgICAgICAgICAgICAgICAgICAicHJvcGVydGllcyI6IHssICAgICAgICAgICAgICAgICAgICAgImFtb3VudCI6IHssICAgICAgICAgICAgICAgICAgICAgICAiaWQiOiAiaHR0cDovL3Bhdi5uZXQvc3Vic2NyaXB0aW9uQ2hhcmdlcy9idW5kbGUvY2hhcmdlcy8yL2Ftb3VudCIsLCAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiOiAiaW50ZWdlciIsICAgICAgICAgICAgICAgICAgICAgfSwsICAgICAgICAgICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogeywgICAgICAgICAgICAgICAgICAgICAgICJpZCI6ICJodHRwOi8vcGF2Lm5ldC9zdWJzY3JpcHRpb25DaGFyZ2VzL2J1bmRsZS9jaGFyZ2VzLzIvZGVzY3JpcHRpb24iLCwgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIjogInN0cmluZyIsICAgICAgICAgICAgICAgICAgICAgfSwgICAgICAgICAgICAgICAgICAgfSwsICAgICAgICAgICAgICAgICAgICJhZGRpdGlvbmFsUHJvcGVydGllcyI6IGZhbHNlLCAgICAgICAgICAgICAgICAgfSwsICAgICAgICAgICAgICAgICB7LCAgICAgICAgICAgICAgICAgICAiaWQiOiAiaHR0cDovL3Bhdi5uZXQvc3Vic2NyaXB0aW9uQ2hhcmdlcy9idW5kbGUvY2hhcmdlcy8zIiwsICAgICAgICAgICAgICAgICAgICJ0eXBlIjogIm9iamVjdCIsLCAgICAgICAgICAgICAgICAgICAicHJvcGVydGllcyI6IHssICAgICAgICAgICAgICAgICAgICAgImFtb3VudCI6IHssICAgICAgICAgICAgICAgICAgICAgICAiaWQiOiAiaHR0cDovL3Bhdi5uZXQvc3Vic2NyaXB0aW9uQ2hhcmdlcy9idW5kbGUvY2hhcmdlcy8zL2Ftb3VudCIsLCAgICAgICAgICAgICAgICAgICAgICAgInR5cGUiOiAiaW50ZWdlciIsICAgICAgICAgICAgICAgICAgICAgfSwsICAgICAgICAgICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogeywgICAgICAgICAgICAgICAgICAgICAgICJpZCI6ICJodHRwOi8vcGF2Lm5ldC9zdWJzY3JpcHRpb25DaGFyZ2VzL2J1bmRsZS9jaGFyZ2VzLzMvZGVzY3JpcHRpb24iLCwgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIjogInN0cmluZyIsICAgICAgICAgICAgICAgICAgICAgfSwgICAgICAgICAgICAgICAgICAgfSwsICAgICAgICAgICAgICAgICAgICJhZGRpdGlvbmFsUHJvcGVydGllcyI6IGZhbHNlLCAgICAgICAgICAgICAgICAgfSwgICAgICAgICAgICAgICBdLCwgICAgICAgICAgICAgICAiYWRkaXRpb25hbEl0ZW1zIjogZmFsc2UsICAgICAgICAgICAgIH0sLCAgICAgICAgICAgICAidG90YWwiOiB7LCAgICAgICAgICAgICAgICJpZCI6ICJodHRwOi8vcGF2Lm5ldC9zdWJzY3JpcHRpb25DaGFyZ2VzL2J1bmRsZS90b3RhbCIsLCAgICAgICAgICAgICAgICJ0eXBlIjogIm51bWJlciIsICAgICAgICAgICAgIH0sICAgICAgICAgICB9LCwgICAgICAgICAgICJhZGRpdGlvbmFsUHJvcGVydGllcyI6IGZhbHNlLCAgICAgICAgIH0sICAgICAgIH0sLCAgICAgICAiYWRkaXRpb25hbFByb3BlcnRpZXMiOiBmYWxzZSwgICAgIH0sLCAgICAgImZyb20iOiB7LCAgICAgICAiaWQiOiAiaHR0cDovL3Bhdi5uZXQvZnJvbSIsLCAgICAgICAidHlwZSI6ICJzdHJpbmciLCAgICAgfSwsICAgICAidG8iOiB7LCAgICAgICAiaWQiOiAiaHR0cDovL3Bhdi5uZXQvdG8iLCwgICAgICAgInR5cGUiOiAic3RyaW5nIiwgICAgIH0sICAgfSwsICAgImFkZGl0aW9uYWxQcm9wZXJ0aWVzIjogZmFsc2UsLCAgICJyZXF1aXJlZCI6IFssICAgICAidG90YWwiLCwgICAgICJ0cmlwbGVQbGF5IiwsICAgICAiX2xpbmtzIiwsICAgICAic3Vic2NyaXB0aW9uQ2hhcmdlcyIsLCAgICAgImZyb20iLCwgICAgICJ0byIsICAgXSwgfV0\u003d",
+                "mime_type": "text/html"
+              }
+            ],
+            "result": {
+              "duration": 225727760,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the response body matches the template \"bill-details\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bill-details",
+                  "offset": 40
+                }
+              ],
+              "location": "CommonStepDefs.Response_body_matches_template(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 223935,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PaymentStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 131269,
+              "status": "passed"
+            },
+            "match": {
+              "location": "VoiceAndDataStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 125967,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InteractionStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 107318,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProductStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 174819020,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CBSGuardDogStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 221256,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BillingStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 3372283,
+              "status": "passed"
+            },
+            "match": {
+              "location": "VoucherManagerStepdefs.start(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 232394,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OrdersStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 197335,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AddressStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 159011,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 192359,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CustomerStepDefs.before(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Per product itemized charge calculation",
+        "description": "",
+        "id": "bo-bill-details;per-product-itemized-charge-calculation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 257124,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I target the BO environment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BO",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonStepDefs.I_target_the_environment(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "embeddings": [
+              {
+                "data": "PGRpdj48cHJlIHN0eWxlPSJtYXJnaW4tYm90dG9tOiAwOyI+PGI+cmVxdWVzdDo8L2I+PGJyPjxicj5odHRwOi8vZGV2ZWxvcG1lbnQtYm8uY2YuZGV2LXBhYXMuYnNreWIuY29tL2JpbGxzLzcyMjU2MzAwMi0xPGJyPjxicj5HRVQgfCB7WC1CaWxsaW5nLUFjY291bnQtTnVtYmVyPVs2MjExNzU2Nzc1OTNdfTwvcHJlPjwvZGl2Pjxicj4\u003d",
+                "mime_type": "text/html"
+              },
+              {
+                "data": "PGRpdj48cHJlIHN0eWxlPSJtYXJnaW4tYm90dG9tOiAwOyI+PGI+cmVzcG9uc2U6PC9iPjxicj48YnI+MjAwIHwge1NlcnZlcj1bbmdpbnhdLCBEYXRlPVtUaHUsIDAzIERlYyAyMDE1IDE2OjQyOjI3IEdNVF0sIENvbnRlbnQtVHlwZT1bYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD1VVEYtOF0sIENvbnRlbnQtTGVuZ3RoPVs1NDldLCBDb25uZWN0aW9uPVtrZWVwLWFsaXZlXSwgS2VlcC1BbGl2ZT1bdGltZW91dD0xMF0sIEFjY2Vzcy1Db250cm9sLUFsbG93LUNyZWRlbnRpYWxzPVt0cnVlXSwgQWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2luPVtudWxsXSwgWC1DZi1SZXF1ZXN0aWQ9W2M5NDc3M2NlLTExNDAtNGFiNi03YWRhLWQyODFmMmEwN2RlYl19PGJyPjxicj57CiAgICAidG90YWwiOiAtMTA3LjM0LAogICAgInRyaXBsZVBsYXkiOiB0cnVlLAogICAgIl9saW5rcyI6IHsKICAgICAgICAic2VsZiI6IHsKICAgICAgICAgICAgImhyZWYiOiAiaHR0cDovL2RldmVsb3BtZW50LWJvLmNmLmRldi1wYWFzLmJza3liLmNvbS9iaWxscy83MjI1NjMwMDItMSIKICAgICAgICB9CiAgICB9LAogICAgInN1YnNjcmlwdGlvbkNoYXJnZXMiOiB7CiAgICAgICAgInRvdGFsIjogOTguOTgsCiAgICAgICAgImJ1bmRsZSI6IHsKICAgICAgICAgICAgImNoYXJnZXMiOiBbCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgImFtb3VudCI6IDYuOTksCiAgICAgICAgICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIk5vdyBUViBFbnRlcnRhaW5tZW50IgogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAiYW1vdW50IjogOS45OSwKICAgICAgICAgICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTm93IFRWIE1vdmllcyIKICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgImFtb3VudCI6IDQwLAogICAgICAgICAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJOb3cgVFYgQnJvYWRiYW5kIFVubGltaXRlZCIKICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgImFtb3VudCI6IDAsCiAgICAgICAgICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIk5vdyBUViBQYXkgYXMgeW91IFRhbGsiCiAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICJhbW91bnQiOiAzNSwKICAgICAgICAgICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTm93IFRWIExpbmUgUmVudGFsIgogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAiYW1vdW50IjogNywKICAgICAgICAgICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiQW5vbnltb3VzIENhbGxlciBSZWplY3QiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIF0sCiAgICAgICAgICAgICJ0b3RhbCI6IDk4Ljk4CiAgICAgICAgfQogICAgfSwKICAgICJmcm9tIjogIjIwMTctMDMtMDYiLAogICAgInRvIjogIjIwMTctMDQtMDUiCn08L3ByZT48L2Rpdj48YnI+",
+                "mime_type": "text/html"
+              }
+            ],
+            "result": {
+              "duration": 65727599,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I view bill details for a bill of the type \"tv talk and broadband charges\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tv talk and broadband charges",
+                  "offset": 44
+                }
+              ],
+              "location": "BillingStepDefs.I_view_bill_details_for_a_bill_of_the_type(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 342578,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the response status is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "RestStepDefinitions.theResponseStatusIs(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25096594,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the bill total for the bundle is computed correctly",
+            "match": {
+              "location": "BillingStepDefs.the_bill_total_for_bundle_is_computed_correctly()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 270854,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PaymentStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 256804,
+              "status": "passed"
+            },
+            "match": {
+              "location": "VoiceAndDataStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 163196,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InteractionStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 145450,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProductStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 212070817,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CBSGuardDogStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 291632,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BillingStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 3257512,
+              "status": "passed"
+            },
+            "match": {
+              "location": "VoucherManagerStepdefs.start(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 134370,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OrdersStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 82378,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AddressStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 80641,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 79196,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CustomerStepDefs.before(Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Aggregated multiple product total",
+        "description": "",
+        "id": "bo-bill-details;aggregated-multiple-product-total",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 153151,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I target the BO environment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BO",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonStepDefs.I_target_the_environment(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "embeddings": [
+              {
+                "data": "PGRpdj48cHJlIHN0eWxlPSJtYXJnaW4tYm90dG9tOiAwOyI+PGI+cmVxdWVzdDo8L2I+PGJyPjxicj5odHRwOi8vZGV2ZWxvcG1lbnQtYm8uY2YuZGV2LXBhYXMuYnNreWIuY29tL2JpbGxzLzcyMjU2MzAwMi0xPGJyPjxicj5HRVQgfCB7WC1CaWxsaW5nLUFjY291bnQtTnVtYmVyPVs2MjExNzU2Nzc1OTNdfTwvcHJlPjwvZGl2Pjxicj4\u003d",
+                "mime_type": "text/html"
+              },
+              {
+                "data": "PGRpdj48cHJlIHN0eWxlPSJtYXJnaW4tYm90dG9tOiAwOyI+PGI+cmVzcG9uc2U6PC9iPjxicj48YnI+MjAwIHwge1NlcnZlcj1bbmdpbnhdLCBEYXRlPVtUaHUsIDAzIERlYyAyMDE1IDE2OjQyOjI4IEdNVF0sIENvbnRlbnQtVHlwZT1bYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD1VVEYtOF0sIENvbnRlbnQtTGVuZ3RoPVs1NDldLCBDb25uZWN0aW9uPVtrZWVwLWFsaXZlXSwgS2VlcC1BbGl2ZT1bdGltZW91dD0xMF0sIEFjY2Vzcy1Db250cm9sLUFsbG93LUNyZWRlbnRpYWxzPVt0cnVlXSwgQWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2luPVtudWxsXSwgWC1DZi1SZXF1ZXN0aWQ9Wzk1ZDlmMTcyLWYzZDgtNDNkZS00ZTQxLTUxMjkwZDlkMWNhMl19PGJyPjxicj57CiAgICAidG90YWwiOiAtMTA3LjM0LAogICAgInRyaXBsZVBsYXkiOiB0cnVlLAogICAgIl9saW5rcyI6IHsKICAgICAgICAic2VsZiI6IHsKICAgICAgICAgICAgImhyZWYiOiAiaHR0cDovL2RldmVsb3BtZW50LWJvLmNmLmRldi1wYWFzLmJza3liLmNvbS9iaWxscy83MjI1NjMwMDItMSIKICAgICAgICB9CiAgICB9LAogICAgInN1YnNjcmlwdGlvbkNoYXJnZXMiOiB7CiAgICAgICAgInRvdGFsIjogOTguOTgsCiAgICAgICAgImJ1bmRsZSI6IHsKICAgICAgICAgICAgImNoYXJnZXMiOiBbCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgImFtb3VudCI6IDYuOTksCiAgICAgICAgICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIk5vdyBUViBFbnRlcnRhaW5tZW50IgogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAiYW1vdW50IjogOS45OSwKICAgICAgICAgICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTm93IFRWIE1vdmllcyIKICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgImFtb3VudCI6IDQwLAogICAgICAgICAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJOb3cgVFYgQnJvYWRiYW5kIFVubGltaXRlZCIKICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgImFtb3VudCI6IDAsCiAgICAgICAgICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIk5vdyBUViBQYXkgYXMgeW91IFRhbGsiCiAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICJhbW91bnQiOiAzNSwKICAgICAgICAgICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTm93IFRWIExpbmUgUmVudGFsIgogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAiYW1vdW50IjogNywKICAgICAgICAgICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiQW5vbnltb3VzIENhbGxlciBSZWplY3QiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIF0sCiAgICAgICAgICAgICJ0b3RhbCI6IDk4Ljk4CiAgICAgICAgfQogICAgfSwKICAgICJmcm9tIjogIjIwMTctMDMtMDYiLAogICAgInRvIjogIjIwMTctMDQtMDUiCn08L3ByZT48L2Rpdj48YnI+",
+                "mime_type": "text/html"
+              }
+            ],
+            "result": {
+              "duration": 72204608,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I view bill details for a bill of the type \"tv talk and broadband charges\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tv talk and broadband charges",
+                  "offset": 44
+                }
+              ],
+              "location": "BillingStepDefs.I_view_bill_details_for_a_bill_of_the_type(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 147920,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the response status is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "RestStepDefinitions.theResponseStatusIs(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16363518,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the total subscription charges are computed correctly",
+            "match": {
+              "location": "BillingStepDefs.the_total_subscription_charges_are_computed_correctly()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 104386,
+              "status": "passed"
+            },
+            "match": {
+              "location": "PaymentStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 83628,
+              "status": "passed"
+            },
+            "match": {
+              "location": "VoiceAndDataStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 71863,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InteractionStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 55619,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ProductStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 165118220,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CBSGuardDogStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 171073,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BillingStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 3524627,
+              "status": "passed"
+            },
+            "match": {
+              "location": "VoucherManagerStepdefs.start(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 142975,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OrdersStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 74231,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AddressStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 71980,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonStepDefs.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 70087,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CustomerStepDefs.before(Scenario)"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Per product prorated charge calculation",
+        "description": "",
+        "id": "bo-bill-details;per-product-prorated-charge-calculation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 140893,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I target the BO environment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BO",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonStepDefs.I_target_the_environment(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "embeddings": [
+              {
+                "data": "PGRpdj48cHJlIHN0eWxlPSJtYXJnaW4tYm90dG9tOiAwOyI+PGI+cmVxdWVzdDo8L2I+PGJyPjxicj5odHRwOi8vZGV2ZWxvcG1lbnQtYm8uY2YuZGV2LXBhYXMuYnNreWIuY29tL2JpbGxzLzcyMjU3MzAwMi0xPGJyPjxicj5HRVQgfCB7WC1CaWxsaW5nLUFjY291bnQtTnVtYmVyPVs2MjExNzUzNzg4ODddfTwvcHJlPjwvZGl2Pjxicj4\u003d",
+                "mime_type": "text/html"
+              },
+              {
+                "data": "PGRpdj48cHJlIHN0eWxlPSJtYXJnaW4tYm90dG9tOiAwOyI+PGI+cmVzcG9uc2U6PC9iPjxicj48YnI+MjAwIHwge1NlcnZlcj1bbmdpbnhdLCBEYXRlPVtUaHUsIDAzIERlYyAyMDE1IDE2OjQyOjI4IEdNVF0sIENvbnRlbnQtVHlwZT1bYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD1VVEYtOF0sIENvbnRlbnQtTGVuZ3RoPVs2NDJdLCBDb25uZWN0aW9uPVtrZWVwLWFsaXZlXSwgS2VlcC1BbGl2ZT1bdGltZW91dD0xMF0sIEFjY2Vzcy1Db250cm9sLUFsbG93LUNyZWRlbnRpYWxzPVt0cnVlXSwgQWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2luPVtudWxsXSwgWC1DZi1SZXF1ZXN0aWQ9WzUzMDNmMDRlLWNmZDQtNGE1MC02ZWJmLWQwYWY2ZDFhYzM5Yl19PGJyPjxicj57CiAgICAidG90YWwiOiAxMTUuOTgsCiAgICAidHJpcGxlUGxheSI6IHRydWUsCiAgICAiX2xpbmtzIjogewogICAgICAgICJzZWxmIjogewogICAgICAgICAgICAiaHJlZiI6ICJodHRwOi8vZGV2ZWxvcG1lbnQtYm8uY2YuZGV2LXBhYXMuYnNreWIuY29tL2JpbGxzLzcyMjU3MzAwMi0xIgogICAgICAgIH0KICAgIH0sCiAgICAic3Vic2NyaXB0aW9uQ2hhcmdlcyI6IHsKICAgICAgICAidG90YWwiOiAxMDYuOTksCiAgICAgICAgImJ1bmRsZSI6IHsKICAgICAgICAgICAgImNoYXJnZXMiOiBbCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgImFtb3VudCI6IDYuOTksCiAgICAgICAgICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIk5vdyBUViBFbnRlcnRhaW5tZW50IgogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAiYW1vdW50IjogNDAsCiAgICAgICAgICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIk5vdyBUViBCcm9hZGJhbmQgVW5saW1pdGVkIgogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAiYW1vdW50IjogMjUsCiAgICAgICAgICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIk5vdyBUViBUYWxrIEFueXRpbWUgRXh0cmEiCiAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgewogICAgICAgICAgICAgICAgICAgICJhbW91bnQiOiAzNSwKICAgICAgICAgICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTm93IFRWIExpbmUgUmVudGFsIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICBdLAogICAgICAgICAgICAidG90YWwiOiAxMDYuOTkKICAgICAgICB9CiAgICB9LAogICAgImZyb20iOiAiMjAxNS0xMS0wMiIsCiAgICAidG8iOiAiMjAxNS0xMi0wMSIsCiAgICAicHJvcmF0ZWRDaGFyZ2VzIjogewogICAgICAgICJ0b3RhbCI6IDguOTksCiAgICAgICAgInBlcmlvZHMiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICJ0b3RhbCI6IDguOTksCiAgICAgICAgICAgICAgICAiZnJvbSI6ICIyMDE1LTExLTA1IiwKICAgICAgICAgICAgICAgICJ0byI6ICIyMDE1LTEyLTAxIiwKICAgICAgICAgICAgICAgICJidW5kbGUiOiB7CiAgICAgICAgICAgICAgICAgICAgImNoYXJnZXMiOiBbCiAgICAgICAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICJhbW91bnQiOiA4Ljk5LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIk5vdyBUViBNb3ZpZXMiCiAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICBdCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICBdLAogICAgICAgICJmcm9tIjogIjIwMTUtMTAtMDIiCiAgICB9Cn08L3ByZT48L2Rpdj48YnI+",
+                "mime_type": "text/html"
+              }
+            ],
+            "result": {
+              "duration": 107456947,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I view bill details for a bill of the type \"1 prorated bill\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1 prorated bill",
+                  "offset": 44
+                }
+              ],
+              "location": "BillingStepDefs.I_view_bill_details_for_a_bill_of_the_type(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 275722,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the response status is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 23
+                }
+              ],
+              "location": "RestStepDefinitions.theResponseStatusIs(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23712033,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the bill total for prorated charges is computed correctly",
+            "match": {
+              "location": "BillingStepDefs.the_bill_total_for_prorated_charges_is_computed_correctly()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "BO Bill Details",
+    "description": "",
+    "id": "bo-bill-details",
+    "keyword": "Feature",
+    "uri": "features/bo/BillDetails.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@BOBillingBillDetails"
+      },
+      {
+        "line": 1,
+        "name": "@BOBilling"
+      },
+      {
+        "line": 1,
+        "name": "@BO"
+      },
+      {
+        "line": 1,
+        "name": "@ALL"
+      }
+    ]
+  }
+]

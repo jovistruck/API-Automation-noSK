@@ -1,0 +1,139 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://pav.net",
+  "type": "object",
+  "properties": {
+    "total": {
+      "id": "http://pav.net/total",
+      "type": "number"
+    },
+    "triplePlay": {
+      "id": "http://pav.net/triplePlay",
+      "type": "boolean"
+    },
+    "_links": {
+      "id": "http://pav.net/_links",
+      "type": "object",
+      "properties": {
+        "self": {
+          "id": "http://pav.net/_links/self",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "http://pav.net/_links/self/href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "subscriptionCharges": {
+      "id": "http://pav.net/subscriptionCharges",
+      "type": "object",
+      "properties": {
+        "total": {
+          "id": "http://pav.net/subscriptionCharges/total",
+          "type": "number"
+        },
+        "bundle": {
+          "id": "http://pav.net/subscriptionCharges/bundle",
+          "type": "object",
+          "properties": {
+            "charges": {
+              "id": "http://pav.net/subscriptionCharges/bundle/charges",
+              "type": "array",
+              "items": [
+                {
+                  "id": "http://pav.net/subscriptionCharges/bundle/charges/0",
+                  "type": "object",
+                  "properties": {
+                    "amount": {
+                      "id": "http://pav.net/subscriptionCharges/bundle/charges/0/amount",
+                      "type": "number"
+                    },
+                    "description": {
+                      "id": "http://pav.net/subscriptionCharges/bundle/charges/0/description",
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                {
+                  "id": "http://pav.net/subscriptionCharges/bundle/charges/1",
+                  "type": "object",
+                  "properties": {
+                    "amount": {
+                      "id": "http://pav.net/subscriptionCharges/bundle/charges/1/amount",
+                      "type": "integer"
+                    },
+                    "description": {
+                      "id": "http://pav.net/subscriptionCharges/bundle/charges/1/description",
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                {
+                  "id": "http://pav.net/subscriptionCharges/bundle/charges/2",
+                  "type": "object",
+                  "properties": {
+                    "amount": {
+                      "id": "http://pav.net/subscriptionCharges/bundle/charges/2/amount",
+                      "type": "integer"
+                    },
+                    "description": {
+                      "id": "http://pav.net/subscriptionCharges/bundle/charges/2/description",
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                {
+                  "id": "http://pav.net/subscriptionCharges/bundle/charges/3",
+                  "type": "object",
+                  "properties": {
+                    "amount": {
+                      "id": "http://pav.net/subscriptionCharges/bundle/charges/3/amount",
+                      "type": "integer"
+                    },
+                    "description": {
+                      "id": "http://pav.net/subscriptionCharges/bundle/charges/3/description",
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              ],
+              "additionalItems": false
+            },
+            "total": {
+              "id": "http://pav.net/subscriptionCharges/bundle/total",
+              "type": "number"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "from": {
+      "id": "http://pav.net/from",
+      "type": "string"
+    },
+    "to": {
+      "id": "http://pav.net/to",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "total",
+    "triplePlay",
+    "_links",
+    "subscriptionCharges",
+    "from",
+    "to"
+  ]
+}

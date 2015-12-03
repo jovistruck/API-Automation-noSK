@@ -1,0 +1,80 @@
+{
+  "reference": "RqNyAs3kqI8bVcpLDfsVmUbhuvd98zJLLU9kTX7ZoC_Sy8tSA0wLnKeQkCqvhjGi",
+  "keyAddresses": {
+
+  },
+  "basket": {
+    "offers": [
+
+    ],
+    "products": [
+
+    ]
+  },
+  "addresses": [
+
+  ],
+  "_links": {
+    "modify-basket": {
+      "href": "http://development-po.cf.dev-paas.bskyb.com/interactions/RqNyAs3kqI8bVcpLDfsVmUbhuvd98zJLLU9kTX7ZoC_Sy8tSA0wLnKeQkCqvhjGi/basket"
+    },
+    "update-customer": {
+      "href": "http://development-po.cf.dev-paas.bskyb.com/interactions/RqNyAs3kqI8bVcpLDfsVmUbhuvd98zJLLU9kTX7ZoC_Sy8tSA0wLnKeQkCqvhjGi/customer"
+    },
+    "payment-method": {
+      "href": "http://development-po.cf.dev-paas.bskyb.com/interactions/RqNyAs3kqI8bVcpLDfsVmUbhuvd98zJLLU9kTX7ZoC_Sy8tSA0wLnKeQkCqvhjGi/payment-method"
+    },
+    "create-order": {
+      "href": "http://development-po.cf.dev-paas.bskyb.com/interactions/RqNyAs3kqI8bVcpLDfsVmUbhuvd98zJLLU9kTX7ZoC_Sy8tSA0wLnKeQkCqvhjGi/order"
+    },
+    "add-address": {
+      "href": "http://development-po.cf.dev-paas.bskyb.com/interactions/RqNyAs3kqI8bVcpLDfsVmUbhuvd98zJLLU9kTX7ZoC_Sy8tSA0wLnKeQkCqvhjGi/addresses"
+    },
+    "get-interaction": {
+      "href": "http://development-po.cf.dev-paas.bskyb.com/interactions/RqNyAs3kqI8bVcpLDfsVmUbhuvd98zJLLU9kTX7ZoC_Sy8tSA0wLnKeQkCqvhjGi"
+    },
+    "get-available-products": {
+      "href": "http://development-po.cf.dev-paas.bskyb.com/interactions/RqNyAs3kqI8bVcpLDfsVmUbhuvd98zJLLU9kTX7ZoC_Sy8tSA0wLnKeQkCqvhjGi/catalogue/products"
+    },
+    "self": {
+      "href": "http://development-po.cf.dev-paas.bskyb.com/interactions/RqNyAs3kqI8bVcpLDfsVmUbhuvd98zJLLU9kTX7ZoC_Sy8tSA0wLnKeQkCqvhjGi"
+    },
+    "lead-time": {
+      "href": "http://development-po.cf.dev-paas.bskyb.com/interactions/RqNyAs3kqI8bVcpLDfsVmUbhuvd98zJLLU9kTX7ZoC_Sy8tSA0wLnKeQkCqvhjGi/lead-time"
+    },
+    "voice-and-data": {
+      "href": "http://development-po.cf.dev-paas.bskyb.com/interactions/RqNyAs3kqI8bVcpLDfsVmUbhuvd98zJLLU9kTX7ZoC_Sy8tSA0wLnKeQkCqvhjGi/voice-and-data"
+    }
+  },
+  "paymentMethods": {
+    "payment": {
+      "method": "NONE"
+    },
+    "billing": {
+      "method": "NONE"
+    }
+  },
+  "orderAddresses": {
+
+  },
+  "status": {
+    "reasons": [
+      {
+        "code": "interaction.customer.not.set",
+        "message": "Not all customer details have not been defined for the interaction."
+      },
+      {
+        "code": "interaction.basket.empty",
+        "message": "At least one item must be added to the basket."
+      },
+      {
+        "code": "interaction.keyaddress.purpose.not.set",
+        "message": "Not all key address purposes are set - missing: [BILLING, DELIVERY, INSTALLATION]"
+      }
+    ],
+    "state": "INCOMPLETE"
+  },
+  "customer": {
+
+  }
+}

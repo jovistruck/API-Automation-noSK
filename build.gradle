@@ -1,0 +1,90 @@
+buildscript {
+    repositories {
+        maven { url 'http://buildrepo.nowtv.bskyb.com/repo' }
+        jcenter()
+        maven { url "http://repo.spring.io/libs-release" }
+        mavenCentral()
+    }
+}
+
+apply plugin: "java"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    maven { url 'http://buildrepo.nowtv.bskyb.com/repo' }
+    mavenLocal()
+    mavenCentral()
+}
+
+ext.versions = [
+        springboot: '1.2.7.RELEASE',
+        cucumber  : '1.2.4'
+]
+
+dependencies {
+    compile "info.cukes:cucumber-java:$versions.cucumber",
+            "info.cukes:cucumber-junit:$versions.cucumber",
+            "com.jayway.restassured:json-path:2.3.2",
+            "com.jayway.jsonpath:json-path:2.1.0",
+            "org.assertj:assertj-core:1.7.0",
+            'com.nowtv.pav:test-commons:0.1.61.0',
+            "io.generators:generators-core:1.0",
+            'org.ocpsoft.prettytime:prettytime-nlp:3.2.5.Final',
+            'com.jayway.awaitility:awaitility:1.6.3',
+            'com.jayway.restassured:json-schema-validator:2.6.0',
+            'org.springframework:spring-tx:4.2.3.RELEASE'
+
+    compile("org.springframework.boot:spring-boot-starter-test:$versions.springboot") {
+        exclude group: 'junit'
+    }
+
+}
+
+task(olu) << {
+    configurations.compile.each { println(it) }
+}
+
+task jarWithDependencies(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version
+        attributes 'Main-Class': 'com.nowtv.pav.test.CucumberTestMain'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+test {
+
+    systemProperty "VM_URL", System.getProperty("VM_URL", "https://vouchers-nowtv-stage.sky.com/")
+    systemProperty "CBS_URL", System.getProperty("CBS_URL", "http://localhost:8081")
+
+    def env = System.getProperty("env")
+    if (env!=null)
+    {
+        System.setProperty("PO_URL", "http://" + env + "-po.cf.dev-paas.bskyb.com")
+        System.setProperty("BO_URL", "http://" + env + "-bo.cf.dev-paas.bskyb.com")
+        System.setProperty("SO_URL", "http://" + env + "-so.cf.dev-paas.bskyb.com")
+    } else {
+        systemProperty "PO_URL", System.getProperty("PO_URL", "http://integration-po.cf.dev-paas.bskyb.com")
+        systemProperty "BO_URL", System.getProperty("BO_URL", "http://integration-bo.cf.dev-paas.bskyb.com")
+        systemProperty "SO_URL", System.getProperty("SO_URL", "http://integration-so.cf.dev-paas.bskyb.com")
+    }
+    systemProperty "cucumber.options", createCucumberOptions()
+}
+
+def String createCucumberOptions() {
+    def userTags = System.getProperty("tags")
+    def commonTags = "--tags ~@wip --tags ~@pending --tags ~@deprecated"
+    userTags = userTags ? "--tags $userTags $commonTags" : "$commonTags"
+    return userTags ? "$userTags" : ""
+}
+
+task printLinkToTestReports << {
+    println "Cucumber junit reports are outputted to file://$project.buildDir/reports/tests/index.html"
+    println "Cucumber html reports are outputted to file://$project.buildDir/reports/index.html"
+}
+
+test.finalizedBy(printLinkToTestReports)

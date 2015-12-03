@@ -1,0 +1,179 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "properties": {
+    "_links": {
+      "id": "http://jsonschema.net/_links",
+      "type": "object",
+      "properties": {
+        "modify-basket": {
+          "id": "http://jsonschema.net/_links/modify-basket",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "http://jsonschema.net/_links/modify-basket/href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "href"
+          ]
+        },
+        "payment-method": {
+          "id": "http://jsonschema.net/_links/payment-method",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "http://jsonschema.net/_links/payment-method/href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "find-address": {
+          "id": "http://jsonschema.net/_links/find-address",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "http://jsonschema.net/_links/find-address/href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "update-customer": {
+          "id": "http://jsonschema.net/_links/update-customer",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "http://jsonschema.net/_links/update-customer/href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "create-interaction": {
+          "id": "http://jsonschema.net/_links/create-interaction",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "http://jsonschema.net/_links/create-interaction/href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "get-products": {
+          "id": "http://jsonschema.net/_links/get-products",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "http://jsonschema.net/_links/get-products/href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "create-order": {
+          "id": "http://jsonschema.net/_links/create-order",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "http://jsonschema.net/_links/create-order/href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "add-address": {
+          "id": "http://jsonschema.net/_links/add-address",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "http://jsonschema.net/_links/add-address/href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "get-interaction": {
+          "id": "http://jsonschema.net/_links/get-interaction",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "http://jsonschema.net/_links/get-interaction/href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "get-available-products": {
+          "id": "http://jsonschema.net/_links/get-available-products",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "http://jsonschema.net/_links/get-available-products/href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "self": {
+          "id": "http://jsonschema.net/_links/self",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "http://jsonschema.net/_links/self/href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "lead-time": {
+          "id": "http://jsonschema.net/_links/lead-time",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "http://jsonschema.net/_links/lead-time/href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "voice-and-data": {
+          "id": "http://jsonschema.net/_links/voice-and-data",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "http://jsonschema.net/_links/voice-and-data/href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "modify-basket",
+        "payment-method",
+        "find-address",
+        "update-customer",
+        "create-interaction",
+        "get-products",
+        "create-order",
+        "add-address",
+        "get-interaction",
+        "get-available-products",
+        "self",
+        "lead-time",
+        "voice-and-data"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "_links"
+  ]
+}

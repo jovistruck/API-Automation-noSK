@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="sad path)" tests="14" skipped="0" failures="0" errors="0" timestamp="2015-12-01T11:30:20" hostname="jov-HP-Z220-CMT-Workstation" time="2.091">
+  <properties/>
+  <testcase name="Given I target the PO environment(Scenario: Set payment method as CARD without token " classname="sad path)" time="0.0"/>
+  <testcase name="When I create an interaction reference(Scenario: Set payment method as CARD without token " classname="sad path)" time="0.0"/>
+  <testcase name="And I set the payment details with(Scenario: Set payment method as CARD without token " classname="sad path)" time="0.0"/>
+  <testcase name="Then the response status is 422(Scenario: Set payment method as CARD without token " classname="sad path)" time="0.0"/>
+  <testcase name="And the json contains this item(Scenario: Set payment method as CARD without token " classname="sad path)" time="0.0"/>
+  <testcase name="Given I target the PO environment(Scenario: Set invalid payment method without token " classname="sad path)" time="0.0"/>
+  <testcase name="When I create an interaction reference(Scenario: Set invalid payment method without token " classname="sad path)" time="0.0"/>
+  <testcase name="And I set the payment details with(Scenario: Set invalid payment method without token " classname="sad path)" time="0.0"/>
+  <testcase name="Then the response status is 400(Scenario: Set invalid payment method without token " classname="sad path)" time="0.001"/>
+  <testcase name="And the json contains this item(Scenario: Set invalid payment method without token " classname="sad path)" time="0.0"/>
+  <testcase name="Given I target the PO environment(Scenario: Set payment method without body" classname="sad path)" time="0.0"/>
+  <testcase name="When I create an interaction reference(Scenario: Set payment method without body" classname="sad path)" time="0.0"/>
+  <testcase name="And I set the payment details with(Scenario: Set payment method without body" classname="sad path)" time="0.0"/>
+  <testcase name="Then the response status is 400(Scenario: Set payment method without body" classname="sad path)" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

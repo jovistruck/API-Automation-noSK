@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "_links": {
+      "id": "_links",
+      "type": "object",
+      "properties": {
+        "bill-history": {
+          "id": "bill-history",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "href"
+          ]
+        },
+        "self": {
+          "id": "self",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "bill-details": {
+          "id": "bill-details",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "bill-details-latest": {
+          "id": "bill-details-latest",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "bill-history",
+        "self",
+        "bill-details",
+        "bill-details-latest"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "_links"
+  ]
+}

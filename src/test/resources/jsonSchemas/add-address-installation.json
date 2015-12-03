@@ -1,0 +1,397 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "reference": {
+      "id": "reference",
+      "type": "string"
+    },
+    "keyAddresses": {
+      "id": "keyAddresses",
+      "type": "object",
+      "properties": {
+        "installationAddressRef": {
+          "id": "installationAddressRef",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "basket": {
+      "id": "basket",
+      "type": "object",
+      "properties": {
+        "offers": {
+          "id": "offers",
+          "type": "array",
+          "items": [{}],
+          "additionalItems": false
+        },
+        "products": {
+          "id": "products",
+          "type": "array",
+          "items": [{}],
+          "additionalItems": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "addresses": {
+      "id": "addresses",
+      "type": "array",
+      "items": {
+        "id": "0",
+        "type": "object",
+        "properties": {
+          "reference": {
+            "id": "reference",
+            "type": "string"
+          },
+          "houseName": {
+            "id": "houseName",
+            "type": "string"
+          },
+          "town": {
+            "id": "town",
+            "type": "string"
+          },
+          "street": {
+            "id": "street",
+            "type": "string"
+          },
+          "countryCode": {
+            "id": "countryCode",
+            "type": "string"
+          },
+          "name": {
+            "id": "name",
+            "type": "string"
+          },
+          "houseNumber": {
+            "id": "houseNumber",
+            "type": "string"
+          },
+          "locality": {
+            "id": "locality",
+            "type": "string"
+          },
+          "county": {
+            "id": "county",
+            "type": "string"
+          },
+          "postcode": {
+            "id": "postcode",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "additionalItems": false
+    },
+    "_links": {
+      "id": "_links",
+      "type": "object",
+      "properties": {
+        "modify-basket": {
+          "id": "modify-basket",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "update-customer": {
+          "id": "update-customer",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "payment-method": {
+          "id": "payment-method",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "create-order": {
+          "id": "create-order",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "add-address": {
+          "id": "add-address",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "get-interaction": {
+          "id": "get-interaction",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "get-available-products": {
+          "id": "get-available-products",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "self": {
+          "id": "self",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "lead-time": {
+          "id": "lead-time",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "voice-and-data": {
+          "id": "voice-and-data",
+          "type": "object",
+          "properties": {
+            "href": {
+              "id": "href",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "paymentMethods": {
+      "id": "paymentMethods",
+      "type": "object",
+      "properties": {
+        "payment": {
+          "id": "payment",
+          "type": "object",
+          "properties": {
+            "method": {
+              "id": "method",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "billing": {
+          "id": "billing",
+          "type": "object",
+          "properties": {
+            "method": {
+              "id": "method",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "profiles": {
+      "id": "profiles",
+      "type": "object",
+      "properties": {
+        "voiceAndData": {
+          "id": "voiceAndData",
+          "type": "object",
+          "properties": {
+            "state": {
+              "id": "state",
+              "type": "string"
+            },
+            "mandatory": {
+              "id": "mandatory",
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "orderAddresses": {
+      "id": "orderAddresses",
+      "type": "object",
+      "properties": {
+        "installationAddress": {
+          "id": "installationAddress",
+          "type": "object",
+          "properties": {
+            "reference": {
+              "id": "reference",
+              "type": "string"
+            },
+            "houseName": {
+              "id": "houseName",
+              "type": "string"
+            },
+            "town": {
+              "id": "town",
+              "type": "string"
+            },
+            "street": {
+              "id": "street",
+              "type": "string"
+            },
+            "countryCode": {
+              "id": "countryCode",
+              "type": "string"
+            },
+            "name": {
+              "id": "name",
+              "type": "string"
+            },
+            "houseNumber": {
+              "id": "houseNumber",
+              "type": "string"
+            },
+            "locality": {
+              "id": "locality",
+              "type": "string"
+            },
+            "county": {
+              "id": "county",
+              "type": "string"
+            },
+            "postcode": {
+              "id": "postcode",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "status": {
+      "id": "status",
+      "type": "object",
+      "properties": {
+        "reasons": {
+          "id": "reasons",
+          "type": "array",
+          "items": [
+            {
+              "id": "0",
+              "type": "object",
+              "properties": {
+                "code": {
+                  "id": "code",
+                  "type": "string"
+                },
+                "message": {
+                  "id": "message",
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            },
+            {
+              "id": "1",
+              "type": "object",
+              "properties": {
+                "code": {
+                  "id": "code",
+                  "type": "string"
+                },
+                "message": {
+                  "id": "message",
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            },
+            {
+              "id": "2",
+              "type": "object",
+              "properties": {
+                "code": {
+                  "id": "code",
+                  "type": "string"
+                },
+                "message": {
+                  "id": "message",
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          ],
+          "additionalItems": false
+        },
+        "state": {
+          "id": "state",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "customer": {
+      "id": "customer",
+      "type": "object",
+      "properties": {},
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "reference",
+    "keyAddresses",
+    "basket",
+    "addresses",
+    "_links",
+    "paymentMethods",
+    "profiles",
+    "orderAddresses",
+    "status",
+    "customer"
+  ]
+}
